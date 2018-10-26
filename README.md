@@ -1,2 +1,7 @@
-# supp-data
-supplementary files and data produced during my research
+# Data from my research
+
+This repository hosts scientific data produced during my research. These are primarily data and input files related to my published articles.
+
+The directories correspond to each paper labeled by DOI.
+
+If you use this information, please cite the relevant paper.
