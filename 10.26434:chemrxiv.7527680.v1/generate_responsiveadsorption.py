@@ -93,14 +93,12 @@ plt.show()
 #defined for a bistable function
 def get_eq_isotherm_bistable(min1, min2, min1_depth, min2_depth, Fe_barrier, os_crit, data_eq, T):
     data_eq["osmotic"] = free_energy(data_eq["!w"], min1, min2, min1_depth, min2_depth, Fe_barrier)+data_eq["Omega"]*T+data_eq["P*"]*data_eq["!w"]
-    #data_eq["osmotic"] = harmonic(data_eq["!w"], 5.5, 1)+data_eq["Omega"]*0.8+data_eq["P*"]*data_eq["!w"]
 
     acts = data_eq["lambda*"].unique()
     widths = data_eq["!w"].unique()
 
     #find width for empty structure
     free_energy_bare = free_energy(widths, min1, min2, min1_depth, min2_depth, Fe_barrier)
-    #free_energy_bare = harmonic(widths, 5.5, 1)
     min_width_bare = widths[np.argmin(free_energy_bare)]
     current_width = min_width_bare
     #initialise lists of activity (xs), number adsorbed (ys) and current widths (zs)  
@@ -111,14 +109,7 @@ def get_eq_isotherm_bistable(min1, min2, min1_depth, min2_depth, Fe_barrier, os_
     count=0
     for act in acts:
         data_lambda = data_eq[data_eq["lambda*"] == act]
-        # if act in [acts[0],acts[130],acts[140],acts[150],acts[160],acts[170],acts[180]]:
-        #     print act
-        #     axarr[count].plot(data_lambda["!w"], data_lambda["osmotic"], '-', color="C0")
-        #     axarr[count].set_xlim([0,7])
-        #     axarr[count].set_ylim([-15,10])
-        #     count=count+1
 
-        # plt.plot(data_lambda["!w"], data_lambda["osmotic"], '-')
         #calculate minima on the osmotic vs w surface
         minima = data_lambda.iloc[argrelextrema(data_lambda["osmotic"].values, np.less)[0]]
         maxima = data_lambda.iloc[argrelextrema(data_lambda["osmotic"].values, np.greater)[0]]
@@ -164,14 +155,7 @@ def get_eq_isotherm_harmonic(minimum, k, os_crit, data_eq, T):
     count=0
     for act in acts:
         data_lambda = data_eq[data_eq["lambda*"] == act]
-        # if act in [acts[0],acts[130],acts[140],acts[150],acts[160],acts[170],acts[180]]:
-        #     print act
-        #     axarr[count].plot(data_lambda["!w"], data_lambda["osmotic"], '-', color="C0")
-        #     axarr[count].set_xlim([0,7])
-        #     axarr[count].set_ylim([-15,10])
-        #     count=count+1
 
-        # plt.plot(data_lambda["!w"], data_lambda["osmotic"], '-')
         #calculate minima on the osmotic vs w surface
         minima = data_lambda.iloc[argrelextrema(data_lambda["osmotic"].values, np.less)[0]]
         maxima = data_lambda.iloc[argrelextrema(data_lambda["osmotic"].values, np.greater)[0]]
