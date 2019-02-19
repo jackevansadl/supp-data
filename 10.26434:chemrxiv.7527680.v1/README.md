@@ -2,7 +2,7 @@ Supporting information for: [“Exploring the Thermodynamic Criteria for Respons
 
 This approach is able to predict responsive gas adsorption isotherms for soft porous materials. This is possible by combining host free energy profile with a kernel of gas adsorption data for slit-pore models.
 
-* Contents of repository *
+**Contents of repository**
 
 - [generate_responsiveadsorption.ipynb](generate_responsiveadsorption.ipynb): A Julia v1.0 notebook used to illustrate the methodology used.
 - [kernel_data](kernel_data): Folder containing panda data structures of single width isotherm kernels used to construct the responsive isotherm.

@@ -3,7 +3,6 @@
 #%%
 import numpy as np
 import pandas as pd
-import pickle
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from scipy.signal import argrelextrema
