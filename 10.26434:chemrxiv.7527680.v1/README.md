@@ -4,5 +4,5 @@ This approach is able to predict responsive gas adsorption isotherms for soft po
 
 **Contents of repository**
 
-- [generate_responsiveadsorption.ipynb](generate_responsiveadsorption.ipynb): A Julia v1.0 notebook used to illustrate the methodology used.
+- [generate_responsiveadsorption.ipynb](generate_responsiveadsorption.ipynb): A Jupyter notebook used to illustrate the methodology used.
 - [kernel_data](kernel_data): Folder containing panda data structures of single width isotherm kernels used to construct the responsive isotherm.
