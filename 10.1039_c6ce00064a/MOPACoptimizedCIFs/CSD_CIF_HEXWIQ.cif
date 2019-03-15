@@ -1,0 +1,64 @@
+data_HEXWIQ
+_audit_creation_date              2015-05-21
+_audit_creation_method            'Materials Studio'
+_symmetry_space_group_name_H-M    'P63/M'
+_symmetry_Int_Tables_number       176
+_symmetry_cell_setting            hexagonal
+loop_
+_symmetry_equiv_pos_as_xyz
+  x,y,z
+  -y,x-y,z
+  -x+y,-x,z
+  -x,-y,z+1/2
+  y,-x+y,z+1/2
+  x-y,x,z+1/2
+  -x,-y,-z
+  y,-x+y,-z
+  x-y,x,-z
+  x,y,-z+1/2
+  -y,x-y,-z+1/2
+  -x+y,-x,-z+1/2
+_cell_length_a                    16.3743
+_cell_length_b                    16.3743
+_cell_length_c                    6.7533
+_cell_angle_alpha                 90.0000
+_cell_angle_beta                  90.0000
+_cell_angle_gamma                 120.0000
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+C3     C     0.35059  -0.07209   0.57051   0.00000  Uiso   1.00
+H1     H     0.32630  -0.10953   0.43167   0.00000  Uiso   1.00
+C4     C     0.41379   0.02501   0.57060   0.00000  Uiso   1.00
+H2     H     0.43825   0.06244   0.43175   0.00000  Uiso   1.00
+Br1    Br    0.53065   0.20597   0.75000   0.00000  Uiso   1.00
+O1     O     0.25498  -0.21781   0.75000   0.00000  Uiso   1.00
+N1     N     0.39103  -0.23857   0.75000   0.00000  Uiso   1.00
+C1     C     0.29581  -0.27549   0.75000   0.00000  Uiso   1.00
+C2     C     0.31910  -0.12091   0.75000   0.00000  Uiso   1.00
+C5     C     0.44538   0.07354   0.75000   0.00000  Uiso   1.00
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+C3     H1      1.081   .     S
+C3     C4      1.398   .     A
+C3     C2      1.401   .     A
+C4     H2      1.082   .     S
+C4     C5      1.399   .     A
+Br1    C5      1.904   .     S
+O1     C1      1.404   .     S
+O1     C2      1.398   .     S
+N1     C1      1.362   .     A
+N1     C1      1.355   3_655 A
+C1     N1      1.355   2_545 A
+C2     C3      1.401   10_556 A
+C5     C4      1.399   10_556 A

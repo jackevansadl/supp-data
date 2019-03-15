@@ -1,0 +1,112 @@
+data_BODLOV.search1
+_audit_creation_date              2015-05-21
+_audit_creation_method            'Materials Studio'
+_symmetry_space_group_name_H-M    'R-3C'
+_symmetry_Int_Tables_number       167
+_symmetry_cell_setting            trigonal
+loop_
+_symmetry_equiv_pos_as_xyz
+  x,y,z
+  -y,x-y,z
+  -x+y,-x,z
+  y,x,-z+1/2
+  x-y,-y,-z+1/2
+  -x,-x+y,-z+1/2
+  -x,-y,-z
+  y,-x+y,-z
+  x-y,x,-z
+  -y,-x,z+1/2
+  -x+y,y,z+1/2
+  x,x-y,z+1/2
+  x+2/3,y+1/3,z+1/3
+  -y+2/3,x-y+1/3,z+1/3
+  -x+y+2/3,-x+1/3,z+1/3
+  y+2/3,x+1/3,-z+5/6
+  x-y+2/3,-y+1/3,-z+5/6
+  -x+2/3,-x+y+1/3,-z+5/6
+  -x+2/3,-y+1/3,-z+1/3
+  y+2/3,-x+y+1/3,-z+1/3
+  x-y+2/3,x+1/3,-z+1/3
+  -y+2/3,-x+1/3,z+5/6
+  -x+y+2/3,y+1/3,z+5/6
+  x+2/3,x-y+1/3,z+5/6
+  x+1/3,y+2/3,z+2/3
+  -y+1/3,x-y+2/3,z+2/3
+  -x+y+1/3,-x+2/3,z+2/3
+  y+1/3,x+2/3,-z+1/6
+  x-y+1/3,-y+2/3,-z+1/6
+  -x+1/3,-x+y+2/3,-z+1/6
+  -x+1/3,-y+2/3,-z+2/3
+  y+1/3,-x+y+2/3,-z+2/3
+  x-y+1/3,x+2/3,-z+2/3
+  -y+1/3,-x+2/3,z+1/6
+  -x+y+1/3,y+2/3,z+1/6
+  x+1/3,x-y+2/3,z+1/6
+_cell_length_a                    12.1017
+_cell_length_b                    12.1017
+_cell_length_c                    65.2815
+_cell_angle_alpha                 90.0000
+_cell_angle_beta                  90.0000
+_cell_angle_gamma                 120.0000
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+Si3    Si    0.50536   0.47993   0.04595   0.00000  Uiso   1.00
+N1     N     0.43679   0.33454   0.06122   0.00000  Uiso   1.00
+C1     C     0.18622   0.18716   0.07880   0.00000  Uiso   1.00
+H1     H     0.13526   0.14164   0.09309   0.00000  Uiso   1.00
+H2     H     0.19872   0.11799   0.06942   0.00000  Uiso   1.00
+H3     H     0.12706   0.21565   0.06976   0.00000  Uiso   1.00
+C2     C     0.61489   0.47405   0.02667   0.00000  Uiso   1.00
+H4     H     0.56061   0.39496   0.01575   0.00000  Uiso   1.00
+H5     H     0.68607   0.45994   0.03503   0.00000  Uiso   1.00
+H6     H     0.66389   0.56559   0.01817   0.00000  Uiso   1.00
+C3     C     0.37759   0.48543   0.03059   0.00000  Uiso   1.00
+H7     H     0.30471   0.48691   0.04054   0.00000  Uiso   1.00
+H8     H     0.33092   0.40016   0.02056   0.00000  Uiso   1.00
+H9     H     0.42134   0.57284   0.02104   0.00000  Uiso   1.00
+C4     C     0.60598   0.63664   0.05890   0.00000  Uiso   1.00
+H10    H     0.55638   0.65059   0.07184   0.00000  Uiso   1.00
+H11    H     0.63017   0.71363   0.04758   0.00000  Uiso   1.00
+H12    H     0.69648   0.64418   0.06398   0.00000  Uiso   1.00
+Si1    Si    0.52658   0.33333   0.08333   0.00000  Uiso   1.00
+Si2    Si    0.34519   0.33333   0.08333   0.00000  Uiso   1.00
+O1     O     0.66667   0.45579   0.08333   0.00000  Uiso   1.00
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+Si3    N1      1.822   .     S
+Si3    C2      1.855   .     S
+Si3    C3      1.871   .     S
+Si3    C4      1.867   .     S
+N1     Si1     1.811   .     S
+N1     Si2     1.816   .     S
+C1     H1      1.102   .     S
+C1     H2      1.107   .     S
+C1     H3      1.107   .     S
+C1     Si2     1.875   .     S
+C2     H4      1.107   .     S
+C2     H5      1.103   .     S
+C2     H6      1.109   .     S
+C3     H7      1.103   .     S
+C3     H8      1.109   .     S
+C3     H9      1.108   .     S
+C4     H10     1.097   .     S
+C4     H11     1.108   .     S
+C4     H12     1.104   .     S
+Si1    N1      1.811   29    S
+Si1    Si2     2.195   .     S
+Si1    O1      1.599   .     S
+Si1    O1      1.599   2_655 S
+Si2    N1      1.816   29    S
+Si2    C1      1.875   29    S
+O1     Si1     1.599   3_665 S
