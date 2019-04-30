@@ -1,4 +1,4 @@
-Supporting information for: [“Exploring the Thermodynamic Criteria for Responsive Adsorption Processes”](https://doi.org/10.26434/chemrxiv.7527680.v1),  J. D. Evans, S. Krause, S. Kaskel, M. B. Sweatman and L. Sarkisov, **2019**, _Chemical Science_, DOI: [10.1039/C9SC01299K](https://doi.org/10.1039/C9SC01299K)
+Supporting information for: [“Exploring the Thermodynamic Criteria for Responsive Adsorption Processes”](https://doi.org/10.1039/C9SC01299K),  J. D. Evans, S. Krause, S. Kaskel, M. B. Sweatman and L. Sarkisov, **2019**, _Chemical Science_, DOI: [10.1039/C9SC01299K](https://doi.org/10.1039/C9SC01299K)
 
 This approach is able to predict responsive gas adsorption isotherms for soft porous materials. This is possible by combining host free energy profile with a kernel of gas adsorption data for slit-pore models.
 
