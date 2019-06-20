@@ -1,0 +1,587 @@
+LAMMPS data file for mol object with MOF-FF params from www.mofplus.org
+
+        78 atoms
+        84 bonds
+       135 angles
+       204 dihedrals
+        45 impropers
+         6 atom types
+         7 bond types
+        10 angle types
+        16 dihedral types
+         5 improper types
+
+    0.000000    100  xlo xhi
+    0.000000    100  ylo yhi
+    0.000000    100  zlo zhi
+
+Masses
+
+    1    12.0107 # buck6d->(c3_c3@ph)|ph-ph/gaussian->(c3_c3@ph)|ph-ph
+    2    12.0107 # buck6d->(c3_c2h1@ph)|benzene/gaussian->(c3_c2h1@ph)|benzene
+    3    12.0107 # buck6d->(c3_c1o2@ket)|DUT60/gaussian->(c3_c1o2@ket)|DUT60
+    4     1.0079 # buck6d->(h1_c1@ph)|benzene/gaussian->(h1_c1@ph)|benzene
+    5    15.9994 # buck6d->(o1_c1@ket)|DUT60/gaussian->(o1_c1@ket)|DUT60
+    6    15.9994 # buck6d->(o1_c1@alkox)|DUT60/gaussian->(o1_c1@alkox)|DUT60
+
+Atoms
+
+         1     1     1    0.00000    32.736122    31.684538     9.916745 # buck6d->(c3_c3@ph)|ph-ph
+         2     1     1    0.00000    32.979165    25.490663     3.817120 # buck6d->(c3_c3@ph)|ph-ph
+         3     1     2   -0.12000    32.934221    26.856414     3.475464 # buck6d->(c3_c2h1@ph)|benzene
+         4     1     2   -0.12000    32.923313    26.133395     6.168567 # buck6d->(c3_c2h1@ph)|benzene
+         5     1     1    0.00000    32.885351    27.506563     5.833893 # buck6d->(c3_c3@ph)|ph-ph
+         6     1     1    0.00000    32.825572    28.561202     6.878932 # buck6d->(c3_c3@ph)|ph-ph
+         7     1     2   -0.12000    33.328675    28.342158     8.180103 # buck6d->(c3_c2h1@ph)|benzene
+         8     1     2   -0.12000    32.233020    30.832362     7.584497 # buck6d->(c3_c2h1@ph)|benzene
+         9     1     1    0.00000    32.743104    30.614627     8.882614 # buck6d->(c3_c3@ph)|ph-ph
+        10     1     2   -0.12000    31.748244    32.690743     9.929835 # buck6d->(c3_c2h1@ph)|benzene
+        11     1     3    0.00000    41.003494    32.477808    19.078618 # buck6d->(c3_c1o2@ket)|DUT60
+        12     1     3    0.00000    32.973492    24.447806     2.738482 # buck6d->(c3_c1o2@ket)|DUT60
+        13     1     3    0.00000    24.520239    40.931061    10.908550 # buck6d->(c3_c1o2@ket)|DUT60
+        14     1     1    0.00000    33.766762    32.715178    11.900355 # buck6d->(c3_c3@ph)|ph-ph
+        15     1     1    0.00000    31.744753    33.706547    10.908550 # buck6d->(c3_c3@ph)|ph-ph
+        16     1     1    0.00000    39.960637    32.472135    17.999980 # buck6d->(c3_c3@ph)|ph-ph
+        17     1     1    0.00000    25.583604    39.867696    10.908550 # buck6d->(c3_c3@ph)|ph-ph
+        18     1     2   -0.12000    38.594886    32.517079    18.341636 # buck6d->(c3_c2h1@ph)|benzene
+        19     1     2   -0.12000    40.304911    32.465154    16.634666 # buck6d->(c3_c2h1@ph)|benzene
+        20     1     2   -0.12000    32.986146    25.146389     5.182434 # buck6d->(c3_c2h1@ph)|benzene
+        21     1     2   -0.12000    26.947609    40.205861    11.001055 # buck6d->(c3_c2h1@ph)|benzene
+        22     1     2   -0.12000    25.245439    38.503691    10.816045 # buck6d->(c3_c2h1@ph)|benzene
+        23     1     2   -0.12000    39.317905    32.527987    15.648533 # buck6d->(c3_c2h1@ph)|benzene
+        24     1     2   -0.12000    37.608753    32.543695    17.355939 # buck6d->(c3_c2h1@ph)|benzene
+        25     1     2   -0.12000    32.907605    27.842547     4.461161 # buck6d->(c3_c2h1@ph)|benzene
+        26     1     2   -0.12000    26.232445    37.515812    10.836554 # buck6d->(c3_c2h1@ph)|benzene
+        27     1     2   -0.12000    27.935488    39.218855    10.980546 # buck6d->(c3_c2h1@ph)|benzene
+        28     1     1    0.00000    37.944737    32.565949    15.983207 # buck6d->(c3_c3@ph)|ph-ph
+        29     1     1    0.00000    27.605613    37.845687    10.908550 # buck6d->(c3_c3@ph)|ph-ph
+        30     1     1    0.00000    36.890098    32.625728    14.938168 # buck6d->(c3_c3@ph)|ph-ph
+        31     1     1    0.00000    28.657197    36.794103    10.908550 # buck6d->(c3_c3@ph)|ph-ph
+        32     1     2   -0.12000    37.109142    32.122625    13.636997 # buck6d->(c3_c2h1@ph)|benzene
+        33     1     2   -0.12000    35.620343    33.185118    15.203901 # buck6d->(c3_c2h1@ph)|benzene
+        34     1     2   -0.12000    32.266182    29.830957     6.613199 # buck6d->(c3_c2h1@ph)|benzene
+        35     1     2   -0.12000    28.411100    35.498603    10.399775 # buck6d->(c3_c2h1@ph)|benzene
+        36     1     2   -0.12000    29.952697    37.040200    11.417325 # buck6d->(c3_c2h1@ph)|benzene
+        37     1     2   -0.12000    34.618938    33.218280    14.232603 # buck6d->(c3_c2h1@ph)|benzene
+        38     1     2   -0.12000    36.113846    32.170187    12.660899 # buck6d->(c3_c2h1@ph)|benzene
+        39     1     2   -0.12000    33.281113    29.337454     9.156201 # buck6d->(c3_c2h1@ph)|benzene
+        40     1     2   -0.12000    30.942320    36.056248    11.409034 # buck6d->(c3_c2h1@ph)|benzene
+        41     1     2   -0.12000    29.395052    34.508980    10.408066 # buck6d->(c3_c2h1@ph)|benzene
+        42     1     1    0.00000    34.836673    32.708196    12.934486 # buck6d->(c3_c3@ph)|ph-ph
+        43     1     1    0.00000    30.691424    34.759876    10.908550 # buck6d->(c3_c3@ph)|ph-ph
+        44     1     2   -0.12000    32.760557    33.703056    11.887265 # buck6d->(c3_c2h1@ph)|benzene
+        45     1     2   -0.12000    33.737091    31.714209    10.908550 # buck6d->(c3_c2h1@ph)|benzene
+        46     1     4    0.12000    32.933349    27.151381     2.414280 # buck6d->(h1_c1@ph)|benzene
+        47     1     4    0.12000    32.887969    25.815738     7.221896 # buck6d->(h1_c1@ph)|benzene
+        48     1     4    0.12000    33.786834    27.376970     8.446272 # buck6d->(h1_c1@ph)|benzene
+        49     1     4    0.12000    31.811077    31.811077     7.308729 # buck6d->(h1_c1@ph)|benzene
+        50     1     4    0.12000    30.962392    32.682888     9.158819 # buck6d->(h1_c1@ph)|benzene
+        51     1     4    0.12000    36.554115    32.541950    17.672287 # buck6d->(h1_c1@ph)|benzene
+        52     1     4    0.12000    32.909350    28.897185     4.144813 # buck6d->(h1_c1@ph)|benzene
+        53     1     4    0.12000    25.911297    36.463356    10.802519 # buck6d->(h1_c1@ph)|benzene
+        54     1     4    0.12000    28.987944    39.540003    11.014581 # buck6d->(h1_c1@ph)|benzene
+        55     1     4    0.12000    38.074330    31.664466    13.370828 # buck6d->(h1_c1@ph)|benzene
+        56     1     4    0.12000    35.396936    33.616660    16.191779 # buck6d->(h1_c1@ph)|benzene
+        57     1     4    0.12000    31.834640    30.054364     5.625321 # buck6d->(h1_c1@ph)|benzene
+        58     1     4    0.12000    27.428894    35.242907     9.973469 # buck6d->(h1_c1@ph)|benzene
+        59     1     4    0.12000    30.208393    38.022406    11.843631 # buck6d->(h1_c1@ph)|benzene
+        60     1     4    0.12000    33.640223    33.640223    14.508372 # buck6d->(h1_c1@ph)|benzene
+        61     1     4    0.12000    36.352088    31.781842    11.658622 # buck6d->(h1_c1@ph)|benzene
+        62     1     4    0.12000    33.669458    29.099212    10.158478 # buck6d->(h1_c1@ph)|benzene
+        63     1     4    0.12000    31.938925    36.321108    11.795197 # buck6d->(h1_c1@ph)|benzene
+        64     1     4    0.12000    29.130192    33.512375    10.021903 # buck6d->(h1_c1@ph)|benzene
+        65     1     4    0.12000    32.768412    34.488908    12.658281 # buck6d->(h1_c1@ph)|benzene
+        66     1     4    0.12000    34.515089    30.936211    10.908550 # buck6d->(h1_c1@ph)|benzene
+        67     1     4    0.12000    38.299919    32.517951    19.402820 # buck6d->(h1_c1@ph)|benzene
+        68     1     4    0.12000    41.364785    32.435046    16.338390 # buck6d->(h1_c1@ph)|benzene
+        69     1     4    0.12000    33.016254    24.086515     5.478710 # buck6d->(h1_c1@ph)|benzene
+        70     1     4    0.12000    27.243885    41.263990    11.069560 # buck6d->(h1_c1@ph)|benzene
+        71     1     4    0.12000    24.187310    38.207415    10.747540 # buck6d->(h1_c1@ph)|benzene
+        72     1     4    0.12000    39.635562    32.563331    14.595204 # buck6d->(h1_c1@ph)|benzene
+        73     1     5    0.00000    50    41.939011    11.683930 # buck6d->(o1_c1@ket)|DUT60
+        74     1     5    0.00000    50    31.883946    18.858701 # buck6d->(o1_c1@ket)|DUT60
+        75     1     5    0.00000    50    23.331643     2.958399 # buck6d->(o1_c1@ket)|DUT60
+        76     1     6    0.00000    50    40.758706    10.133170 # buck6d->(o1_c1@alkox)|DUT60
+        77     1     6    0.00000    50    24.754118     1.652863 # buck6d->(o1_c1@alkox)|DUT60
+        78     1     6    0.00000    50    33.089996    20.164237 # buck6d->(o1_c1@alkox)|DUT60
+
+Bonds
+
+         1     1        1        9  # ('mm3->(c3_c3@ph,c3_c3@ph)|ph-ph',)
+         2     2        1       10  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+         3     2        1       45  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+         4     2        2        3  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+         5     3        2       12  # ('mm3->(c3_c1o2@ket,c3_c3@ph)|DUT60',)
+         6     2        2       20  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+         7     4        3       25  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+         8     5        3       46  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+         9     2        4        5  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        10     4        4       20  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+        11     5        4       47  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        12     1        5        6  # ('mm3->(c3_c3@ph,c3_c3@ph)|ph-ph',)
+        13     2        5       25  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        14     2        6        7  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        15     2        6       34  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        16     4        7       39  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+        17     5        7       48  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        18     2        8        9  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        19     4        8       34  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+        20     5        8       49  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        21     2        9       39  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        22     2       10       15  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        23     5       10       50  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        24     3       11       16  # ('mm3->(c3_c1o2@ket,c3_c3@ph)|DUT60',)
+        25     6       11       74  # ('mm3->(c3_c1o2@ket,o1_c1@ket)|DUT60',)
+        26     7       11       78  # ('mm3->(c3_c1o2@ket,o1_c1@alkox)|DUT60',)
+        27     6       12       75  # ('mm3->(c3_c1o2@ket,o1_c1@ket)|DUT60',)
+        28     7       12       77  # ('mm3->(c3_c1o2@ket,o1_c1@alkox)|DUT60',)
+        29     3       13       17  # ('mm3->(c3_c1o2@ket,c3_c3@ph)|DUT60',)
+        30     6       13       73  # ('mm3->(c3_c1o2@ket,o1_c1@ket)|DUT60',)
+        31     7       13       76  # ('mm3->(c3_c1o2@ket,o1_c1@alkox)|DUT60',)
+        32     1       14       42  # ('mm3->(c3_c3@ph,c3_c3@ph)|ph-ph',)
+        33     2       14       44  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        34     2       14       45  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        35     1       15       43  # ('mm3->(c3_c3@ph,c3_c3@ph)|ph-ph',)
+        36     2       15       44  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        37     2       16       18  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        38     2       16       19  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        39     2       17       21  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        40     2       17       22  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        41     4       18       24  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+        42     5       18       67  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        43     4       19       23  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+        44     5       19       68  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        45     5       20       69  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        46     4       21       27  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+        47     5       21       70  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        48     4       22       26  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+        49     5       22       71  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        50     2       23       28  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        51     5       23       72  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        52     2       24       28  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        53     5       24       51  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        54     5       25       52  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        55     2       26       29  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        56     5       26       53  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        57     2       27       29  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        58     5       27       54  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        59     1       28       30  # ('mm3->(c3_c3@ph,c3_c3@ph)|ph-ph',)
+        60     1       29       31  # ('mm3->(c3_c3@ph,c3_c3@ph)|ph-ph',)
+        61     2       30       32  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        62     2       30       33  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        63     2       31       35  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        64     2       31       36  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        65     4       32       38  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+        66     5       32       55  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        67     4       33       37  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+        68     5       33       56  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        69     5       34       57  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        70     4       35       41  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+        71     5       35       58  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        72     4       36       40  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene',)
+        73     5       36       59  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        74     2       37       42  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        75     5       37       60  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        76     2       38       42  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        77     5       38       61  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        78     5       39       62  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        79     2       40       43  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        80     5       40       63  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        81     2       41       43  # ('mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        82     5       41       64  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        83     5       44       65  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+        84     5       45       66  # ('mm3->(c3_c2h1@ph,h1_c1@ph)|benzene',)
+
+Angles
+
+         1     1       10        1        9  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+         2     1       45        1        9  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+         3     2       10        1       45  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+         4     3       12        2        3  # ('mm3->(c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+         5     2        3        2       20  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+         6     3       12        2       20  # ('mm3->(c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+         7     4       25        3        2  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+         8     5        2        3       46  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+         9     6       25        3       46  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        10     4       20        4        5  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        11     5        5        4       47  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        12     6       20        4       47  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        13     1        4        5        6  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        14     2        4        5       25  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        15     1       25        5        6  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        16     1        7        6        5  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        17     1       34        6        5  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        18     2        7        6       34  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        19     4       39        7        6  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        20     5        6        7       48  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        21     6       39        7       48  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        22     4       34        8        9  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        23     5        9        8       49  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        24     6       34        8       49  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        25     1        8        9        1  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        26     1       39        9        1  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        27     2        8        9       39  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        28     7        1       10       15  # ('mm3->(c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        29     5        1       10       50  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        30     5       15       10       50  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        31     8       16       11       74  # ('mm3->(c3_c3@ph,c3_c1o2@ket,o1_c1@ket)|DUT60',)
+        32     9       16       11       78  # ('mm3->(c3_c3@ph,c3_c1o2@ket,o1_c1@alkox)|DUT60',)
+        33    10       78       11       74  # ('mm3->(o1_c1@alkox,c3_c1o2@ket,o1_c1@ket)|DUT60',)
+        34     8        2       12       75  # ('mm3->(c3_c3@ph,c3_c1o2@ket,o1_c1@ket)|DUT60',)
+        35     9        2       12       77  # ('mm3->(c3_c3@ph,c3_c1o2@ket,o1_c1@alkox)|DUT60',)
+        36    10       77       12       75  # ('mm3->(o1_c1@alkox,c3_c1o2@ket,o1_c1@ket)|DUT60',)
+        37     8       17       13       73  # ('mm3->(c3_c3@ph,c3_c1o2@ket,o1_c1@ket)|DUT60',)
+        38     9       17       13       76  # ('mm3->(c3_c3@ph,c3_c1o2@ket,o1_c1@alkox)|DUT60',)
+        39    10       76       13       73  # ('mm3->(o1_c1@alkox,c3_c1o2@ket,o1_c1@ket)|DUT60',)
+        40     1       44       14       42  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        41     1       45       14       42  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        42     2       44       14       45  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        43     1       10       15       43  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        44     2       10       15       44  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        45     1       44       15       43  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        46     3       11       16       18  # ('mm3->(c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        47     3       11       16       19  # ('mm3->(c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        48     2       18       16       19  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        49     3       13       17       21  # ('mm3->(c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        50     3       13       17       22  # ('mm3->(c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        51     2       21       17       22  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        52     4       24       18       16  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        53     5       16       18       67  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        54     6       24       18       67  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        55     4       23       19       16  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        56     5       16       19       68  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        57     6       23       19       68  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        58     4        4       20        2  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        59     5        2       20       69  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        60     6        4       20       69  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        61     4       27       21       17  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        62     5       17       21       70  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        63     6       27       21       70  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        64     4       26       22       17  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        65     5       17       22       71  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        66     6       26       22       71  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        67     4       19       23       28  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        68     6       19       23       72  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        69     5       28       23       72  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        70     4       18       24       28  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        71     6       18       24       51  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        72     5       28       24       51  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        73     4        3       25        5  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        74     6        3       25       52  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        75     5        5       25       52  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        76     4       22       26       29  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        77     6       22       26       53  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        78     5       29       26       53  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        79     4       21       27       29  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        80     6       21       27       54  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        81     5       29       27       54  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        82     2       23       28       24  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        83     1       23       28       30  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        84     1       24       28       30  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        85     2       26       29       27  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        86     1       26       29       31  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        87     1       27       29       31  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        88     1       32       30       28  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        89     1       33       30       28  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        90     2       32       30       33  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        91     1       35       31       29  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        92     1       36       31       29  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        93     2       35       31       36  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        94     4       38       32       30  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        95     5       30       32       55  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        96     6       38       32       55  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+        97     4       37       33       30  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        98     5       30       33       56  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+        99     6       37       33       56  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+       100     4        8       34        6  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       101     5        6       34       57  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+       102     6        8       34       57  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+       103     4       41       35       31  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       104     5       31       35       58  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+       105     6       41       35       58  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+       106     4       40       36       31  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       107     5       31       36       59  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+       108     6       40       36       59  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+       109     4       33       37       42  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       110     6       33       37       60  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+       111     5       42       37       60  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+       112     4       32       38       42  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       113     6       32       38       61  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+       114     5       42       38       61  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+       115     4        7       39        9  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       116     6        7       39       62  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+       117     5        9       39       62  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+       118     4       36       40       43  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       119     6       36       40       63  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+       120     5       43       40       63  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+       121     4       35       41       43  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       122     6       35       41       64  # ('mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene', 'strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene')
+       123     5       43       41       64  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+       124     1       37       42       14  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       125     1       38       42       14  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       126     2       37       42       38  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       127     1       40       43       15  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       128     1       41       43       15  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       129     2       40       43       41  # ('mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       130     7       14       44       15  # ('mm3->(c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       131     5       14       44       65  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+       132     5       15       44       65  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+       133     7        1       45       14  # ('mm3->(c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       134     5        1       45       66  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+       135     5       14       45       66  # ('mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph',)
+
+Dihedrals
+
+         1     1       10        1        9        8 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+         2     1       10        1        9       39 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+         3     1       45        1        9        8 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+         4     1       45        1        9       39 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+         5     2        9        1       10       15 # ('cos3->(c3_c3@ph,c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+         6     3        9        1       10       50 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+         7     4       45        1       10       15 # ('cos3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+         8     5       45        1       10       50 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+         9     2        9        1       45       14 # ('cos3->(c3_c3@ph,c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        10     3        9        1       45       66 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        11     4       10        1       45       14 # ('cos3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        12     5       10        1       45       66 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        13     6       12        2        3       25 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+        14     7       12        2        3       46 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+        15     8       20        2        3       25 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        16     5       20        2        3       46 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        17     9        3        2       12       75 # ('cos3->(o1_c1@ket,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        18    10        3        2       12       77 # ('cos3->(o1_c1@alkox,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        19     9       20        2       12       75 # ('cos3->(o1_c1@ket,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        20    10       20        2       12       77 # ('cos3->(o1_c1@alkox,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        21     8        3        2       20        4 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        22     5        3        2       20       69 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        23     6       12        2       20        4 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+        24     7       12        2       20       69 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+        25    11        2        3       25        5 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        26    12        2        3       25       52 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        27    12       46        3       25        5 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        28    13       46        3       25       52 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+        29    14       20        4        5        6 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        30     8       20        4        5       25 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        31     3       47        4        5        6 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        32     5       47        4        5       25 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        33    11        5        4       20        2 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        34    12        5        4       20       69 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        35    12       47        4       20        2 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        36    13       47        4       20       69 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+        37     1        4        5        6        7 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        38     1        4        5        6       34 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        39     1       25        5        6        7 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        40     1       25        5        6       34 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        41     8        4        5       25        3 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        42     5        4        5       25       52 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        43    14        6        5       25        3 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        44     3        6        5       25       52 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        45    14        5        6        7       39 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        46     3        5        6        7       48 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        47     8       34        6        7       39 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        48     5       34        6        7       48 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        49    14        5        6       34        8 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        50     3        5        6       34       57 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        51     8        7        6       34        8 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        52     5        7        6       34       57 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        53    11        6        7       39        9 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        54    12        6        7       39       62 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        55    12       48        7       39        9 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        56    13       48        7       39       62 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+        57    14       34        8        9        1 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        58     8       34        8        9       39 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        59     3       49        8        9        1 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        60     5       49        8        9       39 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        61    11        9        8       34        6 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        62    12        9        8       34       57 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        63    12       49        8       34        6 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        64    13       49        8       34       57 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+        65    14        1        9       39        7 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        66     3        1        9       39       62 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        67     8        8        9       39        7 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        68     5        8        9       39       62 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        69    15        1       10       15       43 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        70    16        1       10       15       44 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        71     3       50       10       15       43 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        72     5       50       10       15       44 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        73     9       74       11       16       18 # ('cos3->(o1_c1@ket,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        74     9       74       11       16       19 # ('cos3->(o1_c1@ket,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        75    10       78       11       16       18 # ('cos3->(o1_c1@alkox,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        76    10       78       11       16       19 # ('cos3->(o1_c1@alkox,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        77     9       73       13       17       21 # ('cos3->(o1_c1@ket,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        78     9       73       13       17       22 # ('cos3->(o1_c1@ket,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        79    10       76       13       17       21 # ('cos3->(o1_c1@alkox,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        80    10       76       13       17       22 # ('cos3->(o1_c1@alkox,c3_c1o2@ket,c3_c3@ph,c3_c2h1@ph)|DUT60',)
+        81     1       44       14       42       37 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        82     1       44       14       42       38 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        83     1       45       14       42       37 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        84     1       45       14       42       38 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        85     2       42       14       44       15 # ('cos3->(c3_c3@ph,c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        86     3       42       14       44       65 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        87     4       45       14       44       15 # ('cos3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        88     5       45       14       44       65 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        89     2       42       14       45        1 # ('cos3->(c3_c3@ph,c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        90     3       42       14       45       66 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+        91     4       44       14       45        1 # ('cos3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        92     5       44       14       45       66 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        93     1       10       15       43       40 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        94     1       10       15       43       41 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        95     1       44       15       43       40 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        96     1       44       15       43       41 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        97     4       10       15       44       14 # ('cos3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        98     5       10       15       44       65 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+        99     2       43       15       44       14 # ('cos3->(c3_c3@ph,c3_c3@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       100     3       43       15       44       65 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       101     6       11       16       18       24 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+       102     7       11       16       18       67 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+       103     8       19       16       18       24 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       104     5       19       16       18       67 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       105     6       11       16       19       23 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+       106     7       11       16       19       68 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+       107     8       18       16       19       23 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       108     5       18       16       19       68 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       109     6       13       17       21       27 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+       110     7       13       17       21       70 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+       111     8       22       17       21       27 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       112     5       22       17       21       70 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       113     6       13       17       22       26 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+       114     7       13       17       22       71 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@ket)|DUT60',)
+       115     8       21       17       22       26 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       116     5       21       17       22       71 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       117    11       16       18       24       28 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       118    12       16       18       24       51 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       119    12       67       18       24       28 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       120    13       67       18       24       51 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+       121    11       16       19       23       28 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       122    12       16       19       23       72 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       123    12       68       19       23       28 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       124    13       68       19       23       72 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+       125    11       17       21       27       29 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       126    12       17       21       27       54 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       127    12       70       21       27       29 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       128    13       70       21       27       54 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+       129    11       17       22       26       29 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       130    12       17       22       26       53 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       131    12       71       22       26       29 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       132    13       71       22       26       53 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+       133     8       19       23       28       24 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       134    14       19       23       28       30 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       135     5       72       23       28       24 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       136     3       72       23       28       30 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       137     8       18       24       28       23 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       138    14       18       24       28       30 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       139     5       51       24       28       23 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       140     3       51       24       28       30 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       141     8       22       26       29       27 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       142    14       22       26       29       31 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       143     5       53       26       29       27 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       144     3       53       26       29       31 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       145     8       21       27       29       26 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       146    14       21       27       29       31 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       147     5       54       27       29       26 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       148     3       54       27       29       31 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       149     1       23       28       30       32 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       150     1       23       28       30       33 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       151     1       24       28       30       32 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       152     1       24       28       30       33 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       153     1       26       29       31       35 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       154     1       26       29       31       36 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       155     1       27       29       31       35 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       156     1       27       29       31       36 # ('cos4->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       157    14       28       30       32       38 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       158     3       28       30       32       55 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       159     8       33       30       32       38 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       160     5       33       30       32       55 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       161    14       28       30       33       37 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       162     3       28       30       33       56 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       163     8       32       30       33       37 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       164     5       32       30       33       56 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       165    14       29       31       35       41 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       166     3       29       31       35       58 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       167     8       36       31       35       41 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       168     5       36       31       35       58 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       169    14       29       31       36       40 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       170     3       29       31       36       59 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       171     8       35       31       36       40 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       172     5       35       31       36       59 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       173    11       30       32       38       42 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       174    12       30       32       38       61 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       175    12       55       32       38       42 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       176    13       55       32       38       61 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+       177    11       30       33       37       42 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       178    12       30       33       37       60 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       179    12       56       33       37       42 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       180    13       56       33       37       60 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+       181    11       31       35       41       43 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       182    12       31       35       41       64 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       183    12       58       35       41       43 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       184    13       58       35       41       64 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+       185    11       31       36       40       43 # ('cos3->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       186    12       31       36       40       63 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       187    12       59       36       40       43 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+       188    13       59       36       40       63 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene',)
+       189    14       33       37       42       14 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       190     8       33       37       42       38 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       191     3       60       37       42       14 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       192     5       60       37       42       38 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       193    14       32       38       42       14 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       194     8       32       38       42       37 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       195     3       61       38       42       14 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       196     5       61       38       42       37 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       197    14       36       40       43       15 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       198     8       36       40       43       41 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       199     3       63       40       43       15 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       200     5       63       40       43       41 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       201    14       35       41       43       15 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       202     8       35       41       43       40 # ('cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+       203     3       64       41       43       15 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c3@ph)|ph-ph',)
+       204     5       64       41       43       40 # ('cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph',)
+
+Impropers
+
+         1     1        1        9       10       45 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+         2     2        2        3       12       20 # ('harm->(c3_c3@ph,c3_c1o2@ket,c3_c2h1@ph,c3_c2h1@ph)|DUT60',)
+         3     3        3        2       25       46 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+         4     3        4        5       20       47 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+         5     1        5        4        6       25 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+         6     1        6        5        7       34 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+         7     3        7        6       39       48 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+         8     3        8        9       34       49 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+         9     1        9        1        8       39 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        10     4       10        1       15       50 # ('harm->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        11     5       11       16       74       78 # ('harm->(c3_c1o2@ket,c3_c3@ph,o1_c1@alkox,o1_c1@ket)|DUT60',)
+        12     5       12        2       75       77 # ('harm->(c3_c1o2@ket,c3_c3@ph,o1_c1@alkox,o1_c1@ket)|DUT60',)
+        13     5       13       17       73       76 # ('harm->(c3_c1o2@ket,c3_c3@ph,o1_c1@alkox,o1_c1@ket)|DUT60',)
+        14     1       14       42       44       45 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        15     1       15       10       43       44 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        16     2       16       11       18       19 # ('harm->(c3_c3@ph,c3_c1o2@ket,c3_c2h1@ph,c3_c2h1@ph)|DUT60',)
+        17     2       17       13       21       22 # ('harm->(c3_c3@ph,c3_c1o2@ket,c3_c2h1@ph,c3_c2h1@ph)|DUT60',)
+        18     3       18       16       24       67 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        19     3       19       16       23       68 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        20     3       20        2        4       69 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        21     3       21       17       27       70 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        22     3       22       17       26       71 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        23     3       23       19       28       72 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        24     3       24       18       28       51 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        25     3       25        3        5       52 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        26     3       26       22       29       53 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        27     3       27       21       29       54 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        28     1       28       23       24       30 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        29     1       29       26       27       31 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        30     1       30       28       32       33 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        31     1       31       29       35       36 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        32     3       32       30       38       55 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        33     3       33       30       37       56 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        34     3       34        6        8       57 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        35     3       35       31       41       58 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        36     3       36       31       40       59 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        37     3       37       33       42       60 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        38     3       38       32       42       61 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        39     3       39        7        9       62 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        40     3       40       36       43       63 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        41     3       41       35       43       64 # ('harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        42     1       42       14       37       38 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        43     1       43       15       40       41 # ('harm->(c3_c3@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph',)
+        44     4       44       14       15       65 # ('harm->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+        45     4       45        1       14       66 # ('harm->(c3_c2h1@ph,c3_c3@ph,c3_c3@ph,h1_c1@ph)|ph-ph',)
+
