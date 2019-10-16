@@ -1,0 +1,105 @@
+ start NiNi_scan
+ title "NiNi_scan"
+
+  geometry units angstroms noautosym
+Ni      -0.1706300000      0.0780200000      1.3385400000
+Ni       0.1707900000     -0.0773900000     -1.3384300000                       
+O        1.2816300000     -1.3596800000      1.0815600000                 
+O       -1.5854200000      1.4914000000      1.1367200000                 
+O       -1.5689500000     -1.3543400000      1.1000600000                 
+O        1.2605400000      1.5052100000      1.1213900000                 
+C        1.8151200000     -1.8189500000      0.0455300000                 
+C       -1.8011200000     -1.8199500000     -0.0367600000                            
+O       -1.2768600000      1.3647600000     -1.0821900000                 
+O        1.5818800000     -1.4946200000     -1.1379000000                 
+O        1.5730100000      1.3509900000     -1.0982800000                 
+O       -1.2647900000     -1.5004900000     -1.1212800000                 
+C       -1.8141200000      1.8202100000     -0.0464200000                 
+C        1.8007900000      1.8206800000      0.0376000000                 
+H       -2.5722000000     -2.6072300000     -0.0908200000                 
+H       -2.5775700000      2.6019200000     -0.1986700000                 
+H        2.5715800000      2.6082900000      0.0916300000                 
+H        2.5793700000     -2.5998500000      0.1978300000                 
+N       -0.0610400000      0.0173100000     -3.3539000000                 
+H        0.8179700000      0.0184500000     -3.8564900000                 
+H       -0.6153200000     -0.7738800000     -3.6603400000                 
+H       -0.5661200000      0.8694700000     -3.5698300000                 
+N        0.0605000000     -0.0203600000      3.3538200000                 
+H       -0.8191600000     -0.0408700000      3.8551000000                 
+H        0.5805600000     -0.8647300000      3.5650600000                 
+H        0.5999200000      0.7786400000      3.6662800000                 
+end
+
+geometry adjust
+zcoord
+    angle 1 2 19 150 mmn1 constant
+    angle 2 1 23 150 mmn2 constant
+end
+end
+
+ basis
+   * library def2-tzvp
+ end
+dft
+mulliken
+maxiter 500
+xc pbe0
+odft
+mult 5
+direct
+end
+driver
+maxiter 500
+end
+
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 155 mmn1 constant
+    angle 2 1 23 155 mmn2 constant
+end
+end
+task dft optimize
+
+
+geometry adjust
+zcoord
+    angle 1 2 19 160 mmn1 constant
+    angle 2 1 23 160 mmn2 constant
+end
+end
+task dft optimize
+
+
+geometry adjust
+zcoord
+    angle 1 2 19 165 mmn1 constant
+    angle 2 1 23 165 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 170 mmn1 constant
+    angle 2 1 23 170 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 175 mmn1 constant
+    angle 2 1 23 175 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 180 mmn1 constant
+    angle 2 1 23 180 mmn2 constant
+end
+end
+task dft optimize

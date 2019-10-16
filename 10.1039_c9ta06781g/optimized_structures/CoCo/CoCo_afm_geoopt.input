@@ -1,0 +1,23 @@
+ restart CoCo_bs
+ title "CoCo_bs"
+ 
+ basis
+   * library def2-tzvp
+ end
+scf
+thresh 1.0e-6
+end
+dft
+xc pbe0
+odft
+mult 1
+direct
+ grid xfine
+ tolerances tight
+end
+driver
+  tight
+maxiter 500
+end
+task dft optimize
+

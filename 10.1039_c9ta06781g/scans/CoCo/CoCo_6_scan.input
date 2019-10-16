@@ -1,0 +1,103 @@
+ restart CoCo_6
+ title "CoCo_6"
+ 
+ geometry units angstroms noautosym
+Co                     -0.20974906    -0.20922625     1.37841925
+Co                      0.20574694     0.21629835    -1.37951201
+O                       1.34049333    -1.49658391     1.10574198
+O                      -1.54942890     1.29301487     1.11177968
+O                      -1.57451638    -1.62472865     0.96633356
+O                       1.29544189     1.34798063     1.24227045
+C                       1.83567782    -1.78627764    -0.00403043
+C                      -1.82194215    -1.86778853    -0.23973277
+O                      -1.33209613     1.51420609    -1.10349061
+O                       1.53305595    -1.29888334    -1.11386914
+O                       1.58292468     1.61952888    -0.96653013
+O                      -1.31186944    -1.33076747    -1.24268198
+C                      -1.83951085     1.79214749     0.00382954
+C                       1.81800534     1.87354248     0.23969873
+H                      -2.58006784    -2.64873295    -0.42469984
+H                      -2.62930410     2.56168064     0.00326779
+H                       2.57662663     2.65380865     0.42545629
+H                       2.62562750    -2.55569329    -0.00411045
+N                      -0.09895148    -0.09319618    -3.42807407
+H                       0.71603802    -0.43234706    -3.92461285
+H                      -0.80442283    -0.82372261    -3.42564015
+H                      -0.46769406     0.71076368    -3.92156540
+N                       0.10511314     0.08310684     3.42815850
+H                      -0.70880906     0.39527906     3.94364955
+H                       0.49794689    -0.72268870     3.89965494
+H                       0.79606138     0.82741537     3.43032690
+end
+
+geometry adjust
+zcoord
+    angle 1 2 19 150 mmn1 constant
+    angle 2 1 23 150 mmn2 constant
+end
+end
+
+ basis
+   * library def2-tzvp
+ end
+dft
+mulliken
+maxiter 500
+xc pbe0
+odft
+mult 7
+direct
+end
+driver
+maxiter 500
+end
+
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 155 mmn1 constant
+    angle 2 1 23 155 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 160 mmn1 constant
+    angle 2 1 23 160 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 165 mmn1 constant
+    angle 2 1 23 165 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 170 mmn1 constant
+    angle 2 1 23 170 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 175 mmn1 constant
+    angle 2 1 23 175 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 180 mmn1 constant
+    angle 2 1 23 180 mmn2 constant
+end
+end
+task dft optimize

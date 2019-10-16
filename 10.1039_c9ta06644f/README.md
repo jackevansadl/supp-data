@@ -1,4 +1,4 @@
-Supporting information for: [“Assessing negative thermal expansion in mesoporous metal-organic frameworks by molecular simulation”](https://doi.org/10.26434/chemrxiv.8295878), J. D. Evans, J. P. Dürholt, S. Kaskel, R. Schmid _preprint_, **2019**, DOI: [10.26434/chemrxiv.8295878](https://doi.org/10.26434/chemrxiv.8295878)
+Supporting information for: [“Assessing negative thermal expansion in mesoporous metal-organic frameworks by molecular simulation”](https://doi.org/10.1039/c9ta06644f), J. D. Evans, J. P. Dürholt, S. Kaskel, R. Schmid _Journal of Materials Chemistry A_, **2019**, DOI: [10.1039/C9TA06644F](https://doi.org/10.1039/C9TA06644F)
 
 
 **structures:**

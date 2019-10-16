@@ -1,0 +1,104 @@
+ start CoCo_scan
+ title "CoCo_scan"
+
+  geometry units angstroms noautosym
+Co      -0.1751341200     -0.0624622400      1.3256056500                 
+Co       0.1038167300      0.1288327300     -1.3645520900                 
+O        1.2623765100     -1.4182354300      1.0568255200                 
+O       -1.5010557600      1.3413216100      0.9659618600                 
+O       -1.5250920800     -1.4279616800      1.0068074800                 
+O        1.2612893600      1.3348743800      1.3440036300                 
+C        1.7552468700     -1.7446672200     -0.0484494700                 
+C       -1.8289701000     -1.7518215400     -0.1635765300                 
+O       -1.3053081000      1.5254848700     -1.2705722500                 
+O        1.4864062800     -1.2892079000     -1.1806208100                 
+O        1.4486182800      1.4822590400     -0.8811216300                 
+O       -1.3410418600     -1.2997548700     -1.2178860000                 
+C       -1.7898814600      1.8190772600     -0.1572568700                 
+C        1.7437478100      1.8010105500      0.2898247400                 
+H       -2.6104302700     -2.5211717300     -0.2648295700                 
+H       -2.5697110300      2.5974872500     -0.1556468700                 
+H        2.5163713600      2.5774695400      0.4040439000                 
+H        2.5255720700     -2.5323954200     -0.0137115300                 
+N       -0.0596667200     -0.1418706800     -3.5641082800                 
+H        0.8070057100     -0.3550251000     -4.0415712300                 
+H       -0.6664909100     -0.9510276700     -3.6328568800                 
+H       -0.5103558300      0.6317735200     -4.0366083800                 
+N        0.1579037100     -0.0161401900      3.6460895100                 
+H       -0.6281096500     -0.0442332500      4.2828288500                 
+H        0.7785910300     -0.7830279800      3.8750422500                 
+H        0.6634112600      0.8486381600      3.7964070500                 
+end
+
+geometry adjust
+zcoord
+    angle 1 2 19 150 mmn1 constant
+    angle 2 1 23 150 mmn2 constant
+end
+end
+
+ basis
+   * library def2-tzvp
+ end
+dft
+mulliken
+maxiter 500
+xc pbe0
+odft
+mult 1
+direct
+vectors input big.mos
+end
+driver
+maxiter 500
+end
+
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 155 mmn1 constant
+    angle 2 1 23 155 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 160 mmn1 constant
+    angle 2 1 23 160 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 165 mmn1 constant
+    angle 2 1 23 165 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 170 mmn1 constant
+    angle 2 1 23 170 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 175 mmn1 constant
+    angle 2 1 23 175 mmn2 constant
+end
+end
+task dft optimize
+
+geometry adjust
+zcoord
+    angle 1 2 19 180 mmn1 constant
+    angle 2 1 23 180 mmn2 constant
+end
+end
+task dft optimize
