@@ -16,9 +16,9 @@ data_temp91_big = pd.read_pickle("./stress/loadingstress_91K.pkl")
 data_temp110_big = pd.read_pickle("./stress/loadingstress_110K.pkl")
 data_temp130_big = pd.read_pickle("./stress/loadingstress_130K.pkl")
 
-data_temp91 = pd.read_pickle("./critical_stress_91K.pkl")
-data_temp110 = pd.read_pickle("./critical_stress_111K.pkl")
-data_temp130 = pd.read_pickle("./critical_stress_130K.pkl")
+data_temp91 = pd.read_pickle("./stress/loadingstress_small_91K.pkl")
+data_temp110 = pd.read_pickle("./stress/loadingstress_small_111K.pkl")
+data_temp130 = pd.read_pickle("./stress/loadingstress_small_130K.pkl")
 
 emptystress_91 = np.mean(data_temp91_big[data_temp91_big["nads"] == 0]["stress"])
 emptystress_110 = np.mean(data_temp110_big[data_temp110_big["nads"] == 0]["stress"])
@@ -42,6 +42,10 @@ data_temp130["relative_stress"] = (data_temp130["stress"]-emptystress_130)*0.101
 data_temp91 = data_temp91.sort_values(by=['nads_nga'])
 data_temp110 = data_temp110.sort_values(by=['nads_nga'])
 data_temp130 = data_temp130.sort_values(by=['nads_nga'])
+
+data_temp91.to_excel("./stress/loadingstress_small_91K.xlsx")
+data_temp110.to_excel("./stress/loadingstress_small_110K.xlsx")
+data_temp130.to_excel("./stress/loadingstress_small_130K.xlsx")
 
 # plt.plot(data_temp91_big["nads"],(data_temp91_big["stress"]-emptystress_91)*0.101325, 'o', label="91K")
 # plt.plot(data_temp110_big["nads"],(data_temp110_big["stress"]-emptystress_110)*0.101325, 'o', label="110K")

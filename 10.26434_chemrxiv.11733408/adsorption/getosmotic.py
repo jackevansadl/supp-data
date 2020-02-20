@@ -31,9 +31,18 @@ for n,temp in enumerate(temps):
 
     pressure = np.geomspace(min(data["pressure"]), max(data["pressure"]), num=100000)
     
-    os_op = np.array([-1*nrtp_interp_op.integral(0, p) for p in pressure])
-    os_cp =  np.array([-1*nrtp_interp_cp.integral(0, p) for p in pressure])
+    osdata = pd.DataFrame()
 
+    os_op = np.array([-1*nrtp_interp_op.integral(0, p) for p in pressure])
+    osdata["osmotic_op"] = os_op
+
+    os_cp =  np.array([-1*nrtp_interp_cp.integral(0, p) for p in pressure])
+    osdata["osmotic_cp"] = os_cp
+    osdata["pressure"] = pressure
+
+    osdata.to_pickle("./adsorption/osmotic_"+str(temp)+"K.pkl")
+    osdata.to_excel("./adsorption/osmotic_"+str(temp)+"K.xlsx")
+    data.to_excel("./adsorption/summary_"+str(temp)+"K.xlsx")
     plt.semilogx(pressure,os_op-os_cp, color=colors[n], label=(str(temp)+"K"))
     # plt.plot(pressure,os_cp, '--', color=colors[n])
     

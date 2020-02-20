@@ -34,6 +34,9 @@ data_temp91 = data_temp91.sort_values(by=['nads_nga'])
 data_temp110 = data_temp110.sort_values(by=['nads_nga'])
 data_temp130 = data_temp130.sort_values(by=['nads_nga'])
 
+data_temp91.to_excel("./stress/loadingstress_91K.xlsx")
+data_temp110.to_excel("./stress/loadingstress_110K.xlsx")
+data_temp130.to_excel("./stress/loadingstress_130K.xlsx")
 
 # plt.plot(data_temp91["nads"]-484,(data_temp91["stress"]-emptystress_91)*0.101325, 'o', label="91K")
 # plt.plot(data_temp110["nads"]-461,(data_temp110["stress"]-emptystress_110)*0.101325, 'o', label="110K")
