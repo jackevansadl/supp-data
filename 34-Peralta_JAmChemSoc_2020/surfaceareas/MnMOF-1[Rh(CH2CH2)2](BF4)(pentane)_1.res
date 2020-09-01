@@ -1,0 +1,1 @@
+MnMOF-1[Rh(CH2CH2)2](BF4)(pentane)_1.res    6.47921 4.63796  6.47921

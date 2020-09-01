@@ -1,0 +1,3 @@
+@ MnMOF-1[Rh(CH2CH2)2]Cl(pentane)_2.volpo Unitcell_volume: 5159.11   Density: 1.08578   POAV_A^3: 1626.98 POAV_Volume_fraction: 0.31536 POAV_cm^3/g: 0.290444 PONAV_A^3: 0 PONAV_Volume_fraction: 0 PONAV_cm^3/g: 0
+PROBE_OCCUPIABLE_VOL_CALC: filename| density(g/cm3)| probe rad| N points| probe ctr A fract| probe ctr NA fract| A fract| NA fract| narrow fract |ovlp fract.
+PROBE_OCCUPIABLE___RESULT: MnMOF-1[Rh(CH2CH2)2]Cl(pentane)_2.volpo	1.08578	1.82	50000	0.04046	0	0.31536	0	0.2162	0.46844

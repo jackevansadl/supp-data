@@ -1,0 +1,30 @@
+SimulationType                   MolecularDynamics
+NumberOfCycles                   5000000
+NumberOfInitializationCycles     0
+NumberOfEquilibrationCycles      100000
+PrintEvery                       10000
+RestartFile                      no
+
+Movies yes
+WriteMoviesEvery 2000
+
+Ensemble                         NVT
+
+Forcefield                    GenericMOFs_doon
+
+Framework 0
+FrameworkName MnRhMOF-1_opt
+RemoveAtomNumberCodeFromLabel yes
+UseChargesFromCIFFile yes
+TimeStep                      0.001
+UnitCells 2 1 2
+ExternalTemperature 300.0
+ComputeMSD yes
+PrintMSDEvery 1000
+
+
+component 0 MoleculeName             trans-2-butene
+            MoleculeDefinition       TraPPE
+            TranslationProbability   1.0
+            ReinsertionProbability   1.0
+            CreateNumberOfMolecules  20
