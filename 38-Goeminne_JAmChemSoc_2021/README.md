@@ -1,4 +1,4 @@
-Supporting information for: [“Charting the complete thermodynamic landscape of gas adsorption for a responsive metal-organic framework”](https://doi.org/10.1021/jacs.xxxx), R. Goeminne, S. Krause, S. Kaskel, T. Verstraelen and J. D Evans, **2021**, _J. Am. Chem. Soc._, DOI: [10.1021/jacs.xxxx](https://doi.org/10.1021/jacs.xxxx)
+Supporting information for: [“Charting the complete thermodynamic landscape of gas adsorption for a responsive metal-organic framework”](https://doi.org/10.1021/jacs.1c00522), R. Goeminne, S. Krause, S. Kaskel, T. Verstraelen and J. D Evans, **2021**, _J. Am. Chem. Soc._, DOI: [10.1021/jacs.1c00522](https://doi.org/10.1021/jacs.1c00522)
 
 **Contents of repository**
 
