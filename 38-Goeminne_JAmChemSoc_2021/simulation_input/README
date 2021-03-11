@@ -1,0 +1,25 @@
+install of osmotic_mcmd package:
+
+dependencies:
+    - yaff
+    - LAMMPS
+
+install:
+    git clone https://github.com/rubengoeminne/osmotic_mcmd
+    cd osmotic_mcmd
+    python setup.py install --user
+
+---------------------------------
+
+usage:
+
+ - python md.py $TEMPERATURE $PRESSURE $VOL_CONSTRAINT
+    - Used for generating input structures of the empty framework at a range of volumes. For this, vol_constraint = False
+        (by applying large positive or negative mechanical pressures)
+    - Used to extract the P(V) profile, from which F(V) is determined. For this, vol_constraint = True
+
+
+ - python mcmd.py $TEMPERATURE $PRESSURE
+    - Used to perform a hybrid MC simulation with constraint volume.
+
+

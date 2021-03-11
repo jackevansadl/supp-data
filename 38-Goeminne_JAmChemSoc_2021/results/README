@@ -1,0 +1,9 @@
+Pickled Panda dataframes containing the osmotic potential, volume, pressure, and amount adsorbed for methane adsorption on DUT-49.
+
+'volume' : Angstrom^3
+'pressure' : kPa
+'Ohm' : kJ/mol
+'N' : molecules/UC
+
+
+

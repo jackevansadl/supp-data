@@ -1,0 +1,11 @@
+bonds                                     kind=intar 0
+charges                                   kind=none   None
+ffatypes                                  kind=strar 1
+                    CH4                               
+masses                                    kind=fltar 1
+ 29239.1335835 
+numbers                                   kind=intar 1
+                    8                                             
+pos                                       kind=fltar 1,3                                  
+ 0.0    0.0     0.0
+rvecs                                     kind=none   None
