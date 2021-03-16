@@ -4,3 +4,5 @@ Supporting information for: [“Charting the complete thermodynamic landscape of
 
 - [simulation_input](simulation_input): Input files for the Hybrid GCMC simulations
 - [results](results): Osmotic potential energy surfaces from the Hybrid GCMC simulations
+
+This dataset is also archived on Zenodo: [https://zenodo.org/record/4584629#.YFByly1Q1k4](https://zenodo.org/record/4584629#.YFByly1Q1k4)
