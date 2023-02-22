@@ -1,0 +1,63 @@
+
+# Mathematical form depends on the kind selected below. Few kinds are supported:
+# - BONDHARM: 0.5*K*(r-R0)**2
+
+BONDHARM:UNIT K kjmol/angstrom**2
+BONDHARM:UNIT R0 angstrom
+
+BONDHARM:PARS       CH3     CH2  802.341  1.54
+BONDHARM:PARS       CH2     CH2  802.341  1.54
+
+
+# - BENDAHARM: 0.5*K*(theta-theta0)**2
+
+BENDAHARM:UNIT K kjmol/rad**2
+BENDAHARM:UNIT THETA0 deg
+BENDAHARM:PARS        CH3        CH2     CH2  519.651  114
+
+# TORSION
+#--------
+TORSION:UNIT  A kjmol
+TORSION:UNIT  PHI0 deg
+TORSION:PARS CH3  CH2  CH2  CH3 1 5.90373 180
+TORSION:PARS CH3  CH2  CH2  CH3 2 -1.1339192 0
+TORSION:PARS CH3  CH2  CH2  CH3 3 13.158718 60
+
+
+# van der Waals
+#==============
+
+# The following mathemetical form is supported:
+#  - MM3:   EPSILON*(1.84e5*exp(-12*r/SIGMA)-2.25*(SIGMA/r)^6)
+#  - LJ:    4.0*EPSILON*((SIGMA/r)^12 - (SIGMA/r)^6)
+#
+# Remark:
+#  In MM3, if ONLYPAULI=1 then only the pauli term will be used.
+#  If ONLYPAULI=0, the full MM3 expression is used with 12.
+
+MM3CAP:UNIT SIGMA angstrom
+MM3CAP:UNIT EPSILON kcalmol
+MM3CAP:SCALE 1 0.0
+MM3CAP:SCALE 2 0.0
+MM3CAP:SCALE 3 1.0
+
+# ---------------------------------------------
+# KEY      ffatype  SIGMA  EPSILON  ONLYPAULI
+# ---------------------------------------------
+MM3CAP:PARS     CH4     2.090   0.262      0
+MM3CAP:PARS     CH3     2.101   0.173      0
+MM3CAP:PARS     CH2     2.213   0.0814     0
+
+#Fixed charges
+#---------------
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+
+FIXQ:ATOM      CH4   0.000000000  0.000000000
+FIXQ:ATOM      CH3   0.000000000  0.000000000
+FIXQ:ATOM      CH2   0.000000000  0.000000000

@@ -1,0 +1,164 @@
+# MM3QUART
+#---------
+MM3QUART:UNIT  K kjmol/A**2
+MM3QUART:UNIT  R0 A
+
+MM3QUART:PARS  c3_c2h1_ph  c3_c2n1_ph  4.1381888237e+03  1.3962456231e+00
+MM3QUART:PARS  c3_c2h1_ph  c3_c2h1_ph  4.1427660584e+03  1.3946327372e+00
+MM3QUART:PARS  c3_c2h1_ph  c3_c3_ph  4.0745601281e+03  1.4007999833e+00
+MM3QUART:PARS  c3_c3_ph  c3_c3_ph  3.0675077314e+03  1.4855093993e+00
+MM3QUART:PARS  c3_c2h1_carbazol  c3_c2h1_carbazol  4.4515683431e+03  1.3884653556e+00
+MM3QUART:PARS  c3_c1o2_ket  c3_c3_carbazol  3.0709591356e+03  1.4813879054e+00
+MM3QUART:PARS  c3_c2h1_carbazol  c3_c3_carbazol  4.0890325215e+03  1.4021048070e+00
+MM3QUART:PARS  c3_c2h1_carbazol  c3_c2n1_carbazol  4.1109228339e+03  1.3970438721e+00
+MM3QUART:PARS  c3_c2n1_carbazol  c3_c3_carbazol  3.8796656773e+03  1.4213255282e+00
+MM3QUART:PARS  c3_c3_carbazol  c3_c3_carbazol  3.1590666838e+03  1.4645542976e+00
+MM3QUART:PARS  c3_c2h1_ph  h1_c1_ph  3.3232427645e+03  1.0930920843e+00
+MM3QUART:PARS  c3_c2h1_carbazol  h1_c1_carbazol  3.3658596847e+03  1.0916846516e+00
+MM3QUART:PARS  c3_c2n1_ph  n3_c3_carbazol  3.6734886703e+03  1.4220079820e+00
+MM3QUART:PARS  c3_c2n1_carbazol  n3_c3_carbazol  3.9462633688e+03  1.3948580679e+00
+MM3QUART:PARS  c3_c1o2_ket  o2_c1h1_oh  3.7521529865e+03  1.3538660521e+00
+MM3QUART:PARS  c3_c1o2_ket  o1_c1_ket  7.4652314014e+03  1.2190680886e+00
+MM3QUART:PARS  h1_o1_oh  o2_c1h1_oh  4.3502251867e+03  9.8141839057e-01
+
+
+# MM3BENDA
+#---------
+MM3BENDA:UNIT  K kjmol/rad**2
+MM3BENDA:UNIT  THETA0 deg
+
+MM3BENDA:PARS  c3_c2h1_ph  c3_c2n1_ph  c3_c2h1_ph  5.5553956586e+02  1.1958957512e+02
+MM3BENDA:PARS  c3_c2h1_ph  c3_c2n1_ph  n3_c3_carbazol  4.8683122274e+02  1.1979529163e+02
+MM3BENDA:PARS  c3_c2n1_ph  c3_c2h1_ph  h1_c1_ph  3.0743197058e+02  1.1795624461e+02
+MM3BENDA:PARS  c3_c2h1_ph  c3_c2h1_ph  h1_c1_ph  2.9689922156e+02  1.2019544363e+02
+MM3BENDA:PARS  c3_c2h1_ph  c3_c2h1_ph  c3_c2n1_ph  5.8423259812e+02  1.2008595436e+02
+MM3BENDA:PARS  c3_c3_ph  c3_c2h1_ph  h1_c1_ph  2.9696325697e+02  1.1843052219e+02
+MM3BENDA:PARS  c3_c2h1_ph  c3_c2h1_ph  c3_c3_ph  5.7427950762e+02  1.2127427927e+02
+MM3BENDA:PARS  c3_c2h1_ph  c3_c3_ph  c3_c2h1_ph  5.0285649154e+02  1.1785525604e+02
+MM3BENDA:PARS  c3_c2h1_ph  c3_c3_ph  c3_c3_ph  4.6379475987e+02  1.2028107976e+02
+MM3BENDA:PARS  c3_c3_carbazol  c3_c1o2_ket  o2_c1h1_oh  7.7331753024e+02  1.1101828132e+02
+MM3BENDA:PARS  o1_c1_ket  c3_c1o2_ket  o2_c1h1_oh  8.1153358080e+02  1.2375270311e+02
+MM3BENDA:PARS  c3_c3_carbazol  c3_c1o2_ket  o1_c1_ket  5.9078412943e+02  1.2367746062e+02
+MM3BENDA:PARS  c3_c2h1_carbazol  c3_c2h1_carbazol  c3_c3_carbazol  5.0596770435e+02  1.2011178545e+02
+MM3BENDA:PARS  c3_c2h1_carbazol  c3_c2h1_carbazol  h1_c1_carbazol  2.3165969713e+02  1.2383691617e+02
+MM3BENDA:PARS  c3_c3_carbazol  c3_c2h1_carbazol  h1_c1_carbazol  2.9351738052e+02  1.1766242916e+02
+MM3BENDA:PARS  c3_c2h1_carbazol  c3_c2h1_carbazol  c3_c2n1_carbazol  6.9677087611e+02  1.1804850638e+02
+MM3BENDA:PARS  c3_c2n1_carbazol  c3_c2h1_carbazol  h1_c1_carbazol  3.1529614917e+02  1.2054557089e+02
+MM3BENDA:PARS  c3_c1o2_ket  c3_c3_carbazol  c3_c2h1_carbazol  3.9788640739e+02  1.1971781414e+02
+MM3BENDA:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c2h1_carbazol  5.7393766051e+02  1.2053637088e+02
+MM3BENDA:PARS  c3_c2h1_carbazol  c3_c2n1_carbazol  c3_c3_carbazol  4.2408129053e+02  1.2173346714e+02
+MM3BENDA:PARS  c3_c3_carbazol  c3_c2n1_carbazol  n3_c3_carbazol  5.1337712526e+02  1.0958063324e+02
+MM3BENDA:PARS  c3_c2h1_carbazol  c3_c2n1_carbazol  n3_c3_carbazol  4.5374975336e+02  1.2790499944e+02
+MM3BENDA:PARS  c3_c3_carbazol  c3_c2h1_carbazol  c3_c3_carbazol  5.9383009573e+02  1.1980634497e+02
+MM3BENDA:PARS  c3_c2n1_carbazol  c3_c3_carbazol  c3_c3_carbazol  7.0449302072e+02  1.0604510792e+02
+MM3BENDA:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c3_carbazol  3.8879619099e+02  1.3371853657e+02
+MM3BENDA:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c2n1_carbazol  5.1487891132e+02  1.1958398692e+02
+MM3BENDA:PARS  c3_c2n1_carbazol  n3_c3_carbazol  c3_c2n1_ph  4.2066119720e+02  1.2567960526e+02
+MM3BENDA:PARS  c3_c2n1_carbazol  n3_c3_carbazol  c3_c2n1_carbazol  9.7738053359e+02  1.0882695037e+02
+MM3BENDA:PARS  c3_c1o2_ket  o2_c1h1_oh  h1_o1_oh  4.8139236245e+02  1.0111211579e+02
+
+
+# TORSION
+#--------
+TORSION:UNIT  A kjmol
+TORSION:UNIT  PHI0 deg
+
+TORSION:PARS  c3_c2h1_ph  c3_c2n1_ph  c3_c2h1_ph  h1_c1_ph  2 2.4959446642e+01  0.0000000000e+00
+TORSION:PARS  h1_c1_ph  c3_c2h1_ph  c3_c2n1_ph  n3_c3_carbazol  2 1.9579101673e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_ph  c3_c2h1_ph  c3_c2n1_ph  c3_c2h1_ph  2 3.0657389685e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_ph  c3_c2h1_ph  c3_c2n1_ph  n3_c3_carbazol  2 3.6107747230e+01  0.0000000000e+00
+TORSION:PARS  c3_c2n1_ph  c3_c2h1_ph  c3_c2h1_ph  h1_c1_ph  2 3.5874469807e+01  0.0000000000e+00
+TORSION:PARS  h1_c1_ph  c3_c2h1_ph  c3_c2h1_ph  h1_c1_ph  2 1.8531072434e+01  0.0000000000e+00
+TORSION:PARS  c3_c2n1_ph  c3_c2h1_ph  c3_c2h1_ph  c3_c3_ph  2 3.1040578542e+01  0.0000000000e+00
+TORSION:PARS  c3_c3_ph  c3_c2h1_ph  c3_c2h1_ph  h1_c1_ph  2 3.3288212343e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_ph  c3_c2h1_ph  c3_c3_ph  c3_c2h1_ph  2 3.1180767413e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_ph  c3_c3_ph  c3_c2h1_ph  h1_c1_ph  2 2.4697388597e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_ph  c3_c2h1_ph  c3_c3_ph  c3_c3_ph  2 4.0611440816e+01  0.0000000000e+00
+TORSION:PARS  c3_c3_ph  c3_c3_ph  c3_c2h1_ph  h1_c1_ph  2 1.6416818094e+01  0.0000000000e+00
+TORSION:PARS  c3_c2n1_carbazol  c3_c2h1_carbazol  c3_c2h1_carbazol  c3_c3_carbazol  2 2.7738587350e+01  0.0000000000e+00
+TORSION:PARS  c3_c2n1_carbazol  c3_c2h1_carbazol  c3_c2h1_carbazol  h1_c1_carbazol  2 4.0684993485e+01  0.0000000000e+00
+TORSION:PARS  c3_c3_carbazol  c3_c2h1_carbazol  c3_c2h1_carbazol  h1_c1_carbazol  2 3.8971068766e+01  0.0000000000e+00
+TORSION:PARS  h1_c1_carbazol  c3_c2h1_carbazol  c3_c2h1_carbazol  h1_c1_carbazol  2 1.9801569099e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c1o2_ket  o1_c1_ket  2 1.3277867729e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c1o2_ket  o2_c1h1_oh  2 1.0822058522e+01  0.0000000000e+00
+TORSION:PARS  c3_c1o2_ket  c3_c3_carbazol  c3_c2h1_carbazol  c3_c2h1_carbazol  2 4.2566738411e+01  0.0000000000e+00
+TORSION:PARS  c3_c1o2_ket  c3_c3_carbazol  c3_c2h1_carbazol  h1_c1_carbazol  2 2.1969327421e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_carbazol  c3_c2h1_carbazol  c3_c3_carbazol  c3_c2h1_carbazol  2 4.3402132097e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c2h1_carbazol  h1_c1_carbazol  2 2.6033806920e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_carbazol  c3_c2h1_carbazol  c3_c2n1_carbazol  c3_c3_carbazol  2 3.7874937599e+01  0.0000000000e+00
+TORSION:PARS  c3_c3_carbazol  c3_c2n1_carbazol  c3_c2h1_carbazol  h1_c1_carbazol  2 2.1544217911e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_carbazol  c3_c2h1_carbazol  c3_c2n1_carbazol  n3_c3_carbazol  2 3.3170286532e+01  0.0000000000e+00
+TORSION:PARS  h1_c1_carbazol  c3_c2h1_carbazol  c3_c2n1_carbazol  n3_c3_carbazol  2 1.1710336907e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c2h1_carbazol  c3_c3_carbazol  2 2.7187974897e+01  0.0000000000e+00
+TORSION:PARS  c3_c1o2_ket  c3_c3_carbazol  c3_c2h1_carbazol  c3_c3_carbazol  2 5.2084860144e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_carbazol  c3_c2n1_carbazol  c3_c3_carbazol  c3_c3_carbazol  2 2.3000380437e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c2n1_carbazol  n3_c3_carbazol  2 6.1250228534e+00  0.0000000000e+00
+TORSION:PARS  c3_c3_carbazol  c3_c2h1_carbazol  c3_c3_carbazol  c3_c3_carbazol  2 3.4860378660e+01  0.0000000000e+00
+TORSION:PARS  c3_c3_carbazol  c3_c3_carbazol  c3_c2h1_carbazol  h1_c1_carbazol  2 1.7215196088e+01  0.0000000000e+00
+TORSION:PARS  c3_c2n1_carbazol  c3_c3_carbazol  c3_c2h1_carbazol  c3_c3_carbazol  2 4.8637307158e+01  0.0000000000e+00
+TORSION:PARS  c3_c2n1_carbazol  c3_c3_carbazol  c3_c2h1_carbazol  h1_c1_carbazol  2 3.1306346856e+01  0.0000000000e+00
+TORSION:PARS  c3_c2n1_carbazol  c3_c3_carbazol  c3_c3_carbazol  c3_c2n1_carbazol  2 1.4739172909e+02  0.0000000000e+00
+TORSION:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c3_carbazol  c3_c2n1_carbazol  2 2.9961804503e+01  0.0000000000e+00
+TORSION:PARS  c3_c2n1_carbazol  n3_c3_carbazol  c3_c2n1_carbazol  c3_c3_carbazol  2 5.0065449449e+01  0.0000000000e+00
+TORSION:PARS  c3_c2h1_carbazol  c3_c2n1_carbazol  n3_c3_carbazol  c3_c2n1_carbazol  2 4.5019483807e+00  0.0000000000e+00
+TORSION:PARS  c3_c2n1_ph  n3_c3_carbazol  c3_c2n1_carbazol  c3_c3_carbazol  2 1.5458362819e+01  0.0000000000e+00
+TORSION:PARS  c3_c3_carbazol  c3_c1o2_ket  o2_c1h1_oh  h1_o1_oh  2 2.6584097458e+01  0.0000000000e+00
+TORSION:PARS  h1_o1_oh  o2_c1h1_oh  c3_c1o2_ket  o1_c1_ket  2 1.8257647884e+01  0.0000000000e+00
+
+
+# OOPDIST
+#--------
+OOPDIST:UNIT  K kjmol/A**2
+OOPDIST:UNIT  D0 A
+
+OOPDIST:PARS  c3_c2h1_ph  c3_c2h1_ph  n3_c3_carbazol  c3_c2n1_ph  3.1870249138e+02  6.3598883497e-05
+OOPDIST:PARS  c3_c2h1_ph  c3_c2n1_ph  h1_c1_ph  c3_c2h1_ph  1.6642809996e+02  0.0000000000e+00
+OOPDIST:PARS  c3_c2h1_ph  c3_c3_ph  h1_c1_ph  c3_c2h1_ph  1.8800445205e+02  3.7013978072e-03
+OOPDIST:PARS  c3_c2h1_ph  c3_c2h1_ph  c3_c3_ph  c3_c3_ph  3.8542826278e+02  1.1352993951e-04
+OOPDIST:PARS  c3_c3_carbazol  o1_c1_ket  o2_c1h1_oh  c3_c1o2_ket  1.3740936809e+03  1.6139493922e-03
+OOPDIST:PARS  c3_c2h1_carbazol  c3_c3_carbazol  h1_c1_carbazol  c3_c2h1_carbazol  1.2576198978e+02  0.0000000000e+00
+OOPDIST:PARS  c3_c2h1_carbazol  c3_c2n1_carbazol  h1_c1_carbazol  c3_c2h1_carbazol  7.4558302935e+01  0.0000000000e+00
+OOPDIST:PARS  c3_c2h1_carbazol  c3_c3_carbazol  n3_c3_carbazol  c3_c2n1_carbazol  3.5635062886e+02  4.2885029728e-02
+OOPDIST:PARS  c3_c3_carbazol  c3_c3_carbazol  h1_c1_carbazol  c3_c2h1_carbazol  2.0889943663e+02  2.3793601890e-03
+
+
+# Cross
+#------
+Cross:UNIT  KSS kjmol/angstrom**2
+Cross:UNIT  KBS0 kjmol/(angstrom*rad)
+Cross:UNIT  KBS1 kjmol/(angstrom*rad)
+Cross:UNIT  R0 angstrom
+Cross:UNIT  R1 angstrom
+Cross:UNIT  THETA0 deg
+
+Cross:PARS  c3_c2h1_ph  c3_c2n1_ph  c3_c2h1_ph   5.9080793041e+02  -2.6720942774e+01  -2.6720942774e+01  1.3962456231e+00  1.3962456231e+00  1.1958957512e+02
+Cross:PARS  c3_c2h1_ph  c3_c2n1_ph  n3_c3_carbazol   3.5790150598e+02   1.0709446781e+02   4.1280316618e+02  1.3962456231e+00  1.4220079820e+00  1.1979529163e+02
+Cross:PARS  c3_c2n1_ph  c3_c2h1_ph  h1_c1_ph   1.8093867069e+01   9.0757288780e+01   1.4091356757e+02  1.3962456231e+00  1.0930920843e+00  1.1795624461e+02
+Cross:PARS  c3_c2h1_ph  c3_c2h1_ph  h1_c1_ph   3.9150326210e+01   9.3081316041e+01   1.3073758380e+02  1.3946327372e+00  1.0930920843e+00  1.2019544363e+02
+Cross:PARS  c3_c2h1_ph  c3_c2h1_ph  c3_c2n1_ph   5.6329056725e+02   4.4687986125e+01   3.9197469370e+01  1.3946327372e+00  1.3962456231e+00  1.2008595436e+02
+Cross:PARS  c3_c3_ph  c3_c2h1_ph  h1_c1_ph   3.4280836431e+01   9.3748783333e+01   1.3649320251e+02  1.4007999833e+00  1.0930920843e+00  1.1843052219e+02
+Cross:PARS  c3_c2h1_ph  c3_c2h1_ph  c3_c3_ph   5.2973800797e+02   2.9180201650e+01   5.5703047484e+01  1.3946327372e+00  1.4007999833e+00  1.2127427927e+02
+Cross:PARS  c3_c2h1_ph  c3_c3_ph  c3_c2h1_ph   5.6473936155e+02   2.0638790540e+01   2.0638790540e+01  1.4007999833e+00  1.4007999833e+00  1.1785525604e+02
+Cross:PARS  c3_c2h1_ph  c3_c3_ph  c3_c3_ph   2.9736776198e+02   1.1932021829e+02   1.9063881317e+02  1.4007999833e+00  1.4855093993e+00  1.2028107976e+02
+Cross:PARS  c3_c3_carbazol  c3_c1o2_ket  o2_c1h1_oh   2.6102658205e+02   2.3648071321e+02   3.4992403995e+02  1.4813879054e+00  1.3538660521e+00  1.1101828132e+02
+Cross:PARS  o1_c1_ket  c3_c1o2_ket  o2_c1h1_oh   6.7983645730e+02   4.8039001115e+02   4.1487847028e+02  1.2190680886e+00  1.3538660521e+00  1.2375270311e+02
+Cross:PARS  c3_c3_carbazol  c3_c1o2_ket  o1_c1_ket   4.1176531268e+02   1.3025194912e+02   3.6417052839e+02  1.4813879054e+00  1.2190680886e+00  1.2367746062e+02
+Cross:PARS  c3_c2h1_carbazol  c3_c2h1_carbazol  c3_c3_carbazol   5.1989601141e+02   1.0404292358e+02   3.5324252009e+01  1.3884653556e+00  1.4021048070e+00  1.2011178545e+02
+Cross:PARS  c3_c2h1_carbazol  c3_c2h1_carbazol  h1_c1_carbazol   4.4712040827e+01   9.5946100043e+01   1.0747416450e+02  1.3884653556e+00  1.0916846516e+00  1.2383691617e+02
+Cross:PARS  c3_c3_carbazol  c3_c2h1_carbazol  h1_c1_carbazol   3.9191264416e+01   6.4458355136e+01   1.3891287273e+02  1.4021048070e+00  1.0916846516e+00  1.1766242916e+02
+Cross:PARS  c3_c2h1_carbazol  c3_c2h1_carbazol  c3_c2n1_carbazol   6.1622586734e+02   2.0117872390e+02   9.5678139527e+01  1.3884653556e+00  1.3970438721e+00  1.1804850638e+02
+Cross:PARS  c3_c2n1_carbazol  c3_c2h1_carbazol  h1_c1_carbazol   4.7015758269e+01   7.1507435769e+01   1.3873529050e+02  1.3970438721e+00  1.0916846516e+00  1.2054557089e+02
+Cross:PARS  c3_c1o2_ket  c3_c3_carbazol  c3_c2h1_carbazol   3.5065003990e+02   1.7851219607e+02   5.5950569744e+01  1.4813879054e+00  1.4021048070e+00  1.1971781414e+02
+Cross:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c2h1_carbazol   6.0462930068e+02   1.6459070786e+01   1.6459070786e+01  1.4021048070e+00  1.4021048070e+00  1.2053637088e+02
+Cross:PARS  c3_c2h1_carbazol  c3_c2n1_carbazol  c3_c3_carbazol   4.5474204198e+02  -1.0408271767e+02  -4.8365772429e+01  1.3970438721e+00  1.4213255282e+00  1.2173346714e+02
+Cross:PARS  c3_c3_carbazol  c3_c2n1_carbazol  n3_c3_carbazol   5.0759147543e+02   3.2349024564e+02   4.7313013570e+02  1.4213255282e+00  1.3948580679e+00  1.0958063324e+02
+Cross:PARS  c3_c2h1_carbazol  c3_c2n1_carbazol  n3_c3_carbazol   4.2626321445e+02   2.3665017213e+01   2.8566402651e+02  1.3970438721e+00  1.3948580679e+00  1.2790499944e+02
+Cross:PARS  c3_c3_carbazol  c3_c2h1_carbazol  c3_c3_carbazol   6.0583034865e+02   1.2077295049e+02   1.2077295049e+02  1.4021048070e+00  1.4021048070e+00  1.1980634497e+02
+Cross:PARS  c3_c2n1_carbazol  c3_c3_carbazol  c3_c3_carbazol   4.7094317809e+02   3.5564701050e+02   2.1217513159e+02  1.4213255282e+00  1.4645542976e+00  1.0604510792e+02
+Cross:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c3_carbazol   4.2085581814e+02  -1.3788887369e+01   1.3995325050e+02  1.4021048070e+00  1.4645542976e+00  1.3371853657e+02
+Cross:PARS  c3_c2h1_carbazol  c3_c3_carbazol  c3_c2n1_carbazol   5.5558541009e+02   4.9747142215e+00   6.6062930112e+00  1.4021048070e+00  1.4213255282e+00  1.1958398692e+02
+Cross:PARS  c3_c2n1_carbazol  n3_c3_carbazol  c3_c2n1_ph   2.8317600959e+02   5.6943846842e+01   1.1277998963e+02  1.3948580679e+00  1.4220079820e+00  1.2567960526e+02
+Cross:PARS  c3_c2n1_carbazol  n3_c3_carbazol  c3_c2n1_carbazol   6.3517269558e+02   4.4062110999e+02   4.4062110999e+02  1.3948580679e+00  1.3948580679e+00  1.0882695037e+02
+Cross:PARS  c3_c1o2_ket  o2_c1h1_oh  h1_o1_oh   8.7427947805e+01   1.6821877468e+02   1.3314429898e+02  1.3538660521e+00  9.8141839057e-01  1.0111211579e+02
+
+

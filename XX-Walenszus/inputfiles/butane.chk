@@ -1,0 +1,25 @@
+bonds                                     kind=intar 3,2
+                     1                      0                      2                      1
+                     3                      2
+charges                                   kind=fltar 4
+ 0.000000000000000e+00  0.000000000000000e+00  0.000000000000000e+00  0.000000000000000e+00
+dipoles                                   kind=none   None
+ffatype_ids                               kind=intar 4
+                     0                      1                      1                      0
+ffatypes                                  kind=strar 2
+                   CH3                    CH2
+masses                                    kind=fltar 4
+ 2.740713051225670e+04  2.556892962043364e+04  2.556892962043364e+04  2.740713051225670e+04
+numbers                                   kind=intar 4
+                     6                      6                      6                      6
+pos                                       kind=fltar 4,3
+ 3.569791892984989e+00 -2.098735321028801e-02  1.148027788499394e+00  6.619630463050404e-01
+ 5.462603456804199e-02  1.295727050711394e+00 -6.618678038474644e-01 -5.473166738653245e-02
+-1.295625060569433e+00 -3.569698162829174e+00  2.080952710869026e-02 -1.147921908766623e+00
+radii                                     kind=fltar 4
+ 0.000000000000000e+00  0.000000000000000e+00  0.000000000000000e+00  0.000000000000000e+00
+radii2                                    kind=none   None
+rvecs                                     kind=fltar 0,3
+scope_ids                                 kind=none   None
+scopes                                    kind=none   None
+valence_charges                           kind=none   None

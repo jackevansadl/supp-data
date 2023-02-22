@@ -1,0 +1,33 @@
+# van der Waals
+#==============
+
+# The following mathemetical form is supported:
+#  - MM3CAP:   EPSILON*(1.84e5*exp(-12*r/SIGMA)-2.25*(SIGMA/r)^6)
+#  - LJ:    4.0*EPSILON*((SIGMA/r)^12 - (SIGMA/r)^6)
+#
+# Remark:
+#  In MM3, if ONLYPAULI=1 then only the pauli term will be used.
+#  If ONLYPAULI=0, the full MM3 expression is used with 12.
+
+MM3CAP:UNIT SIGMA angstrom
+MM3CAP:UNIT EPSILON kcalmol
+MM3CAP:SCALE 1 0.0
+MM3CAP:SCALE 2 0.0
+MM3CAP:SCALE 3 1.0
+
+# ---------------------------------------------
+# KEY      ffatype  SIGMA  EPSILON  ONLYPAULI
+# ---------------------------------------------
+MM3CAP:PARS c3_c2n1_ph  1.960   0.056      0
+MM3CAP:PARS c3_c2h1_ph  1.960   0.056      0
+MM3CAP:PARS c3_c3_ph  1.960   0.056      0
+MM3CAP:PARS c3_c1o2_ket  1.960   0.056      0
+MM3CAP:PARS c3_c2h1_carbazol  1.960   0.056      0
+MM3CAP:PARS c3_c3_carbazol  1.960   0.056      0
+MM3CAP:PARS c3_c2n1_carbazol  1.960   0.056      0
+MM3CAP:PARS h1_c1_ph  1.620   0.020      0
+MM3CAP:PARS h1_c1_carbazol  1.620   0.020      0
+MM3CAP:PARS n3_c3_carbazol  1.930   0.043      0 
+MM3CAP:PARS o2_c1h1_oh  1.820   0.059      0
+MM3CAP:PARS o1_c1_ket  1.820   0.059      0
+MM3CAP:PARS h1_o1_oh  1.620   0.020     0

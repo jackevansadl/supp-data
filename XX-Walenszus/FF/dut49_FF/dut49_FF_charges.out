@@ -1,0 +1,49 @@
+#Fixed charges
+#---------------
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+FIXQ:DIELECTRIC 1.0
+
+# Atomic parameters
+# ----------------------------------------------------
+# KEY        label  Q_0A              R_A
+# ----------------------------------------------------
+FIXQ:ATOM c3_c2n1_ph  0.0000000000  1.1703000000
+FIXQ:ATOM c3_c2h1_ph  0.0000000000  1.1703000000
+FIXQ:ATOM c3_c3_ph  0.0000000000  1.1703000000
+FIXQ:ATOM c3_c1o2_ket  0.0000000000  1.1703000000
+FIXQ:ATOM c3_c2h1_carbazol  0.0000000000  1.1703000000
+FIXQ:ATOM c3_c3_carbazol  0.0000000000  1.1703000000
+FIXQ:ATOM c3_c2n1_carbazol  0.0000000000  1.1703000000
+FIXQ:ATOM h1_c1_ph  0.0000000000  0.7308000000
+FIXQ:ATOM h1_c1_carbazol  0.0000000000  0.7308000000
+FIXQ:ATOM n3_c3_carbazol  0.0000000000  1.1048000000
+FIXQ:ATOM o2_c1h1_oh  0.0000000000  1.1325000000
+FIXQ:ATOM o1_c1_ket  0.0000000000  1.1325000000
+FIXQ:ATOM h1_o1_oh  0.0000000000  0.7308000000
+# Bond parameters
+# ----------------------------------------------------
+# KEY         label0   label1           P_AB          
+# ----------------------------------------------------
+FIXQ:BOND  c3_c2h1_ph  c3_c2n1_ph  -0.0703134974
+FIXQ:BOND  c3_c2h1_ph  c3_c2h1_ph   0.0000047726
+FIXQ:BOND  c3_c2h1_ph  c3_c3_ph  -0.0124623595
+FIXQ:BOND  c3_c3_ph  c3_c3_ph  -0.0004264833
+FIXQ:BOND  c3_c2h1_carbazol  c3_c2h1_carbazol   0.0000953248
+FIXQ:BOND  c3_c1o2_ket  c3_c3_carbazol   0.0806952371
+FIXQ:BOND  c3_c2h1_carbazol  c3_c3_carbazol   0.0567583046
+FIXQ:BOND  c3_c2h1_carbazol  c3_c2n1_carbazol  -0.1251464054
+FIXQ:BOND  c3_c2n1_carbazol  c3_c3_carbazol   0.0156397345
+FIXQ:BOND  c3_c3_carbazol  c3_c3_carbazol   0.0000477261
+FIXQ:BOND  c3_c2h1_ph  h1_c1_ph  -0.1315739763
+FIXQ:BOND  c3_c2h1_carbazol  h1_c1_carbazol  -0.1380567651
+FIXQ:BOND  c3_c2n1_ph  n3_c3_carbazol   0.0635357108
+FIXQ:BOND  c3_c2n1_carbazol  n3_c3_carbazol   0.0645574243
+FIXQ:BOND  c3_c1o2_ket  o2_c1h1_oh   0.1288340725
+FIXQ:BOND  c3_c1o2_ket  o1_c1_ket   0.5449364508
+FIXQ:BOND  h1_o1_oh  o2_c1h1_oh   0.4526825529

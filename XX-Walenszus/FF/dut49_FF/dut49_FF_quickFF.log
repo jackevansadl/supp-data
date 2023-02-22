@@ -1,0 +1,3743 @@
+
+________________/\\\_________/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\\\\_________________
+______________/\\\\/\\\\_____\/\\\///////////__\/\\\///////////_________________
+_____________/\\\//\////\\\___\/\\\_____________\/\\\___________________________
+_____________/\\\______\//\\\__\/\\\\\\\\\\\_____\/\\\\\\\\\\\__________________
+_____________\//\\\______/\\\___\/\\\///////______\/\\\///////__________________
+_______________\///\\\\/\\\\/____\/\\\_____________\/\\\________________________
+__________________\////\\\//______\/\\\_____________\/\\\_______________________
+______________________\///\\\\\\___\/\\\_____________\/\\\______________________
+_________________________\//////____\///______________\///______________________
+
+                            Welcom to QuickFF
+   a Python package to quickly derive force fields from ab initio input data
+
+                                 Written by
+     Louis Vanduyfhuys(1)*, Steven Vandenbrande(1) and Toon Verstraelen(1)
+
+         (1) Center for Molecular Modeling, Ghent University Belgium.
+                   * mailto: Louis.Vanduyfhuys@UGent.be
+
+
+ USER               a1174978
+ MACHINE            Darwin DC02GC0H4Q6X2 21.5.0 Darwin Kernel Version 21.5.0: 
+ MACHINE            Tue Apr 26 21:08:29 PDT 2022; root:xnu-8020.121.3~4/RELEASE_
+ MACHINE            ARM64_T8101 arm64
+ TIME               2022-07-21 09:34:19.157021
+ QUICKFF VERSION    2.2.7
+ PYTHON VERSION     3.9.7 | packaged by conda-forge | (default, Sep 29 2021, 
+ PYTHON VERSION     19:24:02) [Clang 11.1.0 ]
+ NUMPY VERSION      1.21.4
+ SCIPY VERSION      1.7.3
+ MATPLOTLIB VERSION 3.5.1
+ CURRENT DIR        /Users/a1174978/Documents/GitHub/projects/
+ CURRENT DIR        navy-sunbittern-copper/quickFF
+ COMMAND LINE       dut49_quickFF.py
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ INIT   20 lowest frequencies [1/cm] before projection:
+ INIT   [721520.64466448 721501.2832039  721453.52162192 721455.81729014]
+ INIT   [529655.34278075 529764.63243748 530463.19695929 530793.78694943]
+ INIT   [536409.20368947 536009.55512785 535820.77787651 535602.41994519]
+ INIT   [534167.04468101 534135.94063434 533975.36425857 534003.44716096]
+ INIT   [538382.91085956 538381.61284292 539921.92811358 539914.60294694]
+ INIT   20 lowest frequencies [1/cm] after projection:
+ INIT   [-1.11043312e-11  1.07129189e-11  1.55985493e-03  3.65788490e-03]
+ INIT   [0.74174423 4.85542894 5.88452031 6.74903511]
+ INIT   [ 7.71444204 32.66630415 41.93344483 47.41007619]
+ INIT   [178.86459092 200.84746823 204.3656613  207.60883655]
+ INIT   [243.61530384 246.92370162 263.01377841 314.84210081]
+
+ REF    Initializing Second order taylor reference for ai
+
+ SETT   bend_term                       bendmm3
+ SETT   bond_term                       bondmm3
+ SETT   consistent_cross_rvs            True
+ SETT   covres                          None
+ SETT   cross_svd_rcond                 1e-08
+ SETT   do_bendclin                     True
+ SETT   do_bends                        True
+ SETT   do_bonds                        True
+ SETT   do_cross_ASA                    True
+ SETT   do_cross_ASS                    True
+ SETT   do_cross_DAA                    False
+ SETT   do_cross_DAD                    False
+ SETT   do_cross_DSD                    False
+ SETT   do_cross_DSS                    False
+ SETT   do_cross_svd                    True
+ SETT   do_dihedrals                    True
+ SETT   do_hess_mass_weighting          True
+ SETT   do_hess_negfreq_proj            False
+ SETT   do_oops                         True
+ SETT   do_sqoopdist_to_oopdist         True
+ SETT   do_squarebend                   True
+ SETT   dont_traj                       None
+ SETT   ei                              dut49_FF/dut49_FF_charges.out
+ SETT   ei_rcut                         94.4863066960626
+ SETT   enforce_ffatypes                {}
+ SETT   excl_bends                      None
+ SETT   excl_bonds                      None
+ SETT   excl_dihs                       None
+ SETT   excl_oopds                      None
+ SETT   ffatypes                        None
+ SETT   fn_charmm22_prm                 None
+ SETT   fn_charmm22_psf                 None
+ SETT   fn_sys                          dut49_FF/dut49_ligand.chk
+ SETT   fn_traj                         None
+ SETT   fn_yaff                         dut49_FF/dut49_FF_quickFF.txt
+ SETT   log_file                        None
+ SETT   log_level                       high
+ SETT   only_traj                       PT_ALL
+ SETT   pert_traj_energy_noise          None
+ SETT   pert_traj_tol                   1e-06
+ SETT   plot_traj                       Final
+ SETT   program_mode                    DeriveFF
+ SETT   remove_dysfunctional_cross      True
+ SETT   vdw                             dut49_FF/dut49_FF_LJ.txt
+ SETT   vdw_rcut                        37.79452267842504
+ SETT   xyz_traj                        False
+
+ INIT   Initializing program
+
+ VAL    Initializing valence force field
+ VAL    Added 81 bond terms
+ VAL    Added 130 bend terms (an)harmonic in the angle, 0 bend terms with 
+ VAL    1+cos(angle) potential and 0 bend terms with 1-cos(4*theta) potential.
+ VAL    Added 204 Cosine dihedral terms (of which 204 are described using 
+ VAL    Chebychev terms)
+ VAL    Added 42 Harmonic and 0 SquareHarmonic out-of-plane distance terms
+
+ SYS    Atomic configuration of the system:
+
+ SYS      index  |  x [A]  |  y [A]  |  z [A]  | ffatype |    q    |  R [A]  
+ SYS    ---------------------------------------------------------------------
+ SYS         0   |   3.554 |   0.076 |  -0.011 |  c3_c2n1_ph |   0.204 |   
+ SYS    1.170 
+ SYS         1   |   2.852 |   0.549 |  -1.125 |  c3_c2h1_ph |  -0.202 |   
+ SYS    1.170 
+ SYS         2   |   2.858 |  -0.398 |   1.107 |  c3_c2h1_ph |  -0.202 |   
+ SYS    1.170 
+ SYS         3   |   1.458 |   0.550 |  -1.117 |  c3_c2h1_ph |  -0.144 |   
+ SYS    1.170 
+ SYS         4   |   1.464 |  -0.399 |   1.106 |  c3_c2h1_ph |  -0.144 |   
+ SYS    1.170 
+ SYS         5   |   0.743 |   0.076 |  -0.003 |  c3_c3_ph |   0.025 |   1.170 
+ SYS         6   |  -0.740 |   0.076 |   0.001 |  c3_c3_ph |   0.025 |   1.170 
+ SYS         7   |  -1.455 |   0.544 |   1.118 |  c3_c2h1_ph |  -0.144 |   
+ SYS    1.170 
+ SYS         8   |  -1.461 |  -0.392 |  -1.111 |  c3_c2h1_ph |  -0.144 |   
+ SYS    1.170 
+ SYS         9   |  -2.849 |   0.543 |   1.126 |  c3_c2h1_ph |  -0.202 |   
+ SYS    1.170 
+ SYS        10   |  -2.856 |  -0.391 |  -1.111 |  c3_c2h1_ph |  -0.202 |   
+ SYS    1.170 
+ SYS        11   |  -3.551 |   0.076 |   0.009 |  c3_c2n1_ph |   0.204 |   
+ SYS    1.170 
+ SYS        12   |   8.783 |  -4.073 |   0.035 |  c3_c1o2_ket |   0.754 |   
+ SYS    1.170 
+ SYS        13   |   8.778 |   4.231 |  -0.074 |  c3_c1o2_ket |   0.754 |   
+ SYS    1.170 
+ SYS        14   |  -8.779 |  -4.074 |  -0.037 |  c3_c1o2_ket |   0.754 |   
+ SYS    1.170 
+ SYS        15   |  -8.776 |   4.230 |   0.077 |  c3_c1o2_ket |   0.754 |   
+ SYS    1.170 
+ SYS        16   |  -6.418 |  -3.353 |  -0.059 |  c3_c2h1_carbazol |  -0.081 |  
+ SYS     1.170 
+ SYS        17   |  -5.404 |  -2.404 |  -0.052 |  c3_c2h1_carbazol |  -0.263 |  
+ SYS     1.170 
+ SYS        18   |  -7.780 |  -2.977 |  -0.039 |  c3_c3_carbazol |  -0.194 |   
+ SYS    1.170 
+ SYS        19   |   6.421 |  -3.353 |   0.055 |  c3_c2h1_carbazol |  -0.081 |  
+ SYS     1.170 
+ SYS        20   |  -5.782 |  -1.057 |  -0.025 |  c3_c2n1_carbazol |   0.205 |  
+ SYS     1.170 
+ SYS        21   |   7.784 |  -2.977 |   0.037 |  c3_c3_carbazol |  -0.194 |   
+ SYS    1.170 
+ SYS        22   |   5.407 |  -2.404 |   0.048 |  c3_c2h1_carbazol |  -0.263 |  
+ SYS     1.170 
+ SYS        23   |  -8.149 |  -1.624 |  -0.012 |  c3_c2h1_carbazol |  -0.025 |  
+ SYS     1.170 
+ SYS        24   |  -7.147 |  -0.650 |  -0.005 |  c3_c3_carbazol |  -0.072 |   
+ SYS    1.170 
+ SYS        25   |  -5.781 |   1.211 |   0.055 |  c3_c2n1_carbazol |   0.205 |  
+ SYS     1.170 
+ SYS        26   |  -7.146 |   0.805 |   0.039 |  c3_c3_carbazol |  -0.072 |   
+ SYS    1.170 
+ SYS        27   |   8.152 |  -1.624 |   0.011 |  c3_c2h1_carbazol |  -0.025 |  
+ SYS     1.170 
+ SYS        28   |  -5.402 |   2.558 |   0.080 |  c3_c2h1_carbazol |  -0.263 |  
+ SYS     1.170 
+ SYS        29   |   5.785 |  -1.057 |   0.023 |  c3_c2n1_carbazol |   0.205 |  
+ SYS     1.170 
+ SYS        30   |  -8.148 |   1.780 |   0.050 |  c3_c2h1_carbazol |  -0.025 |  
+ SYS     1.170 
+ SYS        31   |   7.150 |  -0.650 |   0.004 |  c3_c3_carbazol |  -0.072 |   
+ SYS    1.170 
+ SYS        32   |  -6.415 |   3.508 |   0.091 |  c3_c2h1_carbazol |  -0.081 |  
+ SYS     1.170 
+ SYS        33   |  -7.777 |   3.132 |   0.076 |  c3_c3_carbazol |  -0.194 |   
+ SYS    1.170 
+ SYS        34   |   7.149 |   0.806 |  -0.039 |  c3_c3_carbazol |  -0.072 |   
+ SYS    1.170 
+ SYS        35   |   5.784 |   1.211 |  -0.055 |  c3_c2n1_carbazol |   0.205 |  
+ SYS     1.170 
+ SYS        36   |   8.151 |   1.780 |  -0.049 |  c3_c2h1_carbazol |  -0.025 |  
+ SYS     1.170 
+ SYS        37   |   5.405 |   2.558 |  -0.079 |  c3_c2h1_carbazol |  -0.263 |  
+ SYS     1.170 
+ SYS        38   |   7.780 |   3.133 |  -0.073 |  c3_c3_carbazol |  -0.194 |   
+ SYS    1.170 
+ SYS        39   |   6.418 |   3.508 |  -0.089 |  c3_c2h1_carbazol |  -0.081 |  
+ SYS     1.170 
+ SYS        40   |   3.406 |   0.917 |  -1.990 |  h1_c1_ph |   0.132 |   0.731 
+ SYS        41   |   3.417 |  -0.765 |   1.969 |  h1_c1_ph |   0.132 |   0.731 
+ SYS        42   |   0.914 |   0.939 |  -1.979 |  h1_c1_ph |   0.132 |   0.731 
+ SYS        43   |  -0.910 |   0.928 |   1.982 |  h1_c1_ph |   0.132 |   0.731 
+ SYS        44   |  -3.403 |   0.907 |   1.993 |  h1_c1_ph |   0.132 |   0.731 
+ SYS        45   |  -3.414 |  -0.754 |  -1.975 |  h1_c1_ph |   0.132 |   0.731 
+ SYS        46   |  -6.186 |  -4.418 |  -0.076 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        47   |  -4.354 |  -2.697 |  -0.061 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        48   |   6.189 |  -4.418 |   0.071 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        49   |   4.357 |  -2.698 |   0.056 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        50   |  -9.204 |  -1.348 |   0.008 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        51   |  -4.351 |   2.850 |   0.086 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        52   |   9.207 |  -1.347 |  -0.008 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        53   |  -9.202 |   1.504 |   0.033 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        54   |  -6.182 |   4.573 |   0.108 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        55   |   9.205 |   1.505 |  -0.031 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        56   |   4.354 |   2.850 |  -0.085 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        57   |   6.184 |   4.573 |  -0.104 |  h1_c1_carbazol |   0.138 |   
+ SYS    0.731 
+ SYS        58   |  -4.973 |   0.077 |   0.014 |  n3_c3_carbazol |  -0.193 |   
+ SYS    1.105 
+ SYS        59   |   4.976 |   0.077 |  -0.015 |  n3_c3_carbazol |  -0.193 |   
+ SYS    1.105 
+ SYS        60   |  10.067 |  -3.630 |   0.003 |  o2_c1h1_oh |  -0.582 |   
+ SYS    1.133 
+ SYS        61   |  10.063 |   3.789 |  -0.041 |  o2_c1h1_oh |  -0.582 |   
+ SYS    1.133 
+ SYS        62   |   8.511 |  -5.258 |   0.057 |  o1_c1_ket |  -0.545 |   1.133 
+ SYS        63   |   8.505 |   5.415 |  -0.094 |  o1_c1_ket |  -0.545 |   1.133 
+ SYS        64   |  -8.507 |  -5.258 |  -0.060 |  o1_c1_ket |  -0.545 |   1.133 
+ SYS        65   | -10.061 |   3.788 |   0.046 |  o2_c1h1_oh |  -0.582 |   
+ SYS    1.133 
+ SYS        66   | -10.064 |  -3.631 |  -0.003 |  o2_c1h1_oh |  -0.582 |   
+ SYS    1.133 
+ SYS        67   |  -8.503 |   5.414 |   0.101 |  o1_c1_ket |  -0.545 |   1.133 
+ SYS        68   |  10.617 |  -4.434 |   0.004 |  h1_o1_oh |   0.453 |   0.731 
+ SYS        69   |  10.612 |   4.593 |  -0.042 |  h1_o1_oh |   0.453 |   0.731 
+ SYS        70   | -10.609 |   4.592 |   0.050 |  h1_o1_oh |   0.453 |   0.731 
+ SYS        71   | -10.613 |  -4.435 |  -0.003 |  h1_o1_oh |   0.453 |   0.731 
+ SYS        72   |  -0.922 |  -0.776 |  -1.979 |  h1_c1_ph |   0.132 |   0.731 
+ SYS        73   |   0.925 |  -0.788 |   1.972 |  h1_c1_ph |   0.132 |   0.731 
+
+ EQSET  Resetting system coordinates to ab initio ref
+ EQSET  Setting rest values to AI equilibrium values for tasks EQ_RV
+
+
+        bondmm3/c3_c1o2_ket.c3_c3_carbazol (kjmol/A^2  A)                       
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c1o2_ket.o1_c1_ket (kjmol/A^2  A)                            
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c1o2_ket.o2_c1h1_oh (kjmol/A^2  A)                           
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c2h1_carbazol.c3_c2h1_carbazol (kjmol/A^2  A)                
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/A^2  A)                
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c2h1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c2h1_carbazol.h1_c1_carbazol (kjmol/A^2  A)                  
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c2h1_ph.c3_c2h1_ph (kjmol/A^2  A)                            
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c2h1_ph.c3_c2n1_ph (kjmol/A^2  A)                            
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c2h1_ph.c3_c3_ph (kjmol/A^2  A)                              
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c2h1_ph.h1_c1_ph (kjmol/A^2  A)                              
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c2n1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c2n1_carbazol.n3_c3_carbazol (kjmol/A^2  A)                  
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c2n1_ph.n3_c3_carbazol (kjmol/A^2  A)                        
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c3_carbazol.c3_c3_carbazol (kjmol/A^2  A)                    
+            fc =       +-         rv =       +-     
+
+        bondmm3/c3_c3_ph.c3_c3_ph (kjmol/A^2  A)                                
+            fc =       +-         rv =       +-     
+
+        bondmm3/h1_o1_oh.o2_c1h1_oh (kjmol/A^2  A)                              
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  deg)  
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol/rad^2  deg)              
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/rad^2 
+         deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph (kjmol/rad^2  deg)             
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol/rad^2  deg)               
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol/rad^2  deg)             
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol/rad^2  deg)         
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol/rad^2  deg)               
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/rad^2  deg)                 
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph (kjmol/rad^2  deg)   
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol/rad^2  deg)         
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)        
+            fc =       +-         rv =       +-     
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =       +-         rv =       +-     
+
+        bendmm3/c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)                 
+            fc =       +-         rv =       +-     
+
+        bendmm3/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)             
+            fc =       +-         rv =       +-     
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol 
+         au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol  au)      
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)  
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)        
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol  au)          
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol (kjmol 
+         au)    fc  =      +-        sgn = 1.0
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)          
+            fc  =      +-        sgn = 1.0
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol  au)        
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol  au)   
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_
+        carbazol (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbazol (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbazol (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)            
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)    
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/h1_o1_oh.o2_c1h1_oh.c3_c1o2_ket.o1_c1_ket (kjmol  au)        
+            fc  =      +-        sgn =  -1
+
+        Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc =       +-         rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc =       +-         rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_carbazol.c3_c2h1_
+        carbazo (kjmol/A^2  A)    fc =       +-         rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc =       +-         rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.n3_c3_carbazol.c3_c2n1_carbazol 
+        (kjmol/A^2  A)    fc =       +-         rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/A^2  A)          
+            fc =       +-         rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.n3_c3_carbazol.c3_c2n1_ph (kjmol/A^2  A)  
+            fc =       +-         rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)        
+            fc =       +-         rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)          
+            fc =       +-         rv = .0000 +- .000
+
+        Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_c2n1_ph.n3_c3_carbazol 
+        (kjmol/A^2  A)    fc =       +-         rv = .0000 +- .000
+
+        Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc =       +-         rv = .0000 +- .000
+
+        Oopdist/c3_c3_carbazol.o1_c1_ket.o2_c1h1_oh.c3_c1o2_ket (kjmol/A^2  A)  
+            fc =       +-         rv = .0000 +- .000
+
+
+ EQSET  Averaging force field parameters over master and slaves
+
+ PTGEN  Resetting system coordinates to ab initio ref
+ PTGEN  Constructing trajectories
+
+ PTEST  Resetting system coordinates to ab initio ref
+ PTEST  Estimating FF parameters from perturbation trajectories
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2h1_ph.n3_c3_carbazol.c3_c2n1_ph 
+ PTEST  was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PTEST  carbazol.c3_c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PTEST  carbazol.c3_c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PTEST  carbazol.c3_c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PTEST  carbazol.c3_c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_
+ PTEST  c3_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_
+ PTEST  c3_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PTEST  carbazol.c3_c3_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PTEST  carbazol.c3_c3_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PTEST  carbazol.c3_c3_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PTEST  carbazol.c3_c3_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_c2n1_ph.n3_
+ PTEST  c3_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_c2n1_ph.n3_
+ PTEST  c3_carbazol was negative: set to zero
+
+
+        bondmm3/c3_c1o2_ket.c3_c3_carbazol (kjmol/A^2  A)                       
+            fc =  4163 +- .256    rv = 1.488 +- .000
+
+        bondmm3/c3_c1o2_ket.o1_c1_ket (kjmol/A^2  A)                            
+            fc =  7678 +- .127    rv = 1.219 +- .000
+
+        bondmm3/c3_c1o2_ket.o2_c1h1_oh (kjmol/A^2  A)                           
+            fc =  3534 +- .325    rv = 1.356 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c2h1_carbazol (kjmol/A^2  A)                
+            fc =  5042 +- .114    rv = 1.388 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/A^2  A)                
+            fc =  5002 +- .258    rv = 1.397 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  4758 +-  219    rv = 1.402 +- .005
+
+        bondmm3/c3_c2h1_carbazol.h1_c1_carbazol (kjmol/A^2  A)                  
+            fc =  3398 +- 13.0    rv = 1.091 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c2h1_ph (kjmol/A^2  A)                            
+            fc =  4919 +- .653    rv = 1.393 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c2n1_ph (kjmol/A^2  A)                            
+            fc =  4720 +- .737    rv = 1.397 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c3_ph (kjmol/A^2  A)                              
+            fc =  4588 +- .445    rv = 1.403 +- .000
+
+        bondmm3/c3_c2h1_ph.h1_c1_ph (kjmol/A^2  A)                              
+            fc =  3367 +- 5.10    rv = 1.092 +- .000
+
+        bondmm3/c3_c2n1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  4236 +- .139    rv = 1.422 +- .000
+
+        bondmm3/c3_c2n1_carbazol.n3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  4329 +- .562    rv = 1.394 +- .000
+
+        bondmm3/c3_c2n1_ph.n3_c3_carbazol (kjmol/A^2  A)                        
+            fc =  4550 +- .417    rv = 1.421 +- .000
+
+        bondmm3/c3_c3_carbazol.c3_c3_carbazol (kjmol/A^2  A)                    
+            fc =  4263 +- .299    rv = 1.459 +- .000
+
+        bondmm3/c3_c3_ph.c3_c3_ph (kjmol/A^2  A)                                
+            fc =  4115 +- .000    rv = 1.485 +- .000
+
+        bondmm3/h1_o1_oh.o2_c1h1_oh (kjmol/A^2  A)                              
+            fc =  4616 +- .133    rv = .9792 +- .000
+
+        bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  deg)  
+            fc =  3248 +- 24.7    rv = 119.5 +- 2.54
+
+        bendmm3/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol/rad^2  deg)              
+            fc = 363.3 +- .601    rv = 101.1 +- .005
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/rad^2 
+         deg)    fc =  2990 +- .132    rv = 117.5 +- .001
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =  2918 +- .112    rv = 121.4 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 548.0 +- 19.0    rv = 121.8 +- .340
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =  2707 +- .267    rv = 122.2 +- .001
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =  2707 +- .069    rv = 128.7 +- .001
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  
+        deg)    fc =  2707 +- .081    rv = 120.9 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc =  2689 +- .237    rv = 119.3 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =  2593 +- .066    rv = 134.1 +- .001
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph (kjmol/rad^2  deg)             
+            fc =  2941 +- .249    rv = 120.0 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol/rad^2  deg)               
+            fc =  2928 +- .447    rv = 120.9 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc = 579.5 +- 3.42    rv = 120.4 +- .350
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol/rad^2  deg)             
+            fc =  2708 +- .147    rv = 119.8 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol/rad^2  deg)         
+            fc =  3200 +- 1.10    rv = 119.9 +- .002
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol/rad^2  deg)               
+            fc =  2750 +- .039    rv = 118.4 +- .001
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/rad^2  deg)                 
+            fc =  3032 +- .220    rv = 120.6 +- .003
+
+        bendmm3/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 561.6 +- .095    rv = 120.4 +- .000
+
+        bendmm3/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =  3929 +- .172    rv = 106.5 +- .000
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc =  3607 +- .021    rv = 109.0 +- .001
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph (kjmol/rad^2  deg)   
+            fc =  2774 +- .755    rv = 125.5 +- .002
+
+        bendmm3/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc = 570.6 +- .015    rv = 118.5 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol/rad^2  deg)         
+            fc =  1078 +- .019    rv = 123.5 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)        
+            fc =  4014 +- .065    rv = 113.1 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =  2933 +- .123    rv = 118.8 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 534.7 +- 1.92    rv = 118.9 +- 2.58
+
+        bendmm3/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc =  3782 +- .155    rv = 108.9 +- .000
+
+        bendmm3/c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)                 
+            fc = 578.5 +- .043    rv = 118.5 +- .001
+
+        bendmm3/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)             
+            fc =  1110 +- .109    rv = 123.2 +- .000
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol 
+         au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol  au)      
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)  
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)        
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol  au)          
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol (kjmol 
+         au)    fc  =      +-        sgn = 1.0
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)          
+            fc  =      +-        sgn = 1.0
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carb (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol  au)        
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol  au)   
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_
+        carbazol (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbazol (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbazol (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)            
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  =      +-        sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)    
+            fc  =      +-        sgn =  -1
+
+        TorsCheby2/h1_o1_oh.o2_c1h1_oh.c3_c1o2_ket.o1_c1_ket (kjmol  au)        
+            fc  =      +-        sgn =  -1
+
+        Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc =  1195 +- .417    rv = .0015 +- .001
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc =  1398 +- .868    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_carbazol.c3_c2h1_
+        carbazo (kjmol/A^2  A)    fc =  1405 +- 1.58    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc =  1693 +- 1.26    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.n3_c3_carbazol.c3_c2n1_carbazol 
+        (kjmol/A^2  A)    fc =  1444 +- .501    rv = .0113 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/A^2  A)          
+            fc =  1679 +- .314    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.n3_c3_carbazol.c3_c2n1_ph (kjmol/A^2  A)  
+            fc =  1760 +- .277    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)        
+            fc =  1552 +- 1.76    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)          
+            fc =  1596 +- 1.85    rv = .0000 +- .000
+
+        Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_c2n1_ph.n3_c3_carbazol 
+        (kjmol/A^2  A)    fc =  1112 +- .147    rv = .0000 +- .000
+
+        Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc =  1554 +- .258    rv = .0012 +- .001
+
+        Oopdist/c3_c3_carbazol.o1_c1_ket.o2_c1h1_oh.c3_c1o2_ket (kjmol/A^2  A)  
+            fc =  1957 +- 1.54    rv = .0017 +- .000
+
+
+ PTPOST Averaging force field parameters over master and slaves
+
+ VAL    Resetting system coordinates to ab initio ref
+ VAL    Added 130 stretch-stretch and 260 stretch-angle cross terms from angle 
+ VAL    patterns
+
+ HCEST  Resetting system coordinates to ab initio ref
+ HCEST  Estimating force constants from Hessian cost for tasks HC_FC_DIAG HC_FC_
+ HCEST  CROSS_ASS HC_FC_CROSS_ASA
+
+
+        bondmm3/c3_c1o2_ket.c3_c3_carbazol (kjmol/A^2  A)                       
+            fc =  2914 +- .000    rv = 1.488 +- .000
+
+        bondmm3/c3_c1o2_ket.o1_c1_ket (kjmol/A^2  A)                            
+            fc =  7446 +- .000    rv = 1.219 +- .000
+
+        bondmm3/c3_c1o2_ket.o2_c1h1_oh (kjmol/A^2  A)                           
+            fc =  3680 +- .000    rv = 1.356 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c2h1_carbazol (kjmol/A^2  A)                
+            fc =  4462 +- .000    rv = 1.388 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/A^2  A)                
+            fc =  4090 +- .000    rv = 1.397 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  4081 +- .000    rv = 1.402 +- .000
+
+        bondmm3/c3_c2h1_carbazol.h1_c1_carbazol (kjmol/A^2  A)                  
+            fc =  3374 +- .000    rv = 1.091 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c2h1_ph (kjmol/A^2  A)                            
+            fc =  4183 +- .000    rv = 1.393 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c2n1_ph (kjmol/A^2  A)                            
+            fc =  4108 +- .000    rv = 1.397 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c3_ph (kjmol/A^2  A)                              
+            fc =  3998 +- .000    rv = 1.403 +- .000
+
+        bondmm3/c3_c2h1_ph.h1_c1_ph (kjmol/A^2  A)                              
+            fc =  3337 +- .000    rv = 1.092 +- .000
+
+        bondmm3/c3_c2n1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  3845 +- .000    rv = 1.422 +- .000
+
+        bondmm3/c3_c2n1_carbazol.n3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  3949 +- .000    rv = 1.394 +- .000
+
+        bondmm3/c3_c2n1_ph.n3_c3_carbazol (kjmol/A^2  A)                        
+            fc =  3689 +- .000    rv = 1.421 +- .000
+
+        bondmm3/c3_c3_carbazol.c3_c3_carbazol (kjmol/A^2  A)                    
+            fc =  3272 +- .000    rv = 1.459 +- .000
+
+        bondmm3/c3_c3_ph.c3_c3_ph (kjmol/A^2  A)                                
+            fc =  3070 +- .000    rv = 1.485 +- .000
+
+        bondmm3/h1_o1_oh.o2_c1h1_oh (kjmol/A^2  A)                              
+            fc =  4420 +- .000    rv = .9792 +- .000
+
+        bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  deg)  
+            fc = 400.2 +- .000    rv = 119.5 +- .000
+
+        bendmm3/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol/rad^2  deg)              
+            fc = 471.6 +- .000    rv = 101.1 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/rad^2 
+         deg)    fc = 710.7 +- .000    rv = 117.5 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 484.1 +- .000    rv = 121.4 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 248.5 +- .000    rv = 121.8 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 417.9 +- .000    rv = 122.2 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 438.9 +- .000    rv = 128.7 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  
+        deg)    fc = 564.3 +- .000    rv = 120.9 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc = 518.5 +- .000    rv = 119.3 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 380.4 +- .000    rv = 134.1 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph (kjmol/rad^2  deg)             
+            fc = 585.8 +- .000    rv = 120.0 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol/rad^2  deg)               
+            fc = 582.9 +- .000    rv = 120.9 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc = 293.8 +- .000    rv = 120.4 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol/rad^2  deg)             
+            fc = 550.9 +- .000    rv = 119.8 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol/rad^2  deg)         
+            fc = 484.5 +- .000    rv = 119.9 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol/rad^2  deg)               
+            fc = 494.8 +- .000    rv = 118.4 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/rad^2  deg)                 
+            fc = 459.2 +- .000    rv = 120.6 +- .000
+
+        bendmm3/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 313.8 +- .000    rv = 120.4 +- .000
+
+        bendmm3/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 688.3 +- .000    rv = 106.5 +- .000
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc = 972.5 +- .000    rv = 109.0 +- .000
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph (kjmol/rad^2  deg)   
+            fc = 422.4 +- .000    rv = 125.5 +- .000
+
+        bendmm3/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc = 300.2 +- .000    rv = 118.5 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol/rad^2  deg)         
+            fc = 599.9 +- .000    rv = 123.5 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)        
+            fc = 720.4 +- .000    rv = 113.1 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 613.9 +- .000    rv = 118.8 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 279.2 +- .000    rv = 118.9 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 526.6 +- .000    rv = 108.9 +- .000
+
+        bendmm3/c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)                 
+            fc = 294.9 +- .000    rv = 118.5 +- .000
+
+        bendmm3/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)             
+            fc = 834.0 +- .000    rv = 123.2 +- .000
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol 
+        (kjmol  au)    fc  = 44.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  = 51.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol 
+        (kjmol  au)    fc  = 21.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  = 37.3 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carb (kjmol  au)    fc  = 32.7 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  = 40.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 21.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+        carb (kjmol  au)    fc  = 6.24 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph 
+        (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol 
+         au)    fc  = 14.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh 
+        (kjmol  au)    fc  = 10.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 29.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 27.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  = 5.20 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_
+        carbaz (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  = 29.7 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol  au)      
+            fc  = 30.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)  
+            fc  = 36.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)        
+            fc  = 31.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol  au)          
+            fc  = 40.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  = 25.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol (kjmol 
+         au)    fc  = .000 +- 0.0    sgn = 1.0
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 24.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)          
+            fc  = .000 +- 0.0    sgn = 1.0
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  = 26.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carb (kjmol  au)    fc  = 39.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 49.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 31.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  =  143 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 50.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol  au)        
+            fc  = 31.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  = 35.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  = 15.3 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol  au)   
+            fc  = 24.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 37.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_
+        carbazol (kjmol  au)    fc  = 34.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 21.2 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbazol (kjmol  au)    fc  = 16.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbazol (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 33.2 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)            
+            fc  = 16.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 19.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  = 10.7 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 18.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)    
+            fc  = 19.3 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_o1_oh.o2_c1h1_oh.c3_c1o2_ket.o1_c1_ket (kjmol  au)        
+            fc  = 16.8 +- 0.0    sgn =  -1
+
+        Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0015 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_carbazol.c3_c2h1_
+        carbazo (kjmol/A^2  A)    fc = 107.5 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc = 133.6 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.n3_c3_carbazol.c3_c2n1_carbazol 
+        (kjmol/A^2  A)    fc = 355.9 +- .000    rv = .0113 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/A^2  A)          
+            fc = 375.6 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.n3_c3_carbazol.c3_c2n1_ph (kjmol/A^2  A)  
+            fc = 322.2 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)        
+            fc = 156.4 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)          
+            fc = 181.0 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_c2n1_ph.n3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc = 184.0 +- .000    rv = .0012 +- .000
+
+        Oopdist/c3_c3_carbazol.o1_c1_ket.o2_c1h1_oh.c3_c1o2_ket (kjmol/A^2  A)  
+            fc =  1379 +- .000    rv = .0017 +- .000
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/b0a (kjmol/A  A  deg) 
+            fc =  178 +- .0    rv0 = 1.48 +- .00    rv1 =  119 +- .00
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/b1a (kjmol/A  A  deg) 
+            fc = 57.3 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- .00
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/bb (kjmol/A^2  A  A)  
+            fc =  350 +- .0    rv0 = 1.48 +- .00    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/b0a (kjmol/A  A  deg)             
+            fc =  168 +- .0    rv0 = 1.35 +- 0.0    rv1 =  101 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/b1a (kjmol/A  A  deg)             
+            fc =  131 +- .0    rv0 = .979 +- 0.0    rv1 =  101 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/bb (kjmol/A^2  A  A)              
+            fc = 87.8 +- .0    rv0 = 1.35 +- 0.0    rv1 = .979 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  
+        A  deg)    fc =  205 +- .0    rv0 = 1.38 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  
+        A  deg)    fc = 93.5 +- .0    rv0 = 1.39 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  
+        A  A)    fc =  613 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  104 +- .0    rv0 = 1.38 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 34.0 +- .0    rv0 = 1.40 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  523 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 95.9 +- .0    rv0 = 1.38 +- 0.0    rv1 =  121 +- .00
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  114 +- .0    rv0 = 1.09 +- 0.0    rv1 =  121 +- .00
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A 
+         A)    fc = 44.9 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc = -104 +- .0    rv0 = 1.39 +- 0.0    rv1 =  122 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  -51 +- .0    rv0 = 1.42 +- 0.0    rv1 =  122 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  455 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 26.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  128 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  283 +- .0    rv0 = 1.39 +- 0.0    rv1 =  128 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  426 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 13.7 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 13.7 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  604 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 3.91 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 7.12 +- .0    rv0 = 1.42 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  555 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  -11 +- .0    rv0 = 1.40 +- 0.0    rv1 =  134 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  138 +- .0    rv0 = 1.45 +- 0.0    rv1 =  134 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  421 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.45 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/b0a (kjmol/A  A  deg)            
+            fc = 44.1 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/b1a (kjmol/A  A  deg)            
+            fc = 41.0 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/bb (kjmol/A^2  A  A)             
+            fc =  564 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/b0a (kjmol/A  A  deg)              
+            fc = 28.7 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/b1a (kjmol/A  A  deg)              
+            fc = 56.2 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/bb (kjmol/A^2  A  A)               
+            fc =  529 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)              
+            fc = 93.0 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)              
+            fc =  131 +- .0    rv0 = 1.09 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)               
+            fc = 39.1 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/b0a (kjmol/A  A  deg)            
+            fc =  -27 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/b1a (kjmol/A  A  deg)            
+            fc =  -27 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/bb (kjmol/A^2  A  A)             
+            fc =  590 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/b0a (kjmol/A  A  deg)        
+            fc =  107 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/b1a (kjmol/A  A  deg)        
+            fc =  413 +- .0    rv0 = 1.42 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/bb (kjmol/A^2  A  A)         
+            fc =  357 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/b0a (kjmol/A  A  deg)              
+            fc = 19.6 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/b1a (kjmol/A  A  deg)              
+            fc = 19.5 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/bb (kjmol/A^2  A  A)               
+            fc =  564 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/b0a (kjmol/A  A  deg)                
+            fc =  121 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/b1a (kjmol/A  A  deg)                
+            fc =  189 +- .0    rv0 = 1.48 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/bb (kjmol/A^2  A  A)                 
+            fc =  297 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.48 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 70.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  138 +- .0    rv0 = 1.09 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A 
+         A)    fc = 44.7 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  355 +- .0    rv0 = 1.42 +- 0.0    rv1 =  106 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  211 +- .0    rv0 = 1.45 +- 0.0    rv1 =  106 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  472 +- .0    rv0 = 1.42 +- 0.0    rv1 = 1.45 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  439 +- .0    rv0 = 1.39 +- 0.0    rv1 =  109 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  439 +- .0    rv0 = 1.39 +- 0.0    rv1 =  109 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  636 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/b0a (kjmol/A  A  deg)  
+            fc = 58.8 +- .0    rv0 = 1.39 +- 0.0    rv1 =  125 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/b1a (kjmol/A  A  deg)  
+            fc =  112 +- .0    rv0 = 1.42 +- 0.0    rv1 =  125 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/bb (kjmol/A^2  A  A)   
+            fc =  282 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)              
+            fc = 90.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)              
+            fc =  139 +- .0    rv0 = 1.09 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)               
+            fc = 18.0 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/b0a (kjmol/A  A  deg)        
+            fc =  136 +- .0    rv0 = 1.48 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/b1a (kjmol/A  A  deg)        
+            fc =  362 +- .0    rv0 = 1.21 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/bb (kjmol/A^2  A  A)         
+            fc =  412 +- .0    rv0 = 1.48 +- 0.0    rv1 = 1.21 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/b0a (kjmol/A  A  deg)       
+            fc =  228 +- .0    rv0 = 1.48 +- 0.0    rv1 =  113 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/b1a (kjmol/A  A  deg)       
+            fc =  336 +- .0    rv0 = 1.35 +- 0.0    rv1 =  113 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/bb (kjmol/A^2  A  A)        
+            fc =  261 +- .0    rv0 = 1.48 +- 0.0    rv1 = 1.35 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  124 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  124 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  604 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 64.7 +- .0    rv0 = 1.40 +- .00    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  134 +- .0    rv0 = 1.09 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A  
+        A)    fc = 39.9 +- .0    rv0 = 1.40 +- .00    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  325 +- .0    rv0 = 1.42 +- 0.0    rv1 =  108 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  473 +- .0    rv0 = 1.39 +- 0.0    rv1 =  108 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  506 +- .0    rv0 = 1.42 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)                
+            fc = 93.6 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)                
+            fc =  137 +- .0    rv0 = 1.09 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)                 
+            fc = 34.1 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/b0a (kjmol/A  A  deg)            
+            fc =  482 +- .0    rv0 = 1.21 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/b1a (kjmol/A  A  deg)            
+            fc =  423 +- .0    rv0 = 1.35 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/bb (kjmol/A^2  A  A)             
+            fc =  679 +- .0    rv0 = 1.21 +- 0.0    rv1 = 1.35 +- 0.0
+
+
+ PTEST  Resetting system coordinates to ab initio ref
+ PTEST  Estimating FF parameters from perturbation trajectories with valence 
+ PTEST  reference
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2h1_ph.n3_c3_carbazol.c3_c2n1_ph 
+ PTEST  was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph was 
+ PTEST  negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PTEST  carbazol.c3_c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PTEST  carbazol.c3_c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PTEST  carbazol.c3_c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PTEST  carbazol.c3_c2h1_carbazol was negative: set to zero
+ PTEST  force constant of Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_
+ PTEST  carbazol.c3_c3_carbazol is not positive: force constant set to zero and 
+ PTEST  rest value set to ab initio equilibrium
+ PTEST  rest value of Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_
+ PTEST  c3_carbazol was negative: set to zero
+ PTEST  force constant of Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_
+ PTEST  carbazol.c3_c3_carbazol is not positive: force constant set to zero and 
+ PTEST  rest value set to ab initio equilibrium
+ PTEST  force constant of Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_
+ PTEST  carbazol.c3_c3_carbazol is not positive: force constant set to zero and 
+ PTEST  rest value set to ab initio equilibrium
+ PTEST  rest value of Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_
+ PTEST  c3_carbazol was negative: set to zero
+ PTEST  force constant of Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_
+ PTEST  carbazol.c3_c3_carbazol is not positive: force constant set to zero and 
+ PTEST  rest value set to ab initio equilibrium
+ PTEST  rest value of Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_
+ PTEST  c3_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  rest value of Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_
+ PTEST  c2h1_carbazol was negative: set to zero
+ PTEST  force constant of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PTEST  carbazol.c3_c3_carbazol is not positive: force constant set to zero and 
+ PTEST  rest value set to ab initio equilibrium
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PTEST  carbazol.c3_c3_carbazol was negative: set to zero
+ PTEST  force constant of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PTEST  carbazol.c3_c3_carbazol is not positive: force constant set to zero and 
+ PTEST  rest value set to ab initio equilibrium
+ PTEST  force constant of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PTEST  carbazol.c3_c3_carbazol is not positive: force constant set to zero and 
+ PTEST  rest value set to ab initio equilibrium
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PTEST  carbazol.c3_c3_carbazol was negative: set to zero
+ PTEST  force constant of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PTEST  carbazol.c3_c3_carbazol is not positive: force constant set to zero and 
+ PTEST  rest value set to ab initio equilibrium
+ PTEST  rest value of Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PTEST  carbazol.c3_c3_carbazol was negative: set to zero
+ PTEST  force constant of Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_c2n1_
+ PTEST  ph.n3_c3_carbazol is not positive: force constant set to zero and rest 
+ PTEST  value set to ab initio equilibrium
+ PTEST  force constant of Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_c2n1_
+ PTEST  ph.n3_c3_carbazol is not positive: force constant set to zero and rest 
+ PTEST  value set to ab initio equilibrium
+ PTEST  rest value of Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_c2n1_ph.n3_
+ PTEST  c3_carbazol was negative: set to zero
+
+
+        bondmm3/c3_c1o2_ket.c3_c3_carbazol (kjmol/A^2  A)                       
+            fc =  3019 +- .258    rv = 1.481 +- .000
+
+        bondmm3/c3_c1o2_ket.o1_c1_ket (kjmol/A^2  A)                            
+            fc =  7678 +- .128    rv = 1.219 +- .000
+
+        bondmm3/c3_c1o2_ket.o2_c1h1_oh (kjmol/A^2  A)                           
+            fc =  3595 +- .344    rv = 1.353 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c2h1_carbazol (kjmol/A^2  A)                
+            fc =  4458 +- .094    rv = 1.388 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/A^2  A)                
+            fc =  4022 +- .245    rv = 1.397 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  4024 +-  185    rv = 1.402 +- .007
+
+        bondmm3/c3_c2h1_carbazol.h1_c1_carbazol (kjmol/A^2  A)                  
+            fc =  3398 +- 13.0    rv = 1.091 +- .001
+
+        bondmm3/c3_c2h1_ph.c3_c2h1_ph (kjmol/A^2  A)                            
+            fc =  4161 +- .692    rv = 1.394 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c2n1_ph (kjmol/A^2  A)                            
+            fc =  4048 +- .782    rv = 1.396 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c3_ph (kjmol/A^2  A)                              
+            fc =  3925 +- .392    rv = 1.400 +- .000
+
+        bondmm3/c3_c2h1_ph.h1_c1_ph (kjmol/A^2  A)                              
+            fc =  3367 +- 5.13    rv = 1.093 +- .000
+
+        bondmm3/c3_c2n1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  3799 +- .124    rv = 1.421 +- .000
+
+        bondmm3/c3_c2n1_carbazol.n3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  3999 +- .665    rv = 1.394 +- .000
+
+        bondmm3/c3_c2n1_ph.n3_c3_carbazol (kjmol/A^2  A)                        
+            fc =  3666 +- .271    rv = 1.422 +- .000
+
+        bondmm3/c3_c3_carbazol.c3_c3_carbazol (kjmol/A^2  A)                    
+            fc =  3362 +- .260    rv = 1.464 +- .000
+
+        bondmm3/c3_c3_ph.c3_c3_ph (kjmol/A^2  A)                                
+            fc =  3116 +- .000    rv = 1.485 +- .000
+
+        bondmm3/h1_o1_oh.o2_c1h1_oh (kjmol/A^2  A)                              
+            fc =  4616 +- .136    rv = .9814 +- .000
+
+        bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  deg)  
+            fc = 398.7 +- 23.9    rv = 119.7 +- 5.91
+
+        bendmm3/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol/rad^2  deg)              
+            fc = 363.3 +- .598    rv = 101.1 +- .005
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/rad^2 
+         deg)    fc = 710.6 +- .158    rv = 118.0 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 500.1 +- .103    rv = 120.1 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 246.9 +- 15.6    rv = 123.8 +- 2.37
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 400.5 +- .048    rv = 121.7 +- .002
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 432.8 +- .131    rv = 127.9 +- .003
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  
+        deg)    fc = 580.5 +- .049    rv = 120.5 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc = 488.0 +- .215    rv = 119.5 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 369.2 +- .119    rv = 133.7 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph (kjmol/rad^2  deg)             
+            fc = 590.3 +- .304    rv = 120.0 +- .001
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol/rad^2  deg)               
+            fc = 582.0 +- .401    rv = 121.2 +- .003
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc = 288.9 +- 6.28    rv = 120.1 +- .250
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol/rad^2  deg)             
+            fc = 533.6 +- .463    rv = 119.5 +- .006
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol/rad^2  deg)         
+            fc = 497.1 +- .194    rv = 119.7 +- .003
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol/rad^2  deg)               
+            fc = 465.0 +- .044    rv = 117.8 +- .003
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/rad^2  deg)                 
+            fc = 448.8 +- .269    rv = 120.2 +- .002
+
+        bendmm3/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 291.1 +- .109    rv = 120.5 +- .001
+
+        bendmm3/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 715.2 +- .100    rv = 106.0 +- .000
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc = 962.4 +- .274    rv = 108.8 +- .006
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph (kjmol/rad^2  deg)   
+            fc = 383.0 +- .046    rv = 125.6 +- .007
+
+        bendmm3/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc = 280.2 +- .025    rv = 117.9 +- .001
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol/rad^2  deg)         
+            fc = 507.8 +- .023    rv = 123.6 +- .001
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)        
+            fc = 686.2 +- .134    rv = 111.0 +- .001
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 596.1 +- .129    rv = 119.8 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 260.2 +- 5.31    rv = 117.6 +- 2.92
+
+        bendmm3/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 558.5 +- .072    rv = 109.5 +- .004
+
+        bendmm3/c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)                 
+            fc = 280.2 +- .023    rv = 118.4 +- .005
+
+        bendmm3/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)             
+            fc = 711.2 +- .287    rv = 123.7 +- .001
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol 
+        (kjmol  au)    fc  = 44.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  = 51.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol 
+        (kjmol  au)    fc  = 21.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  = 37.3 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carb (kjmol  au)    fc  = 32.7 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  = 40.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 21.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+        carb (kjmol  au)    fc  = 6.24 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph 
+        (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol 
+         au)    fc  = 14.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh 
+        (kjmol  au)    fc  = 10.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 29.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 27.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  = 5.20 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_
+        carbaz (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  = 29.7 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol  au)      
+            fc  = 30.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)  
+            fc  = 36.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)        
+            fc  = 31.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol  au)          
+            fc  = 40.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  = 25.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol (kjmol 
+         au)    fc  = .000 +- 0.0    sgn = 1.0
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 24.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)          
+            fc  = .000 +- 0.0    sgn = 1.0
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  = 26.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carb (kjmol  au)    fc  = 39.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 49.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 31.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  =  143 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 50.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol  au)        
+            fc  = 31.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  = 35.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  = 15.3 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol  au)   
+            fc  = 24.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 37.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_
+        carbazol (kjmol  au)    fc  = 34.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 21.2 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbazol (kjmol  au)    fc  = 16.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbazol (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 33.2 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)            
+            fc  = 16.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 19.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  = 10.7 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 18.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)    
+            fc  = 19.3 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_o1_oh.o2_c1h1_oh.c3_c1o2_ket.o1_c1_ket (kjmol  au)        
+            fc  = 16.8 +- 0.0    sgn =  -1
+
+        Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_carbazol.c3_c2h1_
+        carbazo (kjmol/A^2  A)    fc = 125.4 +- 1.64    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc = 94.87 +- 1.66    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.n3_c3_carbazol.c3_c2n1_carbazol 
+        (kjmol/A^2  A)    fc = 350.8 +- .493    rv = .0428 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/A^2  A)          
+            fc = 395.8 +- .249    rv = .0001 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.n3_c3_carbazol.c3_c2n1_ph (kjmol/A^2  A)  
+            fc = 392.3 +- .244    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)        
+            fc = 157.6 +- 1.73    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)          
+            fc = 191.3 +- 1.82    rv = .0037 +- .000
+
+        Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_c2n1_ph.n3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc = 211.5 +- .451    rv = .0023 +- .002
+
+        Oopdist/c3_c3_carbazol.o1_c1_ket.o2_c1h1_oh.c3_c1o2_ket (kjmol/A^2  A)  
+            fc =  1360 +- 2.53    rv = .0016 +- .001
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/b0a (kjmol/A  A  deg) 
+            fc =  178 +- .0    rv0 = 1.48 +- .00    rv1 =  119 +- .00
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/b1a (kjmol/A  A  deg) 
+            fc = 57.3 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- .00
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/bb (kjmol/A^2  A  A)  
+            fc =  350 +- .0    rv0 = 1.48 +- .00    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/b0a (kjmol/A  A  deg)             
+            fc =  168 +- .0    rv0 = 1.35 +- 0.0    rv1 =  101 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/b1a (kjmol/A  A  deg)             
+            fc =  131 +- .0    rv0 = .979 +- 0.0    rv1 =  101 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/bb (kjmol/A^2  A  A)              
+            fc = 87.8 +- .0    rv0 = 1.35 +- 0.0    rv1 = .979 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  
+        A  deg)    fc =  205 +- .0    rv0 = 1.38 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  
+        A  deg)    fc = 93.5 +- .0    rv0 = 1.39 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  
+        A  A)    fc =  613 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  104 +- .0    rv0 = 1.38 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 34.0 +- .0    rv0 = 1.40 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  523 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 95.9 +- .0    rv0 = 1.38 +- 0.0    rv1 =  121 +- .00
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  114 +- .0    rv0 = 1.09 +- 0.0    rv1 =  121 +- .00
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A 
+         A)    fc = 44.9 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc = -104 +- .0    rv0 = 1.39 +- 0.0    rv1 =  122 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  -51 +- .0    rv0 = 1.42 +- 0.0    rv1 =  122 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  455 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 26.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  128 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  283 +- .0    rv0 = 1.39 +- 0.0    rv1 =  128 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  426 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 13.7 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 13.7 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  604 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 3.91 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 7.12 +- .0    rv0 = 1.42 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  555 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  -11 +- .0    rv0 = 1.40 +- 0.0    rv1 =  134 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  138 +- .0    rv0 = 1.45 +- 0.0    rv1 =  134 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  421 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.45 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/b0a (kjmol/A  A  deg)            
+            fc = 44.1 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/b1a (kjmol/A  A  deg)            
+            fc = 41.0 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/bb (kjmol/A^2  A  A)             
+            fc =  564 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/b0a (kjmol/A  A  deg)              
+            fc = 28.7 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/b1a (kjmol/A  A  deg)              
+            fc = 56.2 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/bb (kjmol/A^2  A  A)               
+            fc =  529 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)              
+            fc = 93.0 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)              
+            fc =  131 +- .0    rv0 = 1.09 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)               
+            fc = 39.1 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/b0a (kjmol/A  A  deg)            
+            fc =  -27 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/b1a (kjmol/A  A  deg)            
+            fc =  -27 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/bb (kjmol/A^2  A  A)             
+            fc =  590 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/b0a (kjmol/A  A  deg)        
+            fc =  107 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/b1a (kjmol/A  A  deg)        
+            fc =  413 +- .0    rv0 = 1.42 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/bb (kjmol/A^2  A  A)         
+            fc =  357 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/b0a (kjmol/A  A  deg)              
+            fc = 19.6 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/b1a (kjmol/A  A  deg)              
+            fc = 19.5 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/bb (kjmol/A^2  A  A)               
+            fc =  564 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/b0a (kjmol/A  A  deg)                
+            fc =  121 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/b1a (kjmol/A  A  deg)                
+            fc =  189 +- .0    rv0 = 1.48 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/bb (kjmol/A^2  A  A)                 
+            fc =  297 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.48 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 70.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  138 +- .0    rv0 = 1.09 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A 
+         A)    fc = 44.7 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  355 +- .0    rv0 = 1.42 +- 0.0    rv1 =  106 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  211 +- .0    rv0 = 1.45 +- 0.0    rv1 =  106 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  472 +- .0    rv0 = 1.42 +- 0.0    rv1 = 1.45 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  439 +- .0    rv0 = 1.39 +- 0.0    rv1 =  109 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  439 +- .0    rv0 = 1.39 +- 0.0    rv1 =  109 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  636 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/b0a (kjmol/A  A  deg)  
+            fc = 58.8 +- .0    rv0 = 1.39 +- 0.0    rv1 =  125 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/b1a (kjmol/A  A  deg)  
+            fc =  112 +- .0    rv0 = 1.42 +- 0.0    rv1 =  125 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/bb (kjmol/A^2  A  A)   
+            fc =  282 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)              
+            fc = 90.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)              
+            fc =  139 +- .0    rv0 = 1.09 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)               
+            fc = 18.0 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/b0a (kjmol/A  A  deg)        
+            fc =  136 +- .0    rv0 = 1.48 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/b1a (kjmol/A  A  deg)        
+            fc =  362 +- .0    rv0 = 1.21 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/bb (kjmol/A^2  A  A)         
+            fc =  412 +- .0    rv0 = 1.48 +- 0.0    rv1 = 1.21 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/b0a (kjmol/A  A  deg)       
+            fc =  228 +- .0    rv0 = 1.48 +- 0.0    rv1 =  113 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/b1a (kjmol/A  A  deg)       
+            fc =  336 +- .0    rv0 = 1.35 +- 0.0    rv1 =  113 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/bb (kjmol/A^2  A  A)        
+            fc =  261 +- .0    rv0 = 1.48 +- 0.0    rv1 = 1.35 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  124 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  124 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  604 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 64.7 +- .0    rv0 = 1.40 +- .00    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  134 +- .0    rv0 = 1.09 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A  
+        A)    fc = 39.9 +- .0    rv0 = 1.40 +- .00    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  325 +- .0    rv0 = 1.42 +- 0.0    rv1 =  108 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  473 +- .0    rv0 = 1.39 +- 0.0    rv1 =  108 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  506 +- .0    rv0 = 1.42 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)                
+            fc = 93.6 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)                
+            fc =  137 +- .0    rv0 = 1.09 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)                 
+            fc = 34.1 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/b0a (kjmol/A  A  deg)            
+            fc =  482 +- .0    rv0 = 1.21 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/b1a (kjmol/A  A  deg)            
+            fc =  423 +- .0    rv0 = 1.35 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/bb (kjmol/A^2  A  A)             
+            fc =  679 +- .0    rv0 = 1.21 +- 0.0    rv1 = 1.35 +- 0.0
+
+
+ PTPOST Averaging force field parameters over master and slaves
+
+ HCEST  Resetting system coordinates to ab initio ref
+ HCEST  Estimating force constants from Hessian cost for tasks HC_FC_DIAG HC_FC_
+ HCEST  CROSS_ASS HC_FC_CROSS_ASA
+
+
+        bondmm3/c3_c1o2_ket.c3_c3_carbazol (kjmol/A^2  A)                       
+            fc =  3070 +- .000    rv = 1.481 +- .000
+
+        bondmm3/c3_c1o2_ket.o1_c1_ket (kjmol/A^2  A)                            
+            fc =  7465 +- .000    rv = 1.219 +- .000
+
+        bondmm3/c3_c1o2_ket.o2_c1h1_oh (kjmol/A^2  A)                           
+            fc =  3752 +- .000    rv = 1.353 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c2h1_carbazol (kjmol/A^2  A)                
+            fc =  4451 +- .000    rv = 1.388 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/A^2  A)                
+            fc =  4110 +- .000    rv = 1.397 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  4089 +- .000    rv = 1.402 +- .000
+
+        bondmm3/c3_c2h1_carbazol.h1_c1_carbazol (kjmol/A^2  A)                  
+            fc =  3365 +- .000    rv = 1.091 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c2h1_ph (kjmol/A^2  A)                            
+            fc =  4142 +- .000    rv = 1.394 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c2n1_ph (kjmol/A^2  A)                            
+            fc =  4138 +- .000    rv = 1.396 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c3_ph (kjmol/A^2  A)                              
+            fc =  4074 +- .000    rv = 1.400 +- .000
+
+        bondmm3/c3_c2h1_ph.h1_c1_ph (kjmol/A^2  A)                              
+            fc =  3323 +- .000    rv = 1.093 +- .000
+
+        bondmm3/c3_c2n1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  3879 +- .000    rv = 1.421 +- .000
+
+        bondmm3/c3_c2n1_carbazol.n3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  3946 +- .000    rv = 1.394 +- .000
+
+        bondmm3/c3_c2n1_ph.n3_c3_carbazol (kjmol/A^2  A)                        
+            fc =  3673 +- .000    rv = 1.422 +- .000
+
+        bondmm3/c3_c3_carbazol.c3_c3_carbazol (kjmol/A^2  A)                    
+            fc =  3159 +- .000    rv = 1.464 +- .000
+
+        bondmm3/c3_c3_ph.c3_c3_ph (kjmol/A^2  A)                                
+            fc =  3067 +- .000    rv = 1.485 +- .000
+
+        bondmm3/h1_o1_oh.o2_c1h1_oh (kjmol/A^2  A)                              
+            fc =  4350 +- .000    rv = .9814 +- .000
+
+        bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  deg)  
+            fc = 397.8 +- .000    rv = 119.7 +- .000
+
+        bendmm3/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol/rad^2  deg)              
+            fc = 481.3 +- .000    rv = 101.1 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/rad^2 
+         deg)    fc = 696.7 +- .000    rv = 118.0 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 505.9 +- .000    rv = 120.1 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 231.6 +- .000    rv = 123.8 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 424.0 +- .000    rv = 121.7 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 453.7 +- .000    rv = 127.9 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  
+        deg)    fc = 573.9 +- .000    rv = 120.5 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc = 514.8 +- .000    rv = 119.5 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 388.7 +- .000    rv = 133.7 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph (kjmol/rad^2  deg)             
+            fc = 584.2 +- .000    rv = 120.0 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol/rad^2  deg)               
+            fc = 574.2 +- .000    rv = 121.2 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc = 296.8 +- .000    rv = 120.1 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol/rad^2  deg)             
+            fc = 555.5 +- .000    rv = 119.5 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol/rad^2  deg)         
+            fc = 486.8 +- .000    rv = 119.7 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol/rad^2  deg)               
+            fc = 502.8 +- .000    rv = 117.8 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/rad^2  deg)                 
+            fc = 463.7 +- .000    rv = 120.2 +- .000
+
+        bendmm3/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 315.2 +- .000    rv = 120.5 +- .000
+
+        bendmm3/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 704.4 +- .000    rv = 106.0 +- .000
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc = 977.3 +- .000    rv = 108.8 +- .000
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph (kjmol/rad^2  deg)   
+            fc = 420.6 +- .000    rv = 125.6 +- .000
+
+        bendmm3/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc = 307.4 +- .000    rv = 117.9 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol/rad^2  deg)         
+            fc = 590.7 +- .000    rv = 123.6 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)        
+            fc = 773.3 +- .000    rv = 111.0 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 593.8 +- .000    rv = 119.8 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 293.5 +- .000    rv = 117.6 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 513.3 +- .000    rv = 109.5 +- .000
+
+        bendmm3/c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)                 
+            fc = 296.9 +- .000    rv = 118.4 +- .000
+
+        bendmm3/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)             
+            fc = 811.5 +- .000    rv = 123.7 +- .000
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol 
+        (kjmol  au)    fc  = 42.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  = 52.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol 
+        (kjmol  au)    fc  = 21.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  = 37.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carb (kjmol  au)    fc  = 33.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  = 43.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 23.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+        carb (kjmol  au)    fc  = 4.50 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph 
+        (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol 
+         au)    fc  = 13.2 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh 
+        (kjmol  au)    fc  = 10.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 27.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 26.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  = 6.12 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_
+        carbaz (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  = 29.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol  au)      
+            fc  = 30.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)  
+            fc  = 36.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)        
+            fc  = 31.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol  au)          
+            fc  = 40.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  = 24.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol (kjmol 
+         au)    fc  = .000 +- 0.0    sgn = 1.0
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 24.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)          
+            fc  = .000 +- 0.0    sgn = 1.0
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  = 27.7 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carb (kjmol  au)    fc  = 40.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 48.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 31.3 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  =  147 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 50.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol  au)        
+            fc  = 31.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  = 35.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  = 15.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol  au)   
+            fc  = 26.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 38.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_
+        carbazol (kjmol  au)    fc  = 34.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 21.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbazol (kjmol  au)    fc  = 17.2 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbazol (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 33.2 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)            
+            fc  = 16.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 19.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  = 11.7 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 18.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)    
+            fc  = 19.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_o1_oh.o2_c1h1_oh.c3_c1o2_ket.o1_c1_ket (kjmol  au)        
+            fc  = 18.2 +- 0.0    sgn =  -1
+
+        Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_carbazol.c3_c2h1_
+        carbazo (kjmol/A^2  A)    fc = 74.55 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc = 125.7 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.n3_c3_carbazol.c3_c2n1_carbazol 
+        (kjmol/A^2  A)    fc = 356.3 +- .000    rv = .0428 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/A^2  A)          
+            fc = 385.4 +- .000    rv = .0001 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.n3_c3_carbazol.c3_c2n1_ph (kjmol/A^2  A)  
+            fc = 318.7 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)        
+            fc = 166.4 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)          
+            fc = 188.0 +- .000    rv = .0037 +- .000
+
+        Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_c2n1_ph.n3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc = 208.8 +- .000    rv = .0023 +- .000
+
+        Oopdist/c3_c3_carbazol.o1_c1_ket.o2_c1h1_oh.c3_c1o2_ket (kjmol/A^2  A)  
+            fc =  1374 +- .000    rv = .0016 +- .000
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/b0a (kjmol/A  A  deg) 
+            fc =  178 +- .0    rv0 = 1.48 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/b1a (kjmol/A  A  deg) 
+            fc = 55.9 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/bb (kjmol/A^2  A  A)  
+            fc =  350 +- .0    rv0 = 1.48 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/b0a (kjmol/A  A  deg)             
+            fc =  168 +- .0    rv0 = 1.35 +- 0.0    rv1 =  101 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/b1a (kjmol/A  A  deg)             
+            fc =  133 +- .0    rv0 = .981 +- 0.0    rv1 =  101 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/bb (kjmol/A^2  A  A)              
+            fc = 87.4 +- .0    rv0 = 1.35 +- 0.0    rv1 = .981 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  
+        A  deg)    fc =  201 +- .0    rv0 = 1.38 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  
+        A  deg)    fc = 95.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  
+        A  A)    fc =  616 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  104 +- .0    rv0 = 1.38 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 35.3 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  519 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 95.9 +- .0    rv0 = 1.38 +- 0.0    rv1 =  123 +- .00
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  107 +- .0    rv0 = 1.09 +- 0.0    rv1 =  123 +- .00
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A 
+         A)    fc = 44.7 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc = -104 +- .0    rv0 = 1.39 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  -48 +- .0    rv0 = 1.42 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  454 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 23.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  127 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  285 +- .0    rv0 = 1.39 +- 0.0    rv1 =  127 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  426 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 16.4 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 16.4 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  604 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 4.97 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 6.60 +- .0    rv0 = 1.42 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  555 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  -13 +- .0    rv0 = 1.40 +- 0.0    rv1 =  133 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  139 +- .0    rv0 = 1.46 +- 0.0    rv1 =  133 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  420 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.46 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/b0a (kjmol/A  A  deg)            
+            fc = 44.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/b1a (kjmol/A  A  deg)            
+            fc = 39.1 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/bb (kjmol/A^2  A  A)             
+            fc =  563 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/b0a (kjmol/A  A  deg)              
+            fc = 29.1 +- .0    rv0 = 1.39 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/b1a (kjmol/A  A  deg)              
+            fc = 55.7 +- .0    rv0 = 1.40 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/bb (kjmol/A^2  A  A)               
+            fc =  529 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)              
+            fc = 93.0 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- .00
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)              
+            fc =  130 +- .0    rv0 = 1.09 +- 0.0    rv1 =  120 +- .00
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)               
+            fc = 39.1 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/b0a (kjmol/A  A  deg)            
+            fc =  -26 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/b1a (kjmol/A  A  deg)            
+            fc =  -26 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/bb (kjmol/A^2  A  A)             
+            fc =  590 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/b0a (kjmol/A  A  deg)        
+            fc =  107 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/b1a (kjmol/A  A  deg)        
+            fc =  412 +- .0    rv0 = 1.42 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/bb (kjmol/A^2  A  A)         
+            fc =  357 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/b0a (kjmol/A  A  deg)              
+            fc = 20.7 +- .0    rv0 = 1.40 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/b1a (kjmol/A  A  deg)              
+            fc = 20.5 +- .0    rv0 = 1.40 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/bb (kjmol/A^2  A  A)               
+            fc =  564 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/b0a (kjmol/A  A  deg)                
+            fc =  119 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/b1a (kjmol/A  A  deg)                
+            fc =  190 +- .0    rv0 = 1.48 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/bb (kjmol/A^2  A  A)                 
+            fc =  297 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.48 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 71.5 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  138 +- .0    rv0 = 1.09 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A 
+         A)    fc = 47.0 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  355 +- .0    rv0 = 1.42 +- 0.0    rv1 =  106 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  212 +- .0    rv0 = 1.46 +- 0.0    rv1 =  106 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  470 +- .0    rv0 = 1.42 +- 0.0    rv1 = 1.46 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  440 +- .0    rv0 = 1.39 +- 0.0    rv1 =  108 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  440 +- .0    rv0 = 1.39 +- 0.0    rv1 =  108 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  635 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/b0a (kjmol/A  A  deg)  
+            fc = 56.9 +- .0    rv0 = 1.39 +- 0.0    rv1 =  125 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/b1a (kjmol/A  A  deg)  
+            fc =  112 +- .0    rv0 = 1.42 +- 0.0    rv1 =  125 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/bb (kjmol/A^2  A  A)   
+            fc =  283 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)              
+            fc = 90.7 +- .0    rv0 = 1.39 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)              
+            fc =  140 +- .0    rv0 = 1.09 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)               
+            fc = 18.0 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/b0a (kjmol/A  A  deg)        
+            fc =  130 +- .0    rv0 = 1.48 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/b1a (kjmol/A  A  deg)        
+            fc =  364 +- .0    rv0 = 1.21 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/bb (kjmol/A^2  A  A)         
+            fc =  411 +- .0    rv0 = 1.48 +- 0.0    rv1 = 1.21 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/b0a (kjmol/A  A  deg)       
+            fc =  236 +- .0    rv0 = 1.48 +- 0.0    rv1 =  111 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/b1a (kjmol/A  A  deg)       
+            fc =  349 +- .0    rv0 = 1.35 +- 0.0    rv1 =  111 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/bb (kjmol/A^2  A  A)        
+            fc =  261 +- .0    rv0 = 1.48 +- 0.0    rv1 = 1.35 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  120 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  120 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  605 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 64.4 +- .0    rv0 = 1.40 +- 0.0    rv1 =  117 +- .00
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  138 +- .0    rv0 = 1.09 +- .00    rv1 =  117 +- .00
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A  
+        A)    fc = 39.1 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.09 +- .00
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  323 +- .0    rv0 = 1.42 +- 0.0    rv1 =  109 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  473 +- .0    rv0 = 1.39 +- 0.0    rv1 =  109 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  507 +- .0    rv0 = 1.42 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)                
+            fc = 93.7 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)                
+            fc =  136 +- .0    rv0 = 1.09 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)                 
+            fc = 34.2 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/b0a (kjmol/A  A  deg)            
+            fc =  480 +- .0    rv0 = 1.21 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/b1a (kjmol/A  A  deg)            
+            fc =  414 +- .0    rv0 = 1.35 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/bb (kjmol/A^2  A  A)             
+            fc =  679 +- .0    rv0 = 1.21 +- 0.0    rv1 = 1.35 +- 0.0
+
+
+ HCEST  Resetting system coordinates to ab initio ref
+ HCEST  Estimating force constants from Hessian cost for tasks HC_FC_CROSS_ASS 
+ HCEST  HC_FC_CROSS_ASA HC_FC_CROSS_DSS HC_FC_CROSS_DSD HC_FC_CROSS_DAA HC_FC_
+ HCEST  CROSS_DAD
+
+
+        bondmm3/c3_c1o2_ket.c3_c3_carbazol (kjmol/A^2  A)                       
+            fc =  3070 +- .000    rv = 1.481 +- .000
+
+        bondmm3/c3_c1o2_ket.o1_c1_ket (kjmol/A^2  A)                            
+            fc =  7465 +- .000    rv = 1.219 +- .000
+
+        bondmm3/c3_c1o2_ket.o2_c1h1_oh (kjmol/A^2  A)                           
+            fc =  3752 +- .000    rv = 1.353 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c2h1_carbazol (kjmol/A^2  A)                
+            fc =  4451 +- .000    rv = 1.388 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/A^2  A)                
+            fc =  4110 +- .000    rv = 1.397 +- .000
+
+        bondmm3/c3_c2h1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  4089 +- .000    rv = 1.402 +- .000
+
+        bondmm3/c3_c2h1_carbazol.h1_c1_carbazol (kjmol/A^2  A)                  
+            fc =  3365 +- .000    rv = 1.091 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c2h1_ph (kjmol/A^2  A)                            
+            fc =  4142 +- .000    rv = 1.394 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c2n1_ph (kjmol/A^2  A)                            
+            fc =  4138 +- .000    rv = 1.396 +- .000
+
+        bondmm3/c3_c2h1_ph.c3_c3_ph (kjmol/A^2  A)                              
+            fc =  4074 +- .000    rv = 1.400 +- .000
+
+        bondmm3/c3_c2h1_ph.h1_c1_ph (kjmol/A^2  A)                              
+            fc =  3323 +- .000    rv = 1.093 +- .000
+
+        bondmm3/c3_c2n1_carbazol.c3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  3879 +- .000    rv = 1.421 +- .000
+
+        bondmm3/c3_c2n1_carbazol.n3_c3_carbazol (kjmol/A^2  A)                  
+            fc =  3946 +- .000    rv = 1.394 +- .000
+
+        bondmm3/c3_c2n1_ph.n3_c3_carbazol (kjmol/A^2  A)                        
+            fc =  3673 +- .000    rv = 1.422 +- .000
+
+        bondmm3/c3_c3_carbazol.c3_c3_carbazol (kjmol/A^2  A)                    
+            fc =  3159 +- .000    rv = 1.464 +- .000
+
+        bondmm3/c3_c3_ph.c3_c3_ph (kjmol/A^2  A)                                
+            fc =  3067 +- .000    rv = 1.485 +- .000
+
+        bondmm3/h1_o1_oh.o2_c1h1_oh (kjmol/A^2  A)                              
+            fc =  4350 +- .000    rv = .9814 +- .000
+
+        bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  deg)  
+            fc = 397.8 +- .000    rv = 119.7 +- .000
+
+        bendmm3/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol/rad^2  deg)              
+            fc = 481.3 +- .000    rv = 101.1 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol (kjmol/rad^2 
+         deg)    fc = 696.7 +- .000    rv = 118.0 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 505.9 +- .000    rv = 120.1 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 231.6 +- .000    rv = 123.8 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 424.0 +- .000    rv = 121.7 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 453.7 +- .000    rv = 127.9 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol (kjmol/rad^2  
+        deg)    fc = 573.9 +- .000    rv = 120.5 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc = 514.8 +- .000    rv = 119.5 +- .000
+
+        bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 388.7 +- .000    rv = 133.7 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph (kjmol/rad^2  deg)             
+            fc = 584.2 +- .000    rv = 120.0 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol/rad^2  deg)               
+            fc = 574.2 +- .000    rv = 121.2 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc = 296.8 +- .000    rv = 120.1 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol/rad^2  deg)             
+            fc = 555.5 +- .000    rv = 119.5 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol/rad^2  deg)         
+            fc = 486.8 +- .000    rv = 119.7 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol/rad^2  deg)               
+            fc = 502.8 +- .000    rv = 117.8 +- .000
+
+        bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/rad^2  deg)                 
+            fc = 463.7 +- .000    rv = 120.2 +- .000
+
+        bendmm3/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 315.2 +- .000    rv = 120.5 +- .000
+
+        bendmm3/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 704.4 +- .000    rv = 106.0 +- .000
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol (kjmol/rad^2  
+        deg)    fc = 977.3 +- .000    rv = 108.8 +- .000
+
+        bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph (kjmol/rad^2  deg)   
+            fc = 420.6 +- .000    rv = 125.6 +- .000
+
+        bendmm3/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)               
+            fc = 307.4 +- .000    rv = 117.9 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol/rad^2  deg)         
+            fc = 590.7 +- .000    rv = 123.6 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)        
+            fc = 773.3 +- .000    rv = 111.0 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 593.8 +- .000    rv = 119.8 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol (kjmol/rad^2  
+        deg)    fc = 293.5 +- .000    rv = 117.6 +- .000
+
+        bendmm3/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol (kjmol/rad^2  
+        deg)    fc = 513.3 +- .000    rv = 109.5 +- .000
+
+        bendmm3/c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol/rad^2  deg)                 
+            fc = 296.9 +- .000    rv = 118.4 +- .000
+
+        bendmm3/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh (kjmol/rad^2  deg)             
+            fc = 811.5 +- .000    rv = 123.7 +- .000
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol 
+        (kjmol  au)    fc  = 42.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  = 52.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol 
+        (kjmol  au)    fc  = 21.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  = 37.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carb (kjmol  au)    fc  = 33.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  = 43.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_
+        carb (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 23.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+        carb (kjmol  au)    fc  = 4.50 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph 
+        (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket (kjmol 
+         au)    fc  = 13.2 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh 
+        (kjmol  au)    fc  = 10.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 27.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 26.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  = 6.12 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_
+        carbaz (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  = 29.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph (kjmol  au)      
+            fc  = 30.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)  
+            fc  = 36.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)        
+            fc  = 31.1 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol  au)          
+            fc  = 40.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  = 24.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol (kjmol 
+         au)    fc  = .000 +- 0.0    sgn = 1.0
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 24.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2h1_ph.c3_c3_ph.c3_c3_ph.c3_c2h1_ph (kjmol  au)          
+            fc  = .000 +- 0.0    sgn = 1.0
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_
+        carb (kjmol  au)    fc  = 27.7 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carb (kjmol  au)    fc  = 40.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 48.6 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 31.3 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_
+        carbaz (kjmol  au)    fc  =  147 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_
+        carbaz (kjmol  au)    fc  = 50.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph (kjmol  au)        
+            fc  = 31.0 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)        
+            fc  = 35.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c2n1_ph.n3_c3_carbazol.c3_c2n1_carbazol.c3_c3_carbazol 
+        (kjmol  au)    fc  = 15.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh (kjmol  au)   
+            fc  = 26.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 38.9 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_
+        carbazol (kjmol  au)    fc  = 34.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 21.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbazol (kjmol  au)    fc  = 17.2 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_carbazol.c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbazol (kjmol  au)    fc  = .000 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 33.2 +- 0.0    sgn =  -1
+
+        TorsCheby2/c3_c3_ph.c3_c3_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)            
+            fc  = 16.4 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+        carbaz (kjmol  au)    fc  = 19.8 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+        carbaz (kjmol  au)    fc  = 11.7 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph (kjmol  au)          
+            fc  = 18.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_c1_ph.c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol (kjmol  au)    
+            fc  = 19.5 +- 0.0    sgn =  -1
+
+        TorsCheby2/h1_o1_oh.o2_c1h1_oh.c3_c1o2_ket.o1_c1_ket (kjmol  au)        
+            fc  = 18.2 +- 0.0    sgn =  -1
+
+        Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_carbazol.c3_c2h1_
+        carbazo (kjmol/A^2  A)    fc = 74.55 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc = 125.7 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.n3_c3_carbazol.c3_c2n1_carbazol 
+        (kjmol/A^2  A)    fc = 356.3 +- .000    rv = .0428 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph (kjmol/A^2  A)          
+            fc = 385.4 +- .000    rv = .0001 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2h1_ph.n3_c3_carbazol.c3_c2n1_ph (kjmol/A^2  A)  
+            fc = 318.7 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)        
+            fc = 166.4 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph (kjmol/A^2  A)          
+            fc = 188.0 +- .000    rv = .0037 +- .000
+
+        Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_c2n1_ph.n3_c3_carbazol 
+        (kjmol/A^2  A)    fc = .0000 +- .000    rv = .0000 +- .000
+
+        Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_carbazol.c3_c2h1_carbazol 
+        (kjmol/A^2  A)    fc = 208.8 +- .000    rv = .0023 +- .000
+
+        Oopdist/c3_c3_carbazol.o1_c1_ket.o2_c1h1_oh.c3_c1o2_ket (kjmol/A^2  A)  
+            fc =  1374 +- .000    rv = .0016 +- .000
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/b0a (kjmol/A  A  deg) 
+            fc =  178 +- .0    rv0 = 1.48 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/b1a (kjmol/A  A  deg) 
+            fc = 55.9 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_carbazol/bb (kjmol/A^2  A  A)  
+            fc =  350 +- .0    rv0 = 1.48 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/b0a (kjmol/A  A  deg)             
+            fc =  168 +- .0    rv0 = 1.35 +- 0.0    rv1 =  101 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/b1a (kjmol/A  A  deg)             
+            fc =  133 +- .0    rv0 = .981 +- 0.0    rv1 =  101 +- 0.0
+
+        Cross/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh/bb (kjmol/A^2  A  A)              
+            fc = 87.4 +- .0    rv0 = 1.35 +- 0.0    rv1 = .981 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  
+        A  deg)    fc =  201 +- .0    rv0 = 1.38 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  
+        A  deg)    fc = 95.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  
+        A  A)    fc =  616 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  104 +- .0    rv0 = 1.38 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 35.3 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  519 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 95.9 +- .0    rv0 = 1.38 +- 0.0    rv1 =  123 +- .00
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  107 +- .0    rv0 = 1.09 +- 0.0    rv1 =  123 +- .00
+
+        Cross/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A 
+         A)    fc = 44.7 +- .0    rv0 = 1.38 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc = -104 +- .0    rv0 = 1.39 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  -48 +- .0    rv0 = 1.42 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  454 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 23.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  127 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  285 +- .0    rv0 = 1.39 +- 0.0    rv1 =  127 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  426 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 16.4 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 16.4 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  604 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 4.97 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  A  
+        deg)    fc = 6.60 +- .0    rv0 = 1.42 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  555 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  -13 +- .0    rv0 = 1.40 +- 0.0    rv1 =  133 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  139 +- .0    rv0 = 1.46 +- 0.0    rv1 =  133 +- 0.0
+
+        Cross/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  420 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.46 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/b0a (kjmol/A  A  deg)            
+            fc = 44.6 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/b1a (kjmol/A  A  deg)            
+            fc = 39.1 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph/bb (kjmol/A^2  A  A)             
+            fc =  563 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/b0a (kjmol/A  A  deg)              
+            fc = 29.1 +- .0    rv0 = 1.39 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/b1a (kjmol/A  A  deg)              
+            fc = 55.7 +- .0    rv0 = 1.40 +- 0.0    rv1 =  121 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph/bb (kjmol/A^2  A  A)               
+            fc =  529 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)              
+            fc = 93.0 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- .00
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)              
+            fc =  130 +- .0    rv0 = 1.09 +- 0.0    rv1 =  120 +- .00
+
+        Cross/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)               
+            fc = 39.1 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/b0a (kjmol/A  A  deg)            
+            fc =  -26 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/b1a (kjmol/A  A  deg)            
+            fc =  -26 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph/bb (kjmol/A^2  A  A)             
+            fc =  590 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/b0a (kjmol/A  A  deg)        
+            fc =  107 +- .0    rv0 = 1.39 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/b1a (kjmol/A  A  deg)        
+            fc =  412 +- .0    rv0 = 1.42 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol/bb (kjmol/A^2  A  A)         
+            fc =  357 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/b0a (kjmol/A  A  deg)              
+            fc = 20.7 +- .0    rv0 = 1.40 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/b1a (kjmol/A  A  deg)              
+            fc = 20.5 +- .0    rv0 = 1.40 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph/bb (kjmol/A^2  A  A)               
+            fc =  564 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/b0a (kjmol/A  A  deg)                
+            fc =  119 +- .0    rv0 = 1.40 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/b1a (kjmol/A  A  deg)                
+            fc =  190 +- .0    rv0 = 1.48 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2h1_ph.c3_c3_ph.c3_c3_ph/bb (kjmol/A^2  A  A)                 
+            fc =  297 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.48 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 71.5 +- .0    rv0 = 1.39 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  138 +- .0    rv0 = 1.09 +- 0.0    rv1 =  120 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A 
+         A)    fc = 47.0 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  355 +- .0    rv0 = 1.42 +- 0.0    rv1 =  106 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  212 +- .0    rv0 = 1.46 +- 0.0    rv1 =  106 +- 0.0
+
+        Cross/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  470 +- .0    rv0 = 1.42 +- 0.0    rv1 = 1.46 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  440 +- .0    rv0 = 1.39 +- 0.0    rv1 =  108 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  440 +- .0    rv0 = 1.39 +- 0.0    rv1 =  108 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_carbazol/bb (kjmol/A^2  A 
+         A)    fc =  635 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/b0a (kjmol/A  A  deg)  
+            fc = 56.9 +- .0    rv0 = 1.39 +- 0.0    rv1 =  125 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/b1a (kjmol/A  A  deg)  
+            fc =  112 +- .0    rv0 = 1.42 +- 0.0    rv1 =  125 +- 0.0
+
+        Cross/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_ph/bb (kjmol/A^2  A  A)   
+            fc =  283 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.42 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)              
+            fc = 90.7 +- .0    rv0 = 1.39 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)              
+            fc =  140 +- .0    rv0 = 1.09 +- 0.0    rv1 =  117 +- 0.0
+
+        Cross/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)               
+            fc = 18.0 +- .0    rv0 = 1.39 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/b0a (kjmol/A  A  deg)        
+            fc =  130 +- .0    rv0 = 1.48 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/b1a (kjmol/A  A  deg)        
+            fc =  364 +- .0    rv0 = 1.21 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket/bb (kjmol/A^2  A  A)         
+            fc =  411 +- .0    rv0 = 1.48 +- 0.0    rv1 = 1.21 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/b0a (kjmol/A  A  deg)       
+            fc =  236 +- .0    rv0 = 1.48 +- 0.0    rv1 =  111 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/b1a (kjmol/A  A  deg)       
+            fc =  349 +- .0    rv0 = 1.35 +- 0.0    rv1 =  111 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh/bb (kjmol/A^2  A  A)        
+            fc =  261 +- .0    rv0 = 1.48 +- 0.0    rv1 = 1.35 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  120 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  120 +- .0    rv0 = 1.40 +- 0.0    rv1 =  119 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  605 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.40 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b0a (kjmol/A  A  
+        deg)    fc = 64.4 +- .0    rv0 = 1.40 +- 0.0    rv1 =  117 +- .00
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  138 +- .0    rv0 = 1.09 +- .00    rv1 =  117 +- .00
+
+        Cross/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_carbazol/bb (kjmol/A^2  A  
+        A)    fc = 39.1 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.09 +- .00
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b0a (kjmol/A  A  
+        deg)    fc =  323 +- .0    rv0 = 1.42 +- 0.0    rv1 =  109 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/b1a (kjmol/A  A  
+        deg)    fc =  473 +- .0    rv0 = 1.39 +- 0.0    rv1 =  109 +- 0.0
+
+        Cross/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_carbazol/bb (kjmol/A^2  A  
+        A)    fc =  507 +- .0    rv0 = 1.42 +- 0.0    rv1 = 1.39 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/b0a (kjmol/A  A  deg)                
+            fc = 93.7 +- .0    rv0 = 1.40 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/b1a (kjmol/A  A  deg)                
+            fc =  136 +- .0    rv0 = 1.09 +- 0.0    rv1 =  118 +- 0.0
+
+        Cross/c3_c3_ph.c3_c2h1_ph.h1_c1_ph/bb (kjmol/A^2  A  A)                 
+            fc = 34.2 +- .0    rv0 = 1.40 +- 0.0    rv1 = 1.09 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/b0a (kjmol/A  A  deg)            
+            fc =  480 +- .0    rv0 = 1.21 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/b1a (kjmol/A  A  deg)            
+            fc =  414 +- .0    rv0 = 1.35 +- 0.0    rv1 =  123 +- 0.0
+
+        Cross/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh/bb (kjmol/A^2  A  A)             
+            fc =  679 +- .0    rv0 = 1.21 +- 0.0    rv1 = 1.35 +- 0.0
+
+
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c2n1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c2n1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c3_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c2n1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.c3_c2n1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c2n1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2n1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c3_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2n1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c2n1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c2n1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2n1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c3_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2n1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c2n1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_carbazol.h1_c1_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2n1_ph.n3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2n1_carbazol.n3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2n1_carbazol.n3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2n1_ph.n3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2n1_carbazol.n3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c2n1_carbazol.n3_c3_carbazol
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.o1_c1_ket
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.o1_c1_ket
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.o1_c1_ket
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bondmm3/c3_c1o2_ket.o1_c1_ket
+ PLOT   Plotting trajectory for bondmm3/h1_o1_oh.o2_c1h1_oh
+ PLOT   Plotting trajectory for bondmm3/h1_o1_oh.o2_c1h1_oh
+ PLOT   Plotting trajectory for bondmm3/h1_o1_oh.o2_c1h1_oh
+ PLOT   Plotting trajectory for bondmm3/h1_o1_oh.o2_c1h1_oh
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bondmm3/c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2n1_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2n1_ph.n3_c3_carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c2n1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c3_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c3_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c3_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c3_ph.c3_c2h1_ph.h1_c1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_ph.c3_c3_ph.c3_c3_ph
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bendmm3/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bendmm3/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bendmm3/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bendmm3/o1_c1_ket.c3_c1o2_ket.o2_c1h1_oh
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c1o2_ket.o1_c1_ket
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_
+ PLOT   c2n1_carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_
+ PLOT   c2n1_carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_
+ PLOT   c2n1_carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2h1_carbazol.c3_
+ PLOT   c2n1_carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.c3_c2h1_carbazol.h1_c1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2h1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2n1_carbazol.n3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c2n1_carbazol.n3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c3_carbazol.c3_c2h1_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.c3_c3_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c3_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2h1_carbazol.c3_c3_carbazol.c3_c2n1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+ PLOT   ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+ PLOT   ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+ PLOT   ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+ PLOT   ph
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c2n1_carbazol.n3_c3_carbazol.c3_c2n1_
+ PLOT   carbazol
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh
+ PLOT   Plotting trajectory for bendmm3/c3_c1o2_ket.o2_c1h1_oh.h1_o1_oh
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c2h1_ph.n3_c3_carbazol.c3_
+ PLOT   c2n1_ph
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c2h1_ph.n3_c3_carbazol.c3_
+ PLOT   c2n1_ph
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_
+ PLOT   ph
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_
+ PLOT   ph
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_
+ PLOT   ph
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c2n1_ph.h1_c1_ph.c3_c2h1_
+ PLOT   ph
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c3_ph.h1_c1_ph.c3_c2h1_ph
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_ph.c3_c2h1_ph.c3_c3_ph.c3_c3_ph
+ PLOT   Plotting trajectory for Oopdist/c3_c3_carbazol.o1_c1_ket.o2_c1h1_oh.c3_
+ PLOT   c1o2_ket
+ PLOT   Plotting trajectory for Oopdist/c3_c3_carbazol.o1_c1_ket.o2_c1h1_oh.c3_
+ PLOT   c1o2_ket
+ PLOT   Plotting trajectory for Oopdist/c3_c3_carbazol.o1_c1_ket.o2_c1h1_oh.c3_
+ PLOT   c1o2_ket
+ PLOT   Plotting trajectory for Oopdist/c3_c3_carbazol.o1_c1_ket.o2_c1h1_oh.c3_
+ PLOT   c1o2_ket
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_
+ PLOT   carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_
+ PLOT   carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_
+ PLOT   carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c1o2_ket.c3_c2h1_carbazol.c3_c2h1_
+ PLOT   carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.n3_c3_
+ PLOT   carbazol.c3_c2n1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.n3_c3_
+ PLOT   carbazol.c3_c2n1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.n3_c3_
+ PLOT   carbazol.c3_c2n1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c3_carbazol.n3_c3_
+ PLOT   carbazol.c3_c2n1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c3_carbazol.c3_c3_carbazol.h1_c1_
+ PLOT   carbazol.c3_c2h1_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PLOT   carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PLOT   carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PLOT   carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2h1_carbazol.c3_c2n1_carbazol.c3_c3_
+ PLOT   carbazol.c3_c3_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_
+ PLOT   c2n1_ph.n3_c3_carbazol
+ PLOT   Plotting trajectory for Oopdist/c3_c2n1_carbazol.c3_c2n1_carbazol.c3_
+ PLOT   c2n1_ph.n3_c3_carbazol
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+ TIMING Initialization                  0:00:00.027476
+ TIMING Initializing                    0:00:00.405383
+ TIMING Equil Set RV                    0:00:00.010728
+ TIMING PT Generate                     0:03:24.603865
+ TIMING PT Estimate                     0:00:01.398815
+ TIMING PT Post process                 0:00:00.009832
+ TIMING HC Estimate FC                  0:00:09.773226
+ TIMING PT plot energy                  0:00:17.961602
+
+__/\\\__________________________________________________________________/\\\____
+  \ \\\                                                                 \ \\\
+   \ \\\     End of file. Thanks for using QuickFF! Come back soon!!     \ \\\
+____\///__________________________________________________________________\///__
+

@@ -1,0 +1,210 @@
+##############################General settings##############################
+units           real
+atom_style      full
+boundary        p p p
+dielectric      1
+
+##############################Force field and system specification##############################
+special_bonds   lj 0.000000 1.000000 1.000000 coul 0.000000 1.000000 1.000000
+#Note that when a table is used, it is possible that the
+#topology might have been adapted to correctly include
+#Gaussian electrostatics in LAMMPS. The scaling rules might
+#need to be different from what is specified in the Yaff parameter file
+pair_style hybrid/overlay coul/long   12.00000000 table spline 5000
+bond_style      hybrid mm3 harmonic table spline 1000
+angle_style     hybrid mm3 cosine/periodic cross harmonic
+dihedral_style  fourier
+improper_style  distharm
+box tilt large
+
+read_data       lammps.data       # Data file location
+pair_coeff * * coul/long
+pair_coeff 1 1 table lammps.table CH2_00000---CH2_00000
+pair_coeff 1 2 table lammps.table CH3_00000---CH2_00000
+pair_coeff 1 3 table lammps.table c3_c1o2_co2_00000---CH2_00000
+pair_coeff 1 4 table lammps.table c3_c2h1_carbazol_00000---CH2_00000
+pair_coeff 1 5 table lammps.table c3_c2h1_carbazol_00001---CH2_00000
+pair_coeff 1 6 table lammps.table c3_c2h1_carbazol_00002---CH2_00000
+pair_coeff 1 7 table lammps.table c3_c2h1_ph_00000---CH2_00000
+pair_coeff 1 8 table lammps.table c3_c2h1_ph_00001---CH2_00000
+pair_coeff 1 9 table lammps.table c3_c2n1_carbazol_00000---CH2_00000
+pair_coeff 1 10 table lammps.table c3_c2n1_ph_00000---CH2_00000
+pair_coeff 1 11 table lammps.table c3_c3_carbazol_00000---CH2_00000
+pair_coeff 1 12 table lammps.table c3_c3_carbazol_00001---CH2_00000
+pair_coeff 1 13 table lammps.table c3_c3_ph_00000---CH2_00000
+pair_coeff 1 14 table lammps.table cu5_cu1o4_cu2_00000---CH2_00000
+pair_coeff 1 15 table lammps.table h1_c1_carbazol_00000---CH2_00000
+pair_coeff 1 16 table lammps.table h1_c1_ph_00000---CH2_00000
+pair_coeff 1 17 table lammps.table n3_c3_carbazol_00000---CH2_00000
+pair_coeff 1 18 table lammps.table o2_c1cu1_co2_00000---CH2_00000
+pair_coeff 2 2 table lammps.table CH3_00000---CH3_00000
+pair_coeff 2 3 table lammps.table c3_c1o2_co2_00000---CH3_00000
+pair_coeff 2 4 table lammps.table c3_c2h1_carbazol_00000---CH3_00000
+pair_coeff 2 5 table lammps.table c3_c2h1_carbazol_00001---CH3_00000
+pair_coeff 2 6 table lammps.table c3_c2h1_carbazol_00002---CH3_00000
+pair_coeff 2 7 table lammps.table c3_c2h1_ph_00000---CH3_00000
+pair_coeff 2 8 table lammps.table c3_c2h1_ph_00001---CH3_00000
+pair_coeff 2 9 table lammps.table c3_c2n1_carbazol_00000---CH3_00000
+pair_coeff 2 10 table lammps.table c3_c2n1_ph_00000---CH3_00000
+pair_coeff 2 11 table lammps.table c3_c3_carbazol_00000---CH3_00000
+pair_coeff 2 12 table lammps.table c3_c3_carbazol_00001---CH3_00000
+pair_coeff 2 13 table lammps.table c3_c3_ph_00000---CH3_00000
+pair_coeff 2 14 table lammps.table cu5_cu1o4_cu2_00000---CH3_00000
+pair_coeff 2 15 table lammps.table h1_c1_carbazol_00000---CH3_00000
+pair_coeff 2 16 table lammps.table h1_c1_ph_00000---CH3_00000
+pair_coeff 2 17 table lammps.table n3_c3_carbazol_00000---CH3_00000
+pair_coeff 2 18 table lammps.table o2_c1cu1_co2_00000---CH3_00000
+pair_coeff 3 3 table lammps.table c3_c1o2_co2_00000---c3_c1o2_co2_00000
+pair_coeff 3 4 table lammps.table c3_c2h1_carbazol_00000---c3_c1o2_co2_00000
+pair_coeff 3 5 table lammps.table c3_c2h1_carbazol_00001---c3_c1o2_co2_00000
+pair_coeff 3 6 table lammps.table c3_c2h1_carbazol_00002---c3_c1o2_co2_00000
+pair_coeff 3 7 table lammps.table c3_c2h1_ph_00000---c3_c1o2_co2_00000
+pair_coeff 3 8 table lammps.table c3_c2h1_ph_00001---c3_c1o2_co2_00000
+pair_coeff 3 9 table lammps.table c3_c2n1_carbazol_00000---c3_c1o2_co2_00000
+pair_coeff 3 10 table lammps.table c3_c2n1_ph_00000---c3_c1o2_co2_00000
+pair_coeff 3 11 table lammps.table c3_c3_carbazol_00000---c3_c1o2_co2_00000
+pair_coeff 3 12 table lammps.table c3_c3_carbazol_00001---c3_c1o2_co2_00000
+pair_coeff 3 13 table lammps.table c3_c3_ph_00000---c3_c1o2_co2_00000
+pair_coeff 3 14 table lammps.table cu5_cu1o4_cu2_00000---c3_c1o2_co2_00000
+pair_coeff 3 15 table lammps.table h1_c1_carbazol_00000---c3_c1o2_co2_00000
+pair_coeff 3 16 table lammps.table h1_c1_ph_00000---c3_c1o2_co2_00000
+pair_coeff 3 17 table lammps.table n3_c3_carbazol_00000---c3_c1o2_co2_00000
+pair_coeff 3 18 table lammps.table o2_c1cu1_co2_00000---c3_c1o2_co2_00000
+pair_coeff 4 4 table lammps.table c3_c2h1_carbazol_00000---c3_c2h1_carbazol_00000
+pair_coeff 4 5 table lammps.table c3_c2h1_carbazol_00001---c3_c2h1_carbazol_00000
+pair_coeff 4 6 table lammps.table c3_c2h1_carbazol_00002---c3_c2h1_carbazol_00000
+pair_coeff 4 7 table lammps.table c3_c2h1_ph_00000---c3_c2h1_carbazol_00000
+pair_coeff 4 8 table lammps.table c3_c2h1_ph_00001---c3_c2h1_carbazol_00000
+pair_coeff 4 9 table lammps.table c3_c2n1_carbazol_00000---c3_c2h1_carbazol_00000
+pair_coeff 4 10 table lammps.table c3_c2n1_ph_00000---c3_c2h1_carbazol_00000
+pair_coeff 4 11 table lammps.table c3_c3_carbazol_00000---c3_c2h1_carbazol_00000
+pair_coeff 4 12 table lammps.table c3_c3_carbazol_00001---c3_c2h1_carbazol_00000
+pair_coeff 4 13 table lammps.table c3_c3_ph_00000---c3_c2h1_carbazol_00000
+pair_coeff 4 14 table lammps.table cu5_cu1o4_cu2_00000---c3_c2h1_carbazol_00000
+pair_coeff 4 15 table lammps.table h1_c1_carbazol_00000---c3_c2h1_carbazol_00000
+pair_coeff 4 16 table lammps.table h1_c1_ph_00000---c3_c2h1_carbazol_00000
+pair_coeff 4 17 table lammps.table n3_c3_carbazol_00000---c3_c2h1_carbazol_00000
+pair_coeff 4 18 table lammps.table o2_c1cu1_co2_00000---c3_c2h1_carbazol_00000
+pair_coeff 5 5 table lammps.table c3_c2h1_carbazol_00001---c3_c2h1_carbazol_00001
+pair_coeff 5 6 table lammps.table c3_c2h1_carbazol_00002---c3_c2h1_carbazol_00001
+pair_coeff 5 7 table lammps.table c3_c2h1_ph_00000---c3_c2h1_carbazol_00001
+pair_coeff 5 8 table lammps.table c3_c2h1_ph_00001---c3_c2h1_carbazol_00001
+pair_coeff 5 9 table lammps.table c3_c2n1_carbazol_00000---c3_c2h1_carbazol_00001
+pair_coeff 5 10 table lammps.table c3_c2n1_ph_00000---c3_c2h1_carbazol_00001
+pair_coeff 5 11 table lammps.table c3_c3_carbazol_00000---c3_c2h1_carbazol_00001
+pair_coeff 5 12 table lammps.table c3_c3_carbazol_00001---c3_c2h1_carbazol_00001
+pair_coeff 5 13 table lammps.table c3_c3_ph_00000---c3_c2h1_carbazol_00001
+pair_coeff 5 14 table lammps.table cu5_cu1o4_cu2_00000---c3_c2h1_carbazol_00001
+pair_coeff 5 15 table lammps.table h1_c1_carbazol_00000---c3_c2h1_carbazol_00001
+pair_coeff 5 16 table lammps.table h1_c1_ph_00000---c3_c2h1_carbazol_00001
+pair_coeff 5 17 table lammps.table n3_c3_carbazol_00000---c3_c2h1_carbazol_00001
+pair_coeff 5 18 table lammps.table o2_c1cu1_co2_00000---c3_c2h1_carbazol_00001
+pair_coeff 6 6 table lammps.table c3_c2h1_carbazol_00002---c3_c2h1_carbazol_00002
+pair_coeff 6 7 table lammps.table c3_c2h1_ph_00000---c3_c2h1_carbazol_00002
+pair_coeff 6 8 table lammps.table c3_c2h1_ph_00001---c3_c2h1_carbazol_00002
+pair_coeff 6 9 table lammps.table c3_c2n1_carbazol_00000---c3_c2h1_carbazol_00002
+pair_coeff 6 10 table lammps.table c3_c2n1_ph_00000---c3_c2h1_carbazol_00002
+pair_coeff 6 11 table lammps.table c3_c3_carbazol_00000---c3_c2h1_carbazol_00002
+pair_coeff 6 12 table lammps.table c3_c3_carbazol_00001---c3_c2h1_carbazol_00002
+pair_coeff 6 13 table lammps.table c3_c3_ph_00000---c3_c2h1_carbazol_00002
+pair_coeff 6 14 table lammps.table cu5_cu1o4_cu2_00000---c3_c2h1_carbazol_00002
+pair_coeff 6 15 table lammps.table h1_c1_carbazol_00000---c3_c2h1_carbazol_00002
+pair_coeff 6 16 table lammps.table h1_c1_ph_00000---c3_c2h1_carbazol_00002
+pair_coeff 6 17 table lammps.table n3_c3_carbazol_00000---c3_c2h1_carbazol_00002
+pair_coeff 6 18 table lammps.table o2_c1cu1_co2_00000---c3_c2h1_carbazol_00002
+pair_coeff 7 7 table lammps.table c3_c2h1_ph_00000---c3_c2h1_ph_00000
+pair_coeff 7 8 table lammps.table c3_c2h1_ph_00001---c3_c2h1_ph_00000
+pair_coeff 7 9 table lammps.table c3_c2n1_carbazol_00000---c3_c2h1_ph_00000
+pair_coeff 7 10 table lammps.table c3_c2n1_ph_00000---c3_c2h1_ph_00000
+pair_coeff 7 11 table lammps.table c3_c3_carbazol_00000---c3_c2h1_ph_00000
+pair_coeff 7 12 table lammps.table c3_c3_carbazol_00001---c3_c2h1_ph_00000
+pair_coeff 7 13 table lammps.table c3_c3_ph_00000---c3_c2h1_ph_00000
+pair_coeff 7 14 table lammps.table cu5_cu1o4_cu2_00000---c3_c2h1_ph_00000
+pair_coeff 7 15 table lammps.table h1_c1_carbazol_00000---c3_c2h1_ph_00000
+pair_coeff 7 16 table lammps.table h1_c1_ph_00000---c3_c2h1_ph_00000
+pair_coeff 7 17 table lammps.table n3_c3_carbazol_00000---c3_c2h1_ph_00000
+pair_coeff 7 18 table lammps.table o2_c1cu1_co2_00000---c3_c2h1_ph_00000
+pair_coeff 8 8 table lammps.table c3_c2h1_ph_00001---c3_c2h1_ph_00001
+pair_coeff 8 9 table lammps.table c3_c2n1_carbazol_00000---c3_c2h1_ph_00001
+pair_coeff 8 10 table lammps.table c3_c2n1_ph_00000---c3_c2h1_ph_00001
+pair_coeff 8 11 table lammps.table c3_c3_carbazol_00000---c3_c2h1_ph_00001
+pair_coeff 8 12 table lammps.table c3_c3_carbazol_00001---c3_c2h1_ph_00001
+pair_coeff 8 13 table lammps.table c3_c3_ph_00000---c3_c2h1_ph_00001
+pair_coeff 8 14 table lammps.table cu5_cu1o4_cu2_00000---c3_c2h1_ph_00001
+pair_coeff 8 15 table lammps.table h1_c1_carbazol_00000---c3_c2h1_ph_00001
+pair_coeff 8 16 table lammps.table h1_c1_ph_00000---c3_c2h1_ph_00001
+pair_coeff 8 17 table lammps.table n3_c3_carbazol_00000---c3_c2h1_ph_00001
+pair_coeff 8 18 table lammps.table o2_c1cu1_co2_00000---c3_c2h1_ph_00001
+pair_coeff 9 9 table lammps.table c3_c2n1_carbazol_00000---c3_c2n1_carbazol_00000
+pair_coeff 9 10 table lammps.table c3_c2n1_ph_00000---c3_c2n1_carbazol_00000
+pair_coeff 9 11 table lammps.table c3_c3_carbazol_00000---c3_c2n1_carbazol_00000
+pair_coeff 9 12 table lammps.table c3_c3_carbazol_00001---c3_c2n1_carbazol_00000
+pair_coeff 9 13 table lammps.table c3_c3_ph_00000---c3_c2n1_carbazol_00000
+pair_coeff 9 14 table lammps.table cu5_cu1o4_cu2_00000---c3_c2n1_carbazol_00000
+pair_coeff 9 15 table lammps.table h1_c1_carbazol_00000---c3_c2n1_carbazol_00000
+pair_coeff 9 16 table lammps.table h1_c1_ph_00000---c3_c2n1_carbazol_00000
+pair_coeff 9 17 table lammps.table n3_c3_carbazol_00000---c3_c2n1_carbazol_00000
+pair_coeff 9 18 table lammps.table o2_c1cu1_co2_00000---c3_c2n1_carbazol_00000
+pair_coeff 10 10 table lammps.table c3_c2n1_ph_00000---c3_c2n1_ph_00000
+pair_coeff 10 11 table lammps.table c3_c3_carbazol_00000---c3_c2n1_ph_00000
+pair_coeff 10 12 table lammps.table c3_c3_carbazol_00001---c3_c2n1_ph_00000
+pair_coeff 10 13 table lammps.table c3_c3_ph_00000---c3_c2n1_ph_00000
+pair_coeff 10 14 table lammps.table cu5_cu1o4_cu2_00000---c3_c2n1_ph_00000
+pair_coeff 10 15 table lammps.table h1_c1_carbazol_00000---c3_c2n1_ph_00000
+pair_coeff 10 16 table lammps.table h1_c1_ph_00000---c3_c2n1_ph_00000
+pair_coeff 10 17 table lammps.table n3_c3_carbazol_00000---c3_c2n1_ph_00000
+pair_coeff 10 18 table lammps.table o2_c1cu1_co2_00000---c3_c2n1_ph_00000
+pair_coeff 11 11 table lammps.table c3_c3_carbazol_00000---c3_c3_carbazol_00000
+pair_coeff 11 12 table lammps.table c3_c3_carbazol_00001---c3_c3_carbazol_00000
+pair_coeff 11 13 table lammps.table c3_c3_ph_00000---c3_c3_carbazol_00000
+pair_coeff 11 14 table lammps.table cu5_cu1o4_cu2_00000---c3_c3_carbazol_00000
+pair_coeff 11 15 table lammps.table h1_c1_carbazol_00000---c3_c3_carbazol_00000
+pair_coeff 11 16 table lammps.table h1_c1_ph_00000---c3_c3_carbazol_00000
+pair_coeff 11 17 table lammps.table n3_c3_carbazol_00000---c3_c3_carbazol_00000
+pair_coeff 11 18 table lammps.table o2_c1cu1_co2_00000---c3_c3_carbazol_00000
+pair_coeff 12 12 table lammps.table c3_c3_carbazol_00001---c3_c3_carbazol_00001
+pair_coeff 12 13 table lammps.table c3_c3_ph_00000---c3_c3_carbazol_00001
+pair_coeff 12 14 table lammps.table cu5_cu1o4_cu2_00000---c3_c3_carbazol_00001
+pair_coeff 12 15 table lammps.table h1_c1_carbazol_00000---c3_c3_carbazol_00001
+pair_coeff 12 16 table lammps.table h1_c1_ph_00000---c3_c3_carbazol_00001
+pair_coeff 12 17 table lammps.table n3_c3_carbazol_00000---c3_c3_carbazol_00001
+pair_coeff 12 18 table lammps.table o2_c1cu1_co2_00000---c3_c3_carbazol_00001
+pair_coeff 13 13 table lammps.table c3_c3_ph_00000---c3_c3_ph_00000
+pair_coeff 13 14 table lammps.table cu5_cu1o4_cu2_00000---c3_c3_ph_00000
+pair_coeff 13 15 table lammps.table h1_c1_carbazol_00000---c3_c3_ph_00000
+pair_coeff 13 16 table lammps.table h1_c1_ph_00000---c3_c3_ph_00000
+pair_coeff 13 17 table lammps.table n3_c3_carbazol_00000---c3_c3_ph_00000
+pair_coeff 13 18 table lammps.table o2_c1cu1_co2_00000---c3_c3_ph_00000
+pair_coeff 14 14 table lammps.table cu5_cu1o4_cu2_00000---cu5_cu1o4_cu2_00000
+pair_coeff 14 15 table lammps.table h1_c1_carbazol_00000---cu5_cu1o4_cu2_00000
+pair_coeff 14 16 table lammps.table h1_c1_ph_00000---cu5_cu1o4_cu2_00000
+pair_coeff 14 17 table lammps.table n3_c3_carbazol_00000---cu5_cu1o4_cu2_00000
+pair_coeff 14 18 table lammps.table o2_c1cu1_co2_00000---cu5_cu1o4_cu2_00000
+pair_coeff 15 15 table lammps.table h1_c1_carbazol_00000---h1_c1_carbazol_00000
+pair_coeff 15 16 table lammps.table h1_c1_ph_00000---h1_c1_carbazol_00000
+pair_coeff 15 17 table lammps.table n3_c3_carbazol_00000---h1_c1_carbazol_00000
+pair_coeff 15 18 table lammps.table o2_c1cu1_co2_00000---h1_c1_carbazol_00000
+pair_coeff 16 16 table lammps.table h1_c1_ph_00000---h1_c1_ph_00000
+pair_coeff 16 17 table lammps.table n3_c3_carbazol_00000---h1_c1_ph_00000
+pair_coeff 16 18 table lammps.table o2_c1cu1_co2_00000---h1_c1_ph_00000
+pair_coeff 17 17 table lammps.table n3_c3_carbazol_00000---n3_c3_carbazol_00000
+pair_coeff 17 18 table lammps.table o2_c1cu1_co2_00000---n3_c3_carbazol_00000
+pair_coeff 18 18 table lammps.table o2_c1cu1_co2_00000---o2_c1cu1_co2_00000
+kspace_style    ewald 1e-7      # Ewald accuracy
+neighbor        2.0 multi
+neigh_modify    every 2 delay 4 check yes
+
+##############################Output settings##############################
+thermo 10       # Provide output every n steps
+thermo_style     custom step time etotal ke temp pe emol evdwl ecoul elong etail pxx pyy pzz pxy pxz pyz vol press
+#dump 1 all custom 10 positions.dat id type x y z
+#dump 2 all custom 10 velocities.dat id type vx vy vz
+
+##############################Sampling options##############################
+thermo 1000
+timestep 0.5 # in time units
+velocity all create 300.0 666 # initial temperature in Kelvin and random seed
+fix 1 all npt temp 300.0 300.0 100.0 tri 1.0 1.0 1000.0 tchain 3 mtk yes nreset 1000
+dump      traj_dcd all dcd 1000 traj.dcd
+fix_modify 1 energy yes # Add thermo/barostat contributions to energy
+run 4000000
